@@ -23,9 +23,8 @@ def main():
     root = tk.Tk()
     app = OllamaAnalyzerGUI(root)
 
-    # Add window close handler
     def on_closing():
-        if app.is_analyzing:
+        if hasattr(app, 'is_analyzing') and app.is_analyzing:
             app.is_analyzing = False
             time.sleep(1)
         root.destroy()

@@ -12,7 +12,8 @@ import json
 from config import AnalyzerConfig
 from cache_manager import CacheManager
 from dependency_analyzer import DependencyAnalyzer
-from utils import get_project_files, format_size
+from utils import get_project_files, analyze_project_structure, format_size
+
 
 class ConsoleHandler(logging.Handler):
     def __init__(self, console_widget):
@@ -24,6 +25,7 @@ class ConsoleHandler(logging.Handler):
         self.console_widget.insert(tk.END, f"{msg}\n")
         self.console_widget.see(tk.END)
         self.console_widget.update_idletasks()
+
 
 class OllamaAnalyzerGUI:
     def __init__(self, root):
@@ -38,57 +40,51 @@ class OllamaAnalyzerGUI:
         self.create_widgets()
         
         self.logger.info("Application started")
-        
+    
     def setup_logging(self):
         self.logger = logging.getLogger('OllamaAnalyzer')
         self.logger.setLevel(logging.DEBUG)
         
-        # Create logs directory
         Path('logs').mkdir(exist_ok=True)
         
-        # File handler
         log_file = f'logs/analyzer_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'
         file_handler = logging.FileHandler(log_file)
         file_handler.setLevel(logging.DEBUG)
         file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(file_formatter)
         self.logger.addHandler(file_handler)
-        
+    
     def init_variables(self):
         self.project_path = tk.StringVar()
         self.model_name = tk.StringVar(value=self.config.DEFAULT_MODEL)
         self.base_url = tk.StringVar(value="http://localhost:11434")
         self.is_analyzing = False
         self.is_connected = False
-        
-        # File type filters
-        self.file_filters = {ext.lstrip('.'): tk.BooleanVar(value=True)
-                           for ext in self.config.SUPPORTED_EXTENSIONS}
 
-def scan_project_files(self):
-    if self.project_path.get():
-        try:
-            project_path = Path(self.project_path.get())
-            analysis = analyze_project_structure(project_path, self.config)
-            
-            self.file_list_text.delete(1.0, tk.END)
-            self.file_list_text.insert(tk.END, "Project Structure:\n\n")
-            
-            # Display statistics
-            self.file_list_text.insert(tk.END, "Statistics:\n")
-            self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
-            self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
-            self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
-            
-            # Display files
-            self.file_list_text.insert(tk.END, "Files:\n")
-            for file in sorted(analysis['files']):
-                self.file_list_text.insert(tk.END, f"{file}\n")
+    def scan_project_files(self):
+        if self.project_path.get():
+            try:
+                project_path = Path(self.project_path.get())
+                analysis = analyze_project_structure(project_path, self.config)
                 
-            self.logger.info(f"Found {len(analysis['files'])} files in project")
-            
-        except Exception as e:
-            self.logger.error(f"Error scanning project files: {str(e)}")
+                self.file_list_text.delete(1.0, tk.END)
+                self.file_list_text.insert(tk.END, "Project Structure:\n\n")
+                
+                # Display statistics
+                self.file_list_text.insert(tk.END, "Statistics:\n")
+                self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
+                self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
+                self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
+                
+                # Display files
+                self.file_list_text.insert(tk.END, "Files:\n")
+                for file in sorted(analysis['files']):
+                    self.file_list_text.insert(tk.END, f"{file}\n")
+                    
+                self.logger.info(f"Found {len(analysis['files'])} files in project")
+                
+            except Exception as e:
+                self.logger.error(f"Error scanning project files: {str(e)}")
 
     def create_widgets(self):
         # Project settings frame
@@ -125,12 +121,16 @@ def scan_project_files(self):
         self.query_text.bind("<FocusIn>", lambda e: self.on_query_focus_in())
         self.query_text.bind("<FocusOut>", lambda e: self.on_query_focus_out())
 
+        # Analysis controls
         button_frame = ttk.Frame(query_frame)
         button_frame.grid(row=1, column=0, columnspan=2, sticky="ew")
 
-        self.analyze_button = ttk.Button(button_frame, text="Analyze", 
-                                       command=self.start_analysis,
-                                       state="disabled")
+        self.analyze_button = ttk.Button(
+            button_frame, 
+            text="Analyze", 
+            command=self.start_analysis,
+            state="disabled"
+        )
         self.analyze_button.pack(side=tk.LEFT, pady=5)
 
         self.progress_bar = ttk.Progressbar(button_frame, mode='determinate', length=400)
@@ -146,18 +146,56 @@ def scan_project_files(self):
         console_frame = ttk.Frame(self.notebook)
         self.notebook.add(console_frame, text="Console")
 
+        # Console toolbar
+        console_toolbar = ttk.Frame(console_frame)
+        console_toolbar.pack(fill=tk.X, padx=5, pady=2)
+
+        ttk.Button(
+            console_toolbar,
+            text="Clear Console",
+            command=lambda: self.console_text.delete(1.0, tk.END)
+        ).pack(side=tk.LEFT)
+
+        # Console text area
         self.console_text = scrolledtext.ScrolledText(
-            console_frame, wrap=tk.WORD, height=20,
-            background='black', foreground='light green'
+            console_frame,
+            wrap=tk.WORD,
+            height=20,
+            background='black',
+            foreground='light green'
         )
         self.console_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+
+        # Add console handler to logger
+        console_handler = ConsoleHandler(self.console_text)
+        console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        self.logger.addHandler(console_handler)
 
         # Analysis results tab
         results_frame = ttk.Frame(self.notebook)
         self.notebook.add(results_frame, text="Analysis Results")
 
+        # Results toolbar
+        results_toolbar = ttk.Frame(results_frame)
+        results_toolbar.pack(fill=tk.X, padx=5, pady=2)
+
+        ttk.Button(
+            results_toolbar,
+            text="Clear Results",
+            command=lambda: self.results_text.delete(1.0, tk.END)
+        ).pack(side=tk.LEFT)
+
+        ttk.Button(
+            results_toolbar,
+            text="Save Results",
+            command=self.save_results
+        ).pack(side=tk.LEFT, padx=5)
+
+        # Results text area
         self.results_text = scrolledtext.ScrolledText(
-            results_frame, wrap=tk.WORD, height=20
+            results_frame,
+            wrap=tk.WORD,
+            height=20
         )
         self.results_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
@@ -165,8 +203,11 @@ def scan_project_files(self):
         files_frame = ttk.Frame(self.notebook)
         self.notebook.add(files_frame, text="Project Files")
 
+        # Files text area
         self.file_list_text = scrolledtext.ScrolledText(
-            files_frame, wrap=tk.WORD, height=20
+            files_frame,
+            wrap=tk.WORD,
+            height=20
         )
         self.file_list_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
@@ -319,6 +360,7 @@ def scan_project_files(self):
             self.progress_bar["value"] = 0
             self.analyze_button.config(text="Analyze")
 
+    # Fix the query_ollama method to remove the duplicate exception block:
     def query_ollama(self, file_path: str, content: str, question: str) -> str:
         url = f"{self.base_url.get()}/api/generate"
 
