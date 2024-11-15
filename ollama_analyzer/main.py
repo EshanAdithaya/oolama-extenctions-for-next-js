@@ -1,6 +1,7 @@
 import tkinter as tk
 import logging
 from pathlib import Path
+import time
 from gui import OllamaAnalyzerGUI
 
 def main():
