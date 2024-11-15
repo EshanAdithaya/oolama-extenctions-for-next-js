@@ -71,7 +71,7 @@ class AnalyzerConfig:
     MAX_FILE_SIZE_MB: int = 10
     BATCH_SIZE: int = 10
     PARALLEL_PROCESSES: int = 4
-    DEFAULT_MODEL: str = "llama2"
+    DEFAULT_MODEL: str = "llama3.2"
     API_TIMEOUT: int = 30
     MAX_RETRIES: int = 3
     RETRY_DELAY: int = 1

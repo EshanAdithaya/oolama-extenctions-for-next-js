@@ -61,30 +61,42 @@ class OllamaAnalyzerGUI:
         self.is_analyzing = False
         self.is_connected = False
 
-    def scan_project_files(self):
-        if self.project_path.get():
-            try:
-                project_path = Path(self.project_path.get())
-                analysis = analyze_project_structure(project_path, self.config)
+def scan_project_files(self):
+    """Enhanced project file scanning"""
+    if self.project_path.get():
+        try:
+            project_path = Path(self.project_path.get())
+            self.logger.info(f"Scanning project at: {project_path}")
+            
+            # Clear previous content
+            self.file_list_text.delete(1.0, tk.END)
+            
+            # Analyze project
+            analysis = analyze_project_structure(project_path, self.config)
+            
+            # Display results
+            self.file_list_text.insert(tk.END, "Project Structure:\n\n")
+            
+            # Statistics
+            self.file_list_text.insert(tk.END, "Statistics:\n")
+            self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
+            self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
+            self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
+            
+            # Files
+            self.file_list_text.insert(tk.END, "Files:\n")
+            for file in sorted(analysis['files']):
+                self.file_list_text.insert(tk.END, f"{file}\n")
                 
-                self.file_list_text.delete(1.0, tk.END)
-                self.file_list_text.insert(tk.END, "Project Structure:\n\n")
-                
-                # Display statistics
-                self.file_list_text.insert(tk.END, "Statistics:\n")
-                self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
-                self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
-                self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
-                
-                # Display files
-                self.file_list_text.insert(tk.END, "Files:\n")
-                for file in sorted(analysis['files']):
-                    self.file_list_text.insert(tk.END, f"{file}\n")
-                    
-                self.logger.info(f"Found {len(analysis['files'])} files in project")
-                
-            except Exception as e:
-                self.logger.error(f"Error scanning project files: {str(e)}")
+            # Log results
+            self.logger.info(f"Found {len(analysis['files'])} files")
+            self.logger.info("Files by extension:")
+            for ext, count in analysis['stats']['by_extension'].items():
+                self.logger.info(f"  {ext}: {count} files")
+            
+        except Exception as e:
+            self.logger.error(f"Error scanning project files: {str(e)}")
+            messagebox.showerror("Error", f"Error scanning project: {str(e)}")
 
     def create_widgets(self):
         # Project settings frame
@@ -225,12 +237,34 @@ class OllamaAnalyzerGUI:
             self.query_text.insert("1.0", "Enter your question about the project here...")
             self.query_text.config(foreground='grey')
 
-    def browse_project(self):
-        directory = filedialog.askdirectory()
-        if directory:
-            self.project_path.set(directory)
-            self.logger.info(f"Selected project directory: {directory}")
+def browse_project(self):
+    """Enhanced project directory selection"""
+    directory = filedialog.askdirectory()
+    if directory:
+        try:
+            # Convert to absolute path
+            abs_path = Path(directory).resolve()
+            self.logger.info(f"Selected directory: {abs_path}")
+            
+            # Verify it's a valid project directory
+            if not abs_path.is_dir():
+                raise ValueError("Selected path is not a directory")
+            
+            # Log directory contents
+            self.logger.info("Directory contents:")
+            for item in abs_path.iterdir():
+                self.logger.info(f"  {item.name} {'(dir)' if item.is_dir() else '(file)'}")
+            
+            # Set the project path
+            self.project_path.set(str(abs_path))
+            self.logger.info(f"Set project path to: {self.project_path.get()}")
+            
+            # Scan files
             self.scan_project_files()
+            
+        except Exception as e:
+            self.logger.error(f"Error in browse_project: {str(e)}")
+            messagebox.showerror("Error", f"Invalid project directory: {str(e)}")
 
     def connect_to_ollama(self):
         self.logger.info("Attempting to connect to Ollama...")
