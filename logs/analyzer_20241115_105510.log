@@ -1,0 +1,7 @@
+2024-11-15 10:55:10,452 - INFO - Application started
+2024-11-15 10:55:13,305 - INFO - Attempting to connect to Ollama...
+2024-11-15 10:55:17,349 - ERROR - Connection error: Model 'llama2' not found
+2024-11-15 10:55:26,505 - INFO - Attempting to connect to Ollama...
+2024-11-15 10:55:31,843 - INFO - Successfully connected to Ollama
+2024-11-15 10:55:37,372 - INFO - Selected project directory: C:/xampp/htdocs/marketplace01
+2024-11-15 10:55:37,380 - INFO - Found 23 files in project

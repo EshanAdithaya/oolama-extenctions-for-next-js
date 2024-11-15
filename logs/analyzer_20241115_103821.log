@@ -1,0 +1,27 @@
+2024-11-15 10:38:21,948 - INFO - Application started
+2024-11-15 10:38:26,250 - INFO - Attempting to connect to Ollama...
+2024-11-15 10:38:30,331 - ERROR - Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021A814D56A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 10:39:01,566 - INFO - Attempting to connect to Ollama...
+2024-11-15 10:39:06,425 - INFO - Successfully connected to Ollama
+2024-11-15 10:39:12,802 - INFO - Selected project directory: C:/xampp/htdocs/marketplace01/src
+2024-11-15 10:39:12,802 - INFO - Found 18 files in project
+2024-11-15 10:39:25,004 - INFO - Found 18 files to analyze
+2024-11-15 10:39:25,004 - INFO - Analyzing file 1/18: App.css
+2024-11-15 10:39:41,333 - INFO - Analyzing file 2/18: App.js
+2024-11-15 10:39:56,589 - INFO - Analyzing file 3/18: App.test.js
+2024-11-15 10:40:10,579 - INFO - Analyzing file 4/18: components/Account.js
+2024-11-15 10:40:26,749 - INFO - Analyzing file 5/18: components/Cart.js
+2024-11-15 10:40:50,810 - INFO - Analyzing file 6/18: components/Checkout.js
+2024-11-15 10:41:04,406 - INFO - Analyzing file 7/18: components/Header.js
+2024-11-15 10:41:23,600 - INFO - Analyzing file 8/18: components/Hero.js
+2024-11-15 10:41:40,272 - INFO - Analyzing file 9/18: components/NotFound.js
+2024-11-15 10:41:59,645 - INFO - Analyzing file 10/18: components/PreviewMode.jsx
+2024-11-15 10:42:14,110 - INFO - Analyzing file 11/18: components/PreviewWrapper.jsx
+2024-11-15 10:42:31,435 - INFO - Analyzing file 12/18: components/ProductDetail.js
+2024-11-15 10:42:50,715 - INFO - Analyzing file 13/18: components/Products.js
+2024-11-15 10:43:09,690 - INFO - Analyzing file 14/18: index.css
+2024-11-15 10:43:19,357 - INFO - Analyzing file 15/18: index.js
+2024-11-15 10:43:35,029 - INFO - Analyzing file 16/18: lib/utils.js
+2024-11-15 10:43:44,953 - INFO - Analyzing file 17/18: reportWebVitals.js
+2024-11-15 10:44:05,896 - INFO - Analyzing file 18/18: setupTests.js
+2024-11-15 10:44:18,260 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241115_104418.json

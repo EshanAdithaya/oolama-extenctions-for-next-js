@@ -1,0 +1,5 @@
+2024-11-15 10:52:02,744 - INFO - Application started
+2024-11-15 10:52:05,992 - INFO - Attempting to connect to Ollama...
+2024-11-15 10:52:12,174 - INFO - Successfully connected to Ollama
+2024-11-15 10:52:19,825 - INFO - Selected project directory: C:/xampp/htdocs/marketplace01
+2024-11-15 10:52:19,832 - INFO - Found 24 files in project

@@ -2,18 +2,19 @@ import tkinter as tk
 import logging
 from pathlib import Path
 import time
+import logging
 from gui import OllamaAnalyzerGUI
 
 def main():
     # Configure root logger
     logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler('ollama_analyzer.log'),
-            logging.StreamHandler()
-        ]
-    )
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('debug.log'),
+        logging.StreamHandler()
+    ]
+)
 
     # Create required directories
     Path('logs').mkdir(exist_ok=True)
@@ -22,6 +23,9 @@ def main():
     # Initialize GUI
     root = tk.Tk()
     app = OllamaAnalyzerGUI(root)
+
+
+
 
     def on_closing():
         if hasattr(app, 'is_analyzing') and app.is_analyzing:
