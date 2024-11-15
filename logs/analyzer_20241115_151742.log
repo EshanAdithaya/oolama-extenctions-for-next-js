@@ -1,0 +1,15 @@
+2024-11-15 15:17:42,600 - INFO - Application started
+2024-11-15 15:17:44,914 - INFO - Attempting to connect to Ollama...
+2024-11-15 15:17:51,326 - INFO - Successfully connected to Ollama
+2024-11-15 15:17:56,872 - INFO - Selected project directory: C:/xampp/htdocs/marketplace01
+2024-11-15 15:17:56,873 - INFO - Scanning project at: C:\xampp\htdocs\marketplace01
+2024-11-15 15:18:11,407 - INFO - Found 28 files
+2024-11-15 15:18:11,409 - INFO - Files by extension:
+2024-11-15 15:18:11,410 - INFO -   .json: 3 files
+2024-11-15 15:18:11,411 - INFO -   .js: 16 files
+2024-11-15 15:18:11,412 - INFO -   .png: 2 files
+2024-11-15 15:18:11,413 - INFO -   .txt: 1 files
+2024-11-15 15:18:11,414 - INFO -   .md: 1 files
+2024-11-15 15:18:11,415 - INFO -   .css: 2 files
+2024-11-15 15:18:11,416 - INFO -   .jsx: 2 files
+2024-11-15 15:18:11,417 - INFO -   .svg: 1 files

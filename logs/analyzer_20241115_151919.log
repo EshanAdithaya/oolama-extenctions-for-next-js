@@ -1,0 +1,26 @@
+2024-11-15 15:19:19,779 - INFO - Application started
+2024-11-15 15:19:28,404 - INFO - Selected project directory: C:/xampp/htdocs/MultiVendor01
+2024-11-15 15:19:28,405 - INFO - Scanning project at: C:\xampp\htdocs\MultiVendor01
+2024-11-15 15:19:45,304 - INFO - Found 882 files
+2024-11-15 15:19:45,305 - INFO - Files by extension:
+2024-11-15 15:19:45,306 - INFO -   .json: 37 files
+2024-11-15 15:19:45,307 - INFO -   .ts: 160 files
+2024-11-15 15:19:45,307 - INFO -   .js: 7 files
+2024-11-15 15:19:45,308 - INFO -   .svg: 14 files
+2024-11-15 15:19:45,308 - INFO -   .png: 49 files
+2024-11-15 15:19:45,310 - INFO -   .jpg: 1 files
+2024-11-15 15:19:45,310 - INFO -   .txt: 1 files
+2024-11-15 15:19:45,310 - INFO -   .css: 6 files
+2024-11-15 15:19:45,311 - INFO -   .tsx: 607 files
+2024-11-15 15:20:01,050 - INFO - Attempting to connect to Ollama...
+2024-11-15 15:20:06,141 - INFO - Successfully connected to Ollama
+2024-11-15 15:20:36,344 - INFO - Found 882 files to analyze
+2024-11-15 15:20:36,345 - INFO - Analyzing file 1/882: .eslintrc.json
+2024-11-15 15:20:56,157 - INFO - Analyzing file 2/882: additional.d.ts
+2024-11-15 15:21:05,863 - INFO - Analyzing file 3/882: i18next.d.ts
+2024-11-15 15:21:22,382 - INFO - Analyzing file 4/882: lint-staged.config.js
+2024-11-15 15:21:40,594 - INFO - Analyzing file 5/882: next-env.d.ts
+2024-11-15 15:21:55,656 - INFO - Analyzing file 6/882: next-i18next.config.js
+2024-11-15 15:22:10,778 - INFO - Analyzing file 7/882: next-sitemap.config.js
+2024-11-15 15:22:21,002 - INFO - Analyzing file 8/882: next.config.js
+2024-11-15 15:22:43,971 - INFO - Analyzing file 9/882: package.json

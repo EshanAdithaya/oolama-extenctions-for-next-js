@@ -7,8 +7,8 @@ def default_extensions() -> Set[str]:
         # JavaScript/TypeScript
         '.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs',
         
-        # Styles
-        '.css', '.scss', '.sass', '.less', 
+        # Style files
+        '.css', '.scss', '.sass', '.less',
         '.module.css', '.module.scss', '.module.sass', '.module.less',
         '.styled.js', '.styled.ts',
         
@@ -17,26 +17,21 @@ def default_extensions() -> Set[str]:
         '.layout.tsx', '.layout.jsx', '.layout.js',
         '.component.tsx', '.component.jsx', '.component.js',
         
-        # Component files
+        # Form/Component files
         '.form.tsx', '.form.jsx', '.form.js',
         '.view.tsx', '.view.jsx', '.view.js',
         '.modal.tsx', '.modal.jsx', '.modal.js',
         '.dialog.tsx', '.dialog.jsx', '.dialog.js',
         
-        # Utility files
-        '.util.ts', '.util.js',
-        '.helper.ts', '.helper.js',
-        '.service.ts', '.service.js',
-        '.hook.ts', '.hook.js',
-        '.context.ts', '.context.js',
-        '.provider.ts', '.provider.js',
-        
-        # Config and data files
+        # Config files
         '.json', '.env', '.env.local', '.env.development', '.env.production',
         '.config.js', '.config.ts',
         
         # Documentation
         '.md', '.mdx', '.txt',
+        
+        # SVG and other assets
+        '.svg', '.webp', '.jpg', '.jpeg', '.png', '.gif',
         
         # Type definitions
         '.d.ts'

@@ -6,147 +6,176 @@ import logging
 
 logger = logging.getLogger('FileScanner')
 
-def format_size(size_in_bytes: int) -> str:
+def format_size(size_in_bytes: float) -> str:
     """Convert bytes to human readable format"""
-    for unit in ['B', 'KB', 'MB', 'GB']:
-        if size_in_bytes < 1024:
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if size_in_bytes < 1024.0:
             return f"{size_in_bytes:.2f} {unit}"
-        size_in_bytes /= 1024
+        size_in_bytes /= 1024.0
     return f"{size_in_bytes:.2f} TB"
 
-def validate_project_path(project_path: Path) -> bool:
-    """Validate if the path is a valid Next.js/React project directory"""
-    logger.info(f"Validating project path: {project_path}")
-    
-    # Check if path exists and is a directory
-    if not project_path.exists() or not project_path.is_dir():
-        logger.error(f"Invalid path: {project_path}")
-        return False
-    
-    logger.info("Directory structure:")
-    for item in project_path.iterdir():
-        logger.info(f"  {item.name} {'(dir)' if item.is_dir() else '(file)'}")
-    
-    return True
+def scan_directory_structure(directory: Path, indent: str = "") -> None:
+    """Debug function to print actual directory structure"""
+    try:
+        for item in directory.iterdir():
+            if item.is_file():
+                logger.debug(f"{indent}FILE: {item.name}")
+            elif item.is_dir():
+                logger.debug(f"{indent}DIR: {item.name}/")
+                scan_directory_structure(item, indent + "  ")
+    except Exception as e:
+        logger.error(f"Error scanning directory {directory}: {e}")
 
-def get_actual_files(project_path: Path) -> List[str]:
-    """Get all files in the project directory without filtering"""
+def get_project_files(project_path: Path, config: AnalyzerConfig) -> List[str]:
+    """Enhanced recursive file scanning with detailed logging"""
     files = []
+    logger.info(f"Starting deep scan of project at: {project_path}")
     
-    logger.info(f"Scanning all files in: {project_path}")
-    logger.info("Current directory structure:")
+    # First, log the complete directory structure for debugging
+    logger.debug("Full directory structure:")
+    scan_directory_structure(project_path)
     
-    # First, log the entire directory structure
-    for root, dirs, filenames in os.walk(project_path):
-        level = root.replace(str(project_path), '').count(os.sep)
-        indent = ' ' * 4 * level
-        logger.info(f"{indent}{os.path.basename(root)}/")
-        subindent = ' ' * 4 * (level + 1)
-        for filename in filenames:
-            logger.info(f"{subindent}{filename}")
-            # Get path relative to project root
-            full_path = Path(root) / filename
-            try:
-                relative_path = full_path.relative_to(project_path)
-                files.append(str(relative_path))
-            except Exception as e:
-                logger.error(f"Error processing file {filename}: {e}")
+    def process_directory(current_path: Path) -> None:
+        """Recursive function to process directories"""
+        try:
+            for item in current_path.iterdir():
+                relative_path = item.relative_to(project_path)
+                
+                if item.is_dir():
+                    # Log directory discovery
+                    logger.debug(f"Scanning directory: {relative_path}")
+                    
+                    # Skip ignored directories
+                    if item.name in config.IGNORE_DIRS:
+                        logger.debug(f"Skipping ignored directory: {relative_path}")
+                        continue
+                        
+                    # Recursively process subdirectory
+                    process_directory(item)
+                else:
+                    # Log file discovery
+                    logger.debug(f"Found file: {relative_path}")
+                    
+                    # Check file extension
+                    if item.suffix.lower() in config.SUPPORTED_EXTENSIONS:
+                        # Check file size
+                        try:
+                            file_size = item.stat().st_size
+                            if file_size <= (config.MAX_FILE_SIZE_MB * 1024 * 1024):
+                                logger.info(f"Including file: {relative_path} (size: {format_size(file_size)})")
+                                files.append(str(relative_path))
+                            else:
+                                logger.warning(f"File too large, skipping: {relative_path} (size: {format_size(file_size)})")
+                        except Exception as e:
+                            logger.error(f"Error checking file size for {relative_path}: {e}")
+                    else:
+                        logger.debug(f"Skipping unsupported file type: {relative_path}")
+                        
+        except Exception as e:
+            logger.error(f"Error processing directory {current_path}: {e}")
+    
+    # Start the recursive scan
+    process_directory(project_path)
+    
+    # Log summary
+    logger.info(f"Scan complete. Found {len(files)} files")
+    logger.info("Files by extension:")
+    extension_count = {}
+    for file in files:
+        ext = Path(file).suffix.lower()
+        extension_count[ext] = extension_count.get(ext, 0) + 1
+    for ext, count in extension_count.items():
+        logger.info(f"  {ext}: {count} files")
     
     return sorted(files)
 
-def get_directory_size(path: Path) -> int:
-    """Calculate total size of a directory and its contents"""
-    total_size = 0
-    for dirpath, _, filenames in os.walk(path):
-        for filename in filenames:
-            file_path = Path(dirpath) / filename
-            try:
-                total_size += file_path.stat().st_size
-            except Exception:
-                continue
-    return total_size
-
-def get_project_files(project_path: Path, config: AnalyzerConfig) -> List[str]:
-    """Get all project files with minimal filtering"""
-    if not validate_project_path(project_path):
-        logger.error("Invalid project path")
-        return []
-    
-    logger.info(f"Starting project scan at: {project_path}")
-    
-    all_files = get_actual_files(project_path)
-    logger.info(f"Found {len(all_files)} total files")
-    
-    # Only filter out node_modules and .git
-    filtered_files = [
-        f for f in all_files 
-        if not any(part in str(f).split(os.sep) for part in ['node_modules', '.git'])
-    ]
-    
-    logger.info(f"After minimal filtering: {len(filtered_files)} files")
-    for file in filtered_files:
-        logger.info(f"Including file: {file}")
-    
-    return filtered_files
-
-def count_directories(path: Path, ignore_dirs: Set[str]) -> int:
-    """Count number of directories excluding ignored ones"""
-    count = 0
-    for root, dirs, _ in os.walk(path):
-        dirs[:] = [d for d in dirs if d not in ignore_dirs]
-        count += len(dirs)
-    return count
-
 def analyze_project_structure(project_path: Path, config: AnalyzerConfig) -> Dict:
-    """Analyze project structure with actual file system data"""
-    logger.info(f"Starting analysis of: {project_path}")
+    """Enhanced project structure analysis with detailed directory info"""
+    logger.info(f"Starting project analysis at: {project_path}")
     
-    # Initialize statistics
     stats = {
         'total_size': 0,
         'total_dirs': 0,
         'total_files': 0,
         'by_extension': {},
         'by_directory': {},
-        'directory_tree': {}
+        'directory_tree': {},
+        'max_depth': 0
     }
     
-    try:
-        # Get all files
-        files = get_project_files(project_path, config)
-        stats['total_files'] = len(files)
+    def analyze_directory(current_path: Path, depth: int = 0) -> None:
+        """Recursive directory analyzer"""
+        nonlocal stats
         
-        # Process each file
-        for file_path in files:
-            try:
-                full_path = project_path / file_path
-                if full_path.exists():
-                    # Update size
-                    file_size = full_path.stat().st_size
-                    stats['total_size'] += file_size
-                    
-                    # Update extension stats
-                    ext = full_path.suffix.lower()
-                    stats['by_extension'][ext] = stats['by_extension'].get(ext, 0) + 1
-                    
-                    # Update directory stats
-                    dir_path = str(Path(file_path).parent)
-                    stats['by_directory'][dir_path] = stats['by_directory'].get(dir_path, 0) + 1
-                    
-            except Exception as e:
-                logger.error(f"Error processing file {file_path}: {e}")
-        
-        # Count directories
-        stats['total_dirs'] = count_directories(project_path, config.IGNORE_DIRS)
-        
-        logger.info(f"Analysis complete: {stats['total_files']} files in {stats['total_dirs']} directories")
-        logger.info(f"Total size: {format_size(stats['total_size'])}")
-        
-        return {
-            'stats': stats,
-            'files': files
+        try:
+            # Update max depth
+            stats['max_depth'] = max(stats['max_depth'], depth)
+            
+            # Process all items in directory
+            for item in current_path.iterdir():
+                relative_path = item.relative_to(project_path)
+                
+                if item.is_dir():
+                    if item.name not in config.IGNORE_DIRS:
+                        stats['total_dirs'] += 1
+                        dir_path = str(relative_path)
+                        stats['directory_tree'][dir_path] = {
+                            'depth': depth,
+                            'files': 0,
+                            'size': 0
+                        }
+                        analyze_directory(item, depth + 1)
+                else:
+                    if item.suffix.lower() in config.SUPPORTED_EXTENSIONS:
+                        try:
+                            file_size = item.stat().st_size
+                            if file_size <= (config.MAX_FILE_SIZE_MB * 1024 * 1024):
+                                stats['total_files'] += 1
+                                stats['total_size'] += file_size
+                                
+                                # Update extension stats
+                                ext = item.suffix.lower()
+                                stats['by_extension'][ext] = stats['by_extension'].get(ext, 0) + 1
+                                
+                                # Update directory stats
+                                dir_path = str(relative_path.parent)
+                                if dir_path in stats['directory_tree']:
+                                    stats['directory_tree'][dir_path]['files'] += 1
+                                    stats['directory_tree'][dir_path]['size'] += file_size
+                                
+                                stats['by_directory'][dir_path] = stats['by_directory'].get(dir_path, 0) + 1
+                        except Exception as e:
+                            logger.error(f"Error processing file {relative_path}: {e}")
+                            
+        except Exception as e:
+            logger.error(f"Error analyzing directory {current_path}: {e}")
+    
+    # Start recursive analysis
+    analyze_directory(project_path)
+    
+    # Add directory depth information to stats
+    stats['directory_depth'] = {
+        'max_depth': stats['max_depth'],
+        'directories_by_depth': {
+            depth: len([d for d, info in stats['directory_tree'].items() if info['depth'] == depth])
+            for depth in range(stats['max_depth'] + 1)
         }
-        
-    except Exception as e:
-        logger.error(f"Error during analysis: {e}")
-        raise
+    }
+    
+    logger.info("\nAnalysis Summary:")
+    logger.info(f"Total Files: {stats['total_files']}")
+    logger.info(f"Total Directories: {stats['total_dirs']}")
+    logger.info(f"Maximum Directory Depth: {stats['max_depth']}")
+    logger.info(f"Total Size: {format_size(stats['total_size'])}")
+    logger.info("\nDirectory Structure:")
+    for dir_path, info in stats['directory_tree'].items():
+        logger.info(f"  {'  ' * info['depth']}{dir_path}/")
+        logger.info(f"  {'  ' * (info['depth'] + 1)}Files: {info['files']}")
+        logger.info(f"  {'  ' * (info['depth'] + 1)}Size: {format_size(info['size'])}")
+    
+    files = get_project_files(project_path, config)
+    
+    return {
+        'stats': stats,
+        'files': files
+    }

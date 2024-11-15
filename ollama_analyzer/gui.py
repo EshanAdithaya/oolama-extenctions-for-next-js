@@ -14,7 +14,6 @@ from cache_manager import CacheManager
 from dependency_analyzer import DependencyAnalyzer
 from utils import get_project_files, analyze_project_structure, format_size
 
-
 class ConsoleHandler(logging.Handler):
     def __init__(self, console_widget):
         logging.Handler.__init__(self)
@@ -25,7 +24,6 @@ class ConsoleHandler(logging.Handler):
         self.console_widget.insert(tk.END, f"{msg}\n")
         self.console_widget.see(tk.END)
         self.console_widget.update_idletasks()
-
 
 class OllamaAnalyzerGUI:
     def __init__(self, root):
@@ -40,7 +38,7 @@ class OllamaAnalyzerGUI:
         self.create_widgets()
         
         self.logger.info("Application started")
-    
+
     def setup_logging(self):
         self.logger = logging.getLogger('OllamaAnalyzer')
         self.logger.setLevel(logging.DEBUG)
@@ -53,50 +51,13 @@ class OllamaAnalyzerGUI:
         file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(file_formatter)
         self.logger.addHandler(file_handler)
-    
+
     def init_variables(self):
         self.project_path = tk.StringVar()
         self.model_name = tk.StringVar(value=self.config.DEFAULT_MODEL)
         self.base_url = tk.StringVar(value="http://localhost:11434")
         self.is_analyzing = False
         self.is_connected = False
-
-def scan_project_files(self):
-    """Enhanced project file scanning"""
-    if self.project_path.get():
-        try:
-            project_path = Path(self.project_path.get())
-            self.logger.info(f"Scanning project at: {project_path}")
-            
-            # Clear previous content
-            self.file_list_text.delete(1.0, tk.END)
-            
-            # Analyze project
-            analysis = analyze_project_structure(project_path, self.config)
-            
-            # Display results
-            self.file_list_text.insert(tk.END, "Project Structure:\n\n")
-            
-            # Statistics
-            self.file_list_text.insert(tk.END, "Statistics:\n")
-            self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
-            self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
-            self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
-            
-            # Files
-            self.file_list_text.insert(tk.END, "Files:\n")
-            for file in sorted(analysis['files']):
-                self.file_list_text.insert(tk.END, f"{file}\n")
-                
-            # Log results
-            self.logger.info(f"Found {len(analysis['files'])} files")
-            self.logger.info("Files by extension:")
-            for ext, count in analysis['stats']['by_extension'].items():
-                self.logger.info(f"  {ext}: {count} files")
-            
-        except Exception as e:
-            self.logger.error(f"Error scanning project files: {str(e)}")
-            messagebox.showerror("Error", f"Error scanning project: {str(e)}")
 
     def create_widgets(self):
         # Project settings frame
@@ -237,34 +198,12 @@ def scan_project_files(self):
             self.query_text.insert("1.0", "Enter your question about the project here...")
             self.query_text.config(foreground='grey')
 
-def browse_project(self):
-    """Enhanced project directory selection"""
-    directory = filedialog.askdirectory()
-    if directory:
-        try:
-            # Convert to absolute path
-            abs_path = Path(directory).resolve()
-            self.logger.info(f"Selected directory: {abs_path}")
-            
-            # Verify it's a valid project directory
-            if not abs_path.is_dir():
-                raise ValueError("Selected path is not a directory")
-            
-            # Log directory contents
-            self.logger.info("Directory contents:")
-            for item in abs_path.iterdir():
-                self.logger.info(f"  {item.name} {'(dir)' if item.is_dir() else '(file)'}")
-            
-            # Set the project path
-            self.project_path.set(str(abs_path))
-            self.logger.info(f"Set project path to: {self.project_path.get()}")
-            
-            # Scan files
+    def browse_project(self):
+        directory = filedialog.askdirectory()
+        if directory:
+            self.project_path.set(directory)
+            self.logger.info(f"Selected project directory: {directory}")
             self.scan_project_files()
-            
-        except Exception as e:
-            self.logger.error(f"Error in browse_project: {str(e)}")
-            messagebox.showerror("Error", f"Invalid project directory: {str(e)}")
 
     def connect_to_ollama(self):
         self.logger.info("Attempting to connect to Ollama...")
@@ -292,6 +231,42 @@ def browse_project(self):
             self.connection_status.config(text="❌ Error", foreground="red")
             self.analyze_button.config(state="disabled")
             messagebox.showerror("Error", f"Connection failed: {str(e)}")
+
+    def scan_project_files(self):
+        if self.project_path.get():
+            try:
+                project_path = Path(self.project_path.get())
+                self.logger.info(f"Scanning project at: {project_path}")
+                
+                # Clear previous content
+                self.file_list_text.delete(1.0, tk.END)
+                
+                # Analyze project
+                analysis = analyze_project_structure(project_path, self.config)
+                
+                # Display results
+                self.file_list_text.insert(tk.END, "Project Structure:\n\n")
+                
+                # Statistics
+                self.file_list_text.insert(tk.END, "Statistics:\n")
+                self.file_list_text.insert(tk.END, f"Total Files: {analysis['stats']['total_files']}\n")
+                self.file_list_text.insert(tk.END, f"Total Directories: {analysis['stats']['total_dirs']}\n")
+                self.file_list_text.insert(tk.END, f"Total Size: {format_size(analysis['stats']['total_size'])}\n\n")
+                
+                # Files
+                self.file_list_text.insert(tk.END, "Files:\n")
+                for file in sorted(analysis['files']):
+                    self.file_list_text.insert(tk.END, f"{file}\n")
+                    
+                # Log results
+                self.logger.info(f"Found {len(analysis['files'])} files")
+                self.logger.info("Files by extension:")
+                for ext, count in analysis['stats']['by_extension'].items():
+                    self.logger.info(f"  {ext}: {count} files")
+                
+            except Exception as e:
+                self.logger.error(f"Error scanning project files: {str(e)}")
+                messagebox.showerror("Error", f"Error scanning project: {str(e)}")
 
     def start_analysis(self):
         if self.is_analyzing:
@@ -394,8 +369,8 @@ def browse_project(self):
             self.progress_bar["value"] = 0
             self.analyze_button.config(text="Analyze")
 
-    # Fix the query_ollama method to remove the duplicate exception block:
     def query_ollama(self, file_path: str, content: str, question: str) -> str:
+        """Query Ollama with file content and question"""
         url = f"{self.base_url.get()}/api/generate"
 
         system_prompt = f"""You are analyzing the file {file_path} from a Next.js project.
@@ -427,7 +402,7 @@ Consider:
                 "prompt": prompt,
                 "system": system_prompt,
                 "stream": False
-            })
+            }, timeout=30)
 
             response.raise_for_status()
             return response.json()['response']
@@ -435,11 +410,8 @@ Consider:
             self.logger.error(f"Error querying Ollama: {str(e)}")
             raise
 
-        except Exception as e:
-            self.logger.error(f"Error querying Ollama: {str(e)}")
-            raise
-
     def save_results(self):
+        """Save analysis results to a file"""
         if not self.results_text.get("1.0", tk.END).strip():
             messagebox.showwarning("No Results", "There are no results to save.")
             return
@@ -451,7 +423,21 @@ Consider:
         )
 
         if file_path:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(self.results_text.get("1.0", tk.END))
-            self.logger.info(f"Results saved to: {file_path}")
-            messagebox.showinfo("Success", f"Results saved to:\n{file_path}")
+            try:
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(self.results_text.get("1.0", tk.END))
+                self.logger.info(f"Results saved to: {file_path}")
+                messagebox.showinfo("Success", f"Results saved to:\n{file_path}")
+            except Exception as e:
+                self.logger.error(f"Error saving results: {str(e)}")
+                messagebox.showerror("Error", f"Failed to save results: {str(e)}")
+
+    def on_closing(self):
+        """Handle application closing"""
+        if self.is_analyzing:
+            if messagebox.askokcancel("Quit", "Analysis is in progress. Do you want to stop and quit?"):
+                self.is_analyzing = False
+                time.sleep(1)  # Give time for threads to clean up
+                self.root.destroy()
+        else:
+            self.root.destroy()
