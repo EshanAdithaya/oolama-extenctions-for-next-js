@@ -8,11 +8,16 @@ from pathlib import Path
 from typing import Optional
 import requests
 import json
+import os
+import sys
+import subprocess
 
 from config import AnalyzerConfig
 from cache_manager import CacheManager
 from dependency_analyzer import DependencyAnalyzer
 from utils import get_project_files, analyze_project_structure, format_size
+from analysis_summarizer import AnalysisSummarizer
+from project_analyzer import ProjectAnalyzer
 
 class ConsoleHandler(logging.Handler):
     def __init__(self, console_widget):
@@ -25,7 +30,74 @@ class ConsoleHandler(logging.Handler):
         self.console_widget.see(tk.END)
         self.console_widget.update_idletasks()
 
+
+
 class OllamaAnalyzerGUI:
+    
+    def analyze_project(self):
+        if not self.is_connected:
+            self.logger.error("Cannot start analysis - not connected to Ollama")
+            messagebox.showerror("Error", "Please connect to Ollama first")
+            return
+
+        project_path = self.project_path.get()
+        if not project_path:
+            self.logger.error("Cannot start analysis - no project path selected")
+            messagebox.showerror("Error", "Please select a project directory")
+            return
+
+        self.console_text.delete(1.0, tk.END)
+        self.results_text.delete(1.0, tk.END)
+        self.is_analyzing = True
+        self.analyze_button.config(text="Stop")
+
+        try:
+            project_path = Path(project_path)
+            
+            # Initialize the project analyzer if not already done
+            if not hasattr(self, 'project_analyzer'):
+                self.logger.info("Initializing project analyzer...")
+                self.project_analyzer = ProjectAnalyzer(project_path, self.config)
+                self.logger.info("Consolidating project files (this may take a moment)...")
+                self.project_analyzer.consolidate_project()
+                self.logger.info("Project consolidation complete!")
+            
+            # Get the question from the input field
+            question = self.query_text.get(1.0, tk.END).strip()
+            
+            self.logger.info("Querying Ollama...")
+            response = self.project_analyzer.query_ollama(
+                self.base_url.get(),
+                self.model_name.get(),
+                question
+            )
+            
+            # Display results
+            self.results_text.delete(1.0, tk.END)
+            self.results_text.insert(tk.END, response)
+            
+            # Save conversation
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            output_dir = Path("analysis_results")
+            output_dir.mkdir(exist_ok=True)
+            
+            output_file = output_dir / f"conversation_{timestamp}.json"
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump({
+                    "question": question,
+                    "response": response,
+                    "timestamp": timestamp
+                }, f, indent=2)
+            
+            self.logger.info(f"Conversation saved to: {output_file}")
+
+        except Exception as e:
+            self.logger.error(f"Error during analysis: {str(e)}")
+            messagebox.showerror("Error", f"Analysis failed: {str(e)}")
+        finally:
+            self.is_analyzing = False
+            self.analyze_button.config(text="Analyze")
+
     def __init__(self, root):
         self.root = root
         self.root.title("Next.js Project Analyzer")
@@ -63,6 +135,8 @@ class OllamaAnalyzerGUI:
         # Project settings frame
         settings_frame = ttk.LabelFrame(self.root, text="Project Settings", padding="10")
         settings_frame.grid(row=0, column=0, padx=10, pady=5, sticky="ew")
+
+       
 
         # Project path selection
         ttk.Label(settings_frame, text="Project Path:").grid(row=0, column=0, padx=5, pady=5)
@@ -114,6 +188,16 @@ class OllamaAnalyzerGUI:
         # Create notebook for different views
         self.notebook = ttk.Notebook(self.root)
         self.notebook.grid(row=2, column=0, padx=10, pady=5, sticky="nsew")
+
+        menubar = tk.Menu(self.root)
+        self.root.config(menu=menubar)
+
+        file_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="File", menu=file_menu)
+        file_menu.add_command(label="Analyze Previous Results", command=self.analyze_previous_results)
+        file_menu.add_command(label="Browse Previous Results", command=self.browse_previous_results) # Add this line
+
+
 
         # Console output tab
         console_frame = ttk.Frame(self.notebook)
@@ -176,6 +260,36 @@ class OllamaAnalyzerGUI:
         files_frame = ttk.Frame(self.notebook)
         self.notebook.add(files_frame, text="Project Files")
 
+
+        # Previous Results tab
+        json_frame = ttk.Frame(self.notebook)
+        self.notebook.add(json_frame, text="Previous Results")
+
+        # JSON toolbar
+        json_toolbar = ttk.Frame(json_frame)
+        json_toolbar.pack(fill=tk.X, padx=5, pady=2)
+
+        ttk.Button(
+            json_toolbar,
+            text="Load JSON",
+            command=self.analyze_previous_results
+        ).pack(side=tk.LEFT)
+
+        ttk.Button(
+            json_toolbar,
+            text="Open Results Folder",
+            command=self.browse_previous_results
+        ).pack(side=tk.LEFT, padx=5)
+
+        # JSON results area
+        self.json_text = scrolledtext.ScrolledText(
+            json_frame,
+            wrap=tk.WORD,
+            height=20
+        )
+        self.json_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
+
+
         # Files text area
         self.file_list_text = scrolledtext.ScrolledText(
             files_frame,
@@ -187,6 +301,24 @@ class OllamaAnalyzerGUI:
         # Configure grid weights
         self.root.grid_rowconfigure(2, weight=1)
         self.root.grid_columnconfigure(0, weight=1)
+
+    def browse_previous_results(self):
+        """Open file browser to view previous analysis results"""
+        output_dir = Path("analysis_results")
+        if not output_dir.exists():
+            messagebox.showwarning("No Results", "No previous analysis results found.")
+            return
+            
+        try:
+            if sys.platform == 'win32':
+                os.startfile(output_dir)
+            elif sys.platform == 'darwin':
+                subprocess.run(['open', output_dir])
+            else:
+                subprocess.run(['xdg-open', output_dir])
+        except Exception as e:
+            self.logger.error(f"Error opening results folder: {str(e)}")
+            messagebox.showerror("Error", f"Could not open results folder: {str(e)}")
 
     def on_query_focus_in(self):
         if self.query_text.get("1.0", "end-1c") == "Enter your question about the project here...":
@@ -203,7 +335,25 @@ class OllamaAnalyzerGUI:
         if directory:
             self.project_path.set(directory)
             self.logger.info(f"Selected project directory: {directory}")
-            self.scan_project_files()
+            
+            # Reset the project analyzer when selecting a new project
+            if hasattr(self, 'project_analyzer'):
+                delattr(self, 'project_analyzer')
+            
+            try:
+                # Initialize new project analyzer
+                self.project_analyzer = ProjectAnalyzer(Path(directory), self.config)
+                self.logger.info("Consolidating project files (this may take a moment)...")
+                self.project_analyzer.consolidate_project()
+                self.logger.info("Project consolidation complete!")
+                
+                # Scan and display project files
+                self.scan_project_files()
+                
+                messagebox.showinfo("Success", "Project loaded and ready for queries!")
+            except Exception as e:
+                self.logger.error(f"Error loading project: {str(e)}")
+                messagebox.showerror("Error", f"Failed to load project: {str(e)}")
 
     def connect_to_ollama(self):
         self.logger.info("Attempting to connect to Ollama...")
@@ -358,6 +508,9 @@ class OllamaAnalyzerGUI:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(results, f, indent=2)
 
+
+            
+
             self.logger.info(f"Analysis completed. Results saved to: {output_file}")
             messagebox.showinfo("Complete", f"Analysis completed!\nResults saved to: {output_file}")
 
@@ -410,6 +563,25 @@ Consider:
             self.logger.error(f"Error querying Ollama: {str(e)}")
             raise
 
+        # Fix the indentation - move it to be at same level as other methods
+    def analyze_previous_results(self):
+        if not self.is_connected:
+            messagebox.showerror("Error", "Please connect to Ollama first")
+            return
+            
+        file_path = filedialog.askopenfilename(
+            filetypes=[("JSON files", "*.json")]
+        )
+        if file_path:
+            question = self.query_text.get(1.0, tk.END).strip()
+            summarizer = AnalysisSummarizer(self.base_url.get(), self.model_name.get())
+            conclusion = summarizer.summarize_results(
+                results_file=file_path,
+                original_query=question
+            )
+            self.results_text.delete(1.0, tk.END)
+            self.results_text.insert(tk.END, conclusion)
+
     def save_results(self):
         """Save analysis results to a file"""
         if not self.results_text.get("1.0", tk.END).strip():
@@ -431,6 +603,8 @@ Consider:
             except Exception as e:
                 self.logger.error(f"Error saving results: {str(e)}")
                 messagebox.showerror("Error", f"Failed to save results: {str(e)}")
+
+
 
     def on_closing(self):
         """Handle application closing"""
