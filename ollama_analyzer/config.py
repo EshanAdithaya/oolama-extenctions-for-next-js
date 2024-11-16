@@ -31,7 +31,7 @@ def default_extensions() -> Set[str]:
         '.md', '.mdx', '.txt',
         
         # SVG and other assets
-        '.svg', '.webp', '.jpg', '.jpeg', '.png', '.gif',
+        '.svg', '.webp',
         
         # Type definitions
         '.d.ts'
@@ -48,7 +48,7 @@ def default_ignore_dirs() -> Set[str]:
 def default_ignore_files() -> Set[str]:
     return {
         '.DS_Store', 'package-lock.json', 'yarn.lock', '.gitignore',
-        '*.log', '*.map', 'thumbs.db', 
+        '*.log', '*.map', 'thumbs.db', '.jpg', '.jpeg', '.png', '.gif',
         '*.test.js', '*.spec.js', '*.test.tsx', '*.spec.tsx',
         '*.test.jsx', '*.spec.jsx', '*.stories.tsx', '*.stories.jsx',
         '*.min.js', '*.min.css', '*.bundle.js', '*.bundle.css',
