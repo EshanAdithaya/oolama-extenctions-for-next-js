@@ -1,0 +1,1183 @@
+2024-11-15 17:28:02,030 - INFO - Application started
+2024-11-15 17:28:05,830 - INFO - Attempting to connect to Ollama...
+2024-11-15 17:28:09,900 - ERROR - Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000181476FF440>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 17:46:05,402 - INFO - Selected project directory: C:/xampp/htdocs/MultiVendor01
+2024-11-15 17:46:05,402 - INFO - Scanning project at: C:\xampp\htdocs\MultiVendor01
+2024-11-15 17:46:21,571 - INFO - Found 882 files
+2024-11-15 17:46:21,574 - INFO - Files by extension:
+2024-11-15 17:46:21,575 - INFO -   .json: 37 files
+2024-11-15 17:46:21,576 - INFO -   .ts: 160 files
+2024-11-15 17:46:21,577 - INFO -   .js: 7 files
+2024-11-15 17:46:21,577 - INFO -   .svg: 14 files
+2024-11-15 17:46:21,578 - INFO -   .png: 49 files
+2024-11-15 17:46:21,579 - INFO -   .jpg: 1 files
+2024-11-15 17:46:21,581 - INFO -   .txt: 1 files
+2024-11-15 17:46:21,581 - INFO -   .css: 6 files
+2024-11-15 17:46:21,581 - INFO -   .tsx: 607 files
+2024-11-15 17:46:55,561 - INFO - Attempting to connect to Ollama...
+2024-11-15 17:47:01,548 - INFO - Successfully connected to Ollama
+2024-11-15 17:47:17,852 - INFO - Found 882 files to analyze
+2024-11-15 17:47:17,854 - INFO - Analyzing file 1/882: .eslintrc.json
+2024-11-15 17:47:30,413 - INFO - Analyzing file 2/882: additional.d.ts
+2024-11-15 17:47:41,260 - INFO - Analyzing file 3/882: i18next.d.ts
+2024-11-15 17:47:55,629 - INFO - Analyzing file 4/882: lint-staged.config.js
+2024-11-15 17:48:08,811 - INFO - Analyzing file 5/882: next-env.d.ts
+2024-11-15 17:48:18,211 - INFO - Analyzing file 6/882: next-i18next.config.js
+2024-11-15 17:48:34,020 - INFO - Analyzing file 7/882: next-sitemap.config.js
+2024-11-15 17:48:44,365 - INFO - Analyzing file 8/882: next.config.js
+2024-11-15 17:48:59,088 - INFO - Analyzing file 9/882: package.json
+2024-11-15 17:49:18,365 - INFO - Analyzing file 10/882: postcss.config.js
+2024-11-15 17:49:34,013 - INFO - Analyzing file 11/882: prettier.config.js
+2024-11-15 17:49:45,355 - INFO - Analyzing file 12/882: public\access-denied.svg
+2024-11-15 17:50:05,598 - INFO - Analyzing file 13/882: public\flash-sale-fallback.png
+2024-11-15 17:50:05,598 - ERROR - Error analyzing public\flash-sale-fallback.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:06,109 - INFO - Analyzing file 14/882: public\hqdefault.jpg
+2024-11-15 17:50:06,109 - ERROR - Error analyzing public\hqdefault.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 17:50:06,614 - INFO - Analyzing file 15/882: public\icons\apple-icon-180.png
+2024-11-15 17:50:06,614 - ERROR - Error analyzing public\icons\apple-icon-180.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:07,123 - INFO - Analyzing file 16/882: public\icons\manifest-icon-192.png
+2024-11-15 17:50:07,124 - ERROR - Error analyzing public\icons\manifest-icon-192.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:07,629 - INFO - Analyzing file 17/882: public\icons\manifest-icon-512.png
+2024-11-15 17:50:07,631 - ERROR - Error analyzing public\icons\manifest-icon-512.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:08,134 - INFO - Analyzing file 18/882: public\img\author-img-1.png
+2024-11-15 17:50:08,136 - ERROR - Error analyzing public\img\author-img-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:08,644 - INFO - Analyzing file 19/882: public\img\author-img-2.png
+2024-11-15 17:50:08,648 - ERROR - Error analyzing public\img\author-img-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:09,155 - INFO - Analyzing file 20/882: public\img\author-img-3.png
+2024-11-15 17:50:09,155 - ERROR - Error analyzing public\img\author-img-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:09,665 - INFO - Analyzing file 21/882: public\img\book-img.png
+2024-11-15 17:50:09,672 - ERROR - Error analyzing public\img\book-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:10,178 - INFO - Analyzing file 22/882: public\img\combo-banner-1.png
+2024-11-15 17:50:10,181 - ERROR - Error analyzing public\img\combo-banner-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:10,687 - INFO - Analyzing file 23/882: public\img\combo-banner-2.png
+2024-11-15 17:50:10,690 - ERROR - Error analyzing public\img\combo-banner-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:11,196 - INFO - Analyzing file 24/882: public\img\combo-banner-3.png
+2024-11-15 17:50:11,196 - ERROR - Error analyzing public\img\combo-banner-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:50:11,705 - INFO - Analyzing file 25/882: public\locales\ar\banner.json
+2024-11-15 17:50:28,111 - INFO - Analyzing file 26/882: public\locales\ar\common.json
+2024-11-15 17:50:36,928 - INFO - Analyzing file 27/882: public\locales\ar\faq.json
+2024-11-15 17:50:43,671 - INFO - Analyzing file 28/882: public\locales\ar\policy.json
+2024-11-15 17:50:52,332 - INFO - Analyzing file 29/882: public\locales\ar\terms.json
+2024-11-15 17:51:00,030 - INFO - Analyzing file 30/882: public\locales\de\banner.json
+2024-11-15 17:51:11,860 - INFO - Analyzing file 31/882: public\locales\de\common.json
+2024-11-15 17:51:25,107 - INFO - Analyzing file 32/882: public\locales\de\faq.json
+2024-11-15 17:51:36,689 - INFO - Analyzing file 33/882: public\locales\de\policy.json
+2024-11-15 17:51:47,467 - INFO - Analyzing file 34/882: public\locales\de\terms.json
+2024-11-15 17:51:59,828 - INFO - Analyzing file 35/882: public\locales\en\banner.json
+2024-11-15 17:52:12,929 - INFO - Analyzing file 36/882: public\locales\en\common.json
+2024-11-15 17:52:27,935 - INFO - Analyzing file 37/882: public\locales\en\faq.json
+2024-11-15 17:52:36,347 - INFO - Analyzing file 38/882: public\locales\en\policy.json
+2024-11-15 17:52:46,245 - INFO - Analyzing file 39/882: public\locales\en\terms.json
+2024-11-15 17:52:55,722 - INFO - Analyzing file 40/882: public\locales\es\banner.json
+2024-11-15 17:53:10,789 - INFO - Analyzing file 41/882: public\locales\es\common.json
+2024-11-15 17:53:16,695 - INFO - Analyzing file 42/882: public\locales\es\faq.json
+2024-11-15 17:53:23,823 - INFO - Analyzing file 43/882: public\locales\es\policy.json
+2024-11-15 17:53:36,050 - INFO - Analyzing file 44/882: public\locales\es\terms.json
+2024-11-15 17:53:43,940 - INFO - Analyzing file 45/882: public\locales\he\banner.json
+2024-11-15 17:53:53,162 - INFO - Analyzing file 46/882: public\locales\he\common.json
+2024-11-15 17:54:00,273 - INFO - Analyzing file 47/882: public\locales\he\faq.json
+2024-11-15 17:54:08,315 - INFO - Analyzing file 48/882: public\locales\he\policy.json
+2024-11-15 17:54:17,314 - INFO - Analyzing file 49/882: public\locales\he\terms.json
+2024-11-15 17:54:32,427 - INFO - Analyzing file 50/882: public\locales\zh\banner.json
+2024-11-15 17:54:42,689 - INFO - Analyzing file 51/882: public\locales\zh\common.json
+2024-11-15 17:54:49,297 - INFO - Analyzing file 52/882: public\locales\zh\faq.json
+2024-11-15 17:55:00,026 - INFO - Analyzing file 53/882: public\locales\zh\policy.json
+2024-11-15 17:55:12,281 - INFO - Analyzing file 54/882: public\locales\zh\terms.json
+2024-11-15 17:55:22,847 - INFO - Analyzing file 55/882: public\manifest.json
+2024-11-15 17:55:33,127 - INFO - Analyzing file 56/882: public\master.png
+2024-11-15 17:55:33,131 - ERROR - Error analyzing public\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:33,633 - INFO - Analyzing file 57/882: public\mockup-img.png
+2024-11-15 17:55:33,638 - ERROR - Error analyzing public\mockup-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:34,143 - INFO - Analyzing file 58/882: public\mockup.png
+2024-11-15 17:55:34,143 - ERROR - Error analyzing public\mockup.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:34,652 - INFO - Analyzing file 59/882: public\mockup1.png
+2024-11-15 17:55:34,652 - ERROR - Error analyzing public\mockup1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:35,161 - INFO - Analyzing file 60/882: public\news-letter-icon.png
+2024-11-15 17:55:35,161 - ERROR - Error analyzing public\news-letter-icon.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:35,670 - INFO - Analyzing file 61/882: public\payment\discover.png
+2024-11-15 17:55:35,675 - ERROR - Error analyzing public\payment\discover.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:36,178 - INFO - Analyzing file 62/882: public\payment\iyzico.png
+2024-11-15 17:55:36,178 - ERROR - Error analyzing public\payment\iyzico.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:36,685 - INFO - Analyzing file 63/882: public\payment\master.png
+2024-11-15 17:55:36,688 - ERROR - Error analyzing public\payment\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:37,198 - INFO - Analyzing file 64/882: public\payment\mollie.png
+2024-11-15 17:55:37,201 - ERROR - Error analyzing public\payment\mollie.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:37,705 - INFO - Analyzing file 65/882: public\payment\paypal.png
+2024-11-15 17:55:37,706 - ERROR - Error analyzing public\payment\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:38,216 - INFO - Analyzing file 66/882: public\payment\paystack.png
+2024-11-15 17:55:38,216 - ERROR - Error analyzing public\payment\paystack.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:38,726 - INFO - Analyzing file 67/882: public\payment\razorpay.png
+2024-11-15 17:55:38,730 - ERROR - Error analyzing public\payment\razorpay.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:39,234 - INFO - Analyzing file 68/882: public\payment\skrill.png
+2024-11-15 17:55:39,241 - ERROR - Error analyzing public\payment\skrill.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:39,745 - INFO - Analyzing file 69/882: public\payment\sslcommerz.png
+2024-11-15 17:55:39,750 - ERROR - Error analyzing public\payment\sslcommerz.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:40,254 - INFO - Analyzing file 70/882: public\payment\stripe.png
+2024-11-15 17:55:40,257 - ERROR - Error analyzing public\payment\stripe.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:40,763 - INFO - Analyzing file 71/882: public\payment\visa.png
+2024-11-15 17:55:40,769 - ERROR - Error analyzing public\payment\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:41,275 - INFO - Analyzing file 72/882: public\payment\xendit-logo.png
+2024-11-15 17:55:41,275 - ERROR - Error analyzing public\payment\xendit-logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:41,786 - INFO - Analyzing file 73/882: public\paypal.png
+2024-11-15 17:55:41,788 - ERROR - Error analyzing public\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:42,298 - INFO - Analyzing file 74/882: public\promotion\offer-1.png
+2024-11-15 17:55:42,305 - ERROR - Error analyzing public\promotion\offer-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:42,812 - INFO - Analyzing file 75/882: public\promotion\offer-2.png
+2024-11-15 17:55:42,812 - ERROR - Error analyzing public\promotion\offer-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:43,324 - INFO - Analyzing file 76/882: public\promotion\offer-3.png
+2024-11-15 17:55:43,327 - ERROR - Error analyzing public\promotion\offer-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:43,833 - INFO - Analyzing file 77/882: public\promotion\offer-4.png
+2024-11-15 17:55:43,833 - ERROR - Error analyzing public\promotion\offer-4.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:44,344 - INFO - Analyzing file 78/882: public\promotion\offer-5.png
+2024-11-15 17:55:44,345 - ERROR - Error analyzing public\promotion\offer-5.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:44,854 - INFO - Analyzing file 79/882: public\robots.txt
+2024-11-15 17:55:58,794 - INFO - Analyzing file 80/882: public\selling.png
+2024-11-15 17:55:58,798 - ERROR - Error analyzing public\selling.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:59,307 - INFO - Analyzing file 81/882: public\shop-fallback-cover-photo.png
+2024-11-15 17:55:59,310 - ERROR - Error analyzing public\shop-fallback-cover-photo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:55:59,814 - INFO - Analyzing file 82/882: public\visa.png
+2024-11-15 17:55:59,814 - ERROR - Error analyzing public\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:56:00,326 - INFO - Analyzing file 83/882: src\assets\app-store-btn.png
+2024-11-15 17:56:00,326 - ERROR - Error analyzing src\assets\app-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:56:00,834 - INFO - Analyzing file 84/882: src\assets\arrow-forward.png
+2024-11-15 17:56:00,840 - ERROR - Error analyzing src\assets\arrow-forward.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:56:01,347 - INFO - Analyzing file 85/882: src\assets\cards\amex.svg
+2024-11-15 17:56:17,420 - INFO - Analyzing file 86/882: src\assets\cards\diners.svg
+2024-11-15 17:56:38,149 - INFO - Analyzing file 87/882: src\assets\cards\discover.svg
+2024-11-15 17:56:56,740 - INFO - Analyzing file 88/882: src\assets\cards\fallback-image.png
+2024-11-15 17:56:56,744 - ERROR - Error analyzing src\assets\cards\fallback-image.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:56:57,256 - INFO - Analyzing file 89/882: src\assets\cards\jcb.svg
+2024-11-15 17:57:08,290 - INFO - Analyzing file 90/882: src\assets\cards\mastercard.svg
+2024-11-15 17:57:23,288 - INFO - Analyzing file 91/882: src\assets\cards\unionpay.svg
+2024-11-15 17:57:36,743 - INFO - Analyzing file 92/882: src\assets\cards\visa.svg
+2024-11-15 17:57:57,885 - INFO - Analyzing file 93/882: src\assets\category-img.png
+2024-11-15 17:57:57,894 - ERROR - Error analyzing src\assets\category-img.png: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 17:57:58,398 - INFO - Analyzing file 94/882: src\assets\commission.png
+2024-11-15 17:57:58,407 - ERROR - Error analyzing src\assets\commission.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:57:58,915 - INFO - Analyzing file 95/882: src\assets\contact-illustration.svg
+2024-11-15 17:58:09,092 - INFO - Analyzing file 96/882: src\assets\css\custom-plugins.css
+2024-11-15 17:58:16,127 - INFO - Analyzing file 97/882: src\assets\css\main.css
+2024-11-15 17:58:31,931 - INFO - Analyzing file 98/882: src\assets\css\rich-text-editor.css
+2024-11-15 17:58:45,716 - INFO - Analyzing file 99/882: src\assets\no-result.svg
+2024-11-15 17:58:56,458 - INFO - Analyzing file 100/882: src\assets\pattern.png
+2024-11-15 17:58:56,476 - ERROR - Error analyzing src\assets\pattern.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:58:56,983 - INFO - Analyzing file 101/882: src\assets\payment-card.png
+2024-11-15 17:58:56,990 - ERROR - Error analyzing src\assets\payment-card.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:58:57,500 - INFO - Analyzing file 102/882: src\assets\placeholders\avatar.svg
+2024-11-15 17:59:10,904 - INFO - Analyzing file 103/882: src\assets\placeholders\coupon.svg
+2024-11-15 17:59:18,504 - INFO - Analyzing file 104/882: src\assets\placeholders\logo.svg
+2024-11-15 17:59:34,387 - INFO - Analyzing file 105/882: src\assets\placeholders\product.svg
+2024-11-15 17:59:48,045 - INFO - Analyzing file 106/882: src\assets\play-store-btn.png
+2024-11-15 17:59:48,052 - ERROR - Error analyzing src\assets\play-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:59:48,563 - INFO - Analyzing file 107/882: src\assets\stripe-card.png
+2024-11-15 17:59:48,572 - ERROR - Error analyzing src\assets\stripe-card.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 17:59:49,087 - INFO - Analyzing file 108/882: src\components\404\404.tsx
+2024-11-15 18:00:10,669 - INFO - Analyzing file 109/882: src\components\404\pexels-charlesdeluvio-1851164-removebg-preview.png
+2024-11-15 18:00:10,678 - ERROR - Error analyzing src\components\404\pexels-charlesdeluvio-1851164-removebg-preview.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 18:00:11,186 - INFO - Analyzing file 110/882: src\components\address\address-card.tsx
+2024-11-15 18:00:23,205 - INFO - Analyzing file 111/882: src\components\address\address-form.tsx
+2024-11-15 18:00:32,483 - INFO - Analyzing file 112/882: src\components\address\address-header.tsx
+2024-11-15 18:00:48,004 - INFO - Analyzing file 113/882: src\components\address\delete-view.tsx
+2024-11-15 18:00:58,801 - INFO - Analyzing file 114/882: src\components\auth\change-password-form.tsx
+2024-11-15 18:01:11,704 - INFO - Analyzing file 115/882: src\components\auth\forgot-password.tsx
+2024-11-15 18:01:20,137 - INFO - Analyzing file 116/882: src\components\auth\login-form.tsx
+2024-11-15 18:01:34,899 - INFO - Analyzing file 117/882: src\components\auth\otp-login.tsx
+2024-11-15 18:01:51,567 - INFO - Analyzing file 118/882: src\components\auth\register-form.tsx
+2024-11-15 18:02:06,079 - INFO - Analyzing file 119/882: src\components\auth\social-login.tsx
+2024-11-15 18:02:15,974 - INFO - Analyzing file 120/882: src\components\author\authors-grid.tsx
+2024-11-15 18:02:34,795 - INFO - Analyzing file 121/882: src\components\author\details\details.tsx
+2024-11-15 18:02:47,556 - INFO - Analyzing file 122/882: src\components\author\top-authors-grid.tsx
+2024-11-15 18:03:04,351 - INFO - Analyzing file 123/882: src\components\banners\banner-short.tsx
+2024-11-15 18:03:15,281 - INFO - Analyzing file 124/882: src\components\banners\banner-with-pagination.tsx
+2024-11-15 18:03:25,640 - INFO - Analyzing file 125/882: src\components\banners\banner-with-search.tsx
+2024-11-15 18:03:46,232 - INFO - Analyzing file 126/882: src\components\banners\banner-without-slider.tsx
+2024-11-15 18:03:59,643 - INFO - Analyzing file 127/882: src\components\banners\banner.tsx
+2024-11-15 18:04:11,795 - INFO - Analyzing file 128/882: src\components\banners\page-banner.tsx
+2024-11-15 18:04:23,548 - INFO - Analyzing file 129/882: src\components\become-seller\index.tsx
+2024-11-15 18:04:40,335 - INFO - Analyzing file 130/882: src\components\become-seller\templates\banner\banner.tsx
+2024-11-15 18:04:55,702 - INFO - Analyzing file 131/882: src\components\become-seller\templates\business-purpose\business-purpose-item.tsx
+2024-11-15 18:05:08,052 - INFO - Analyzing file 132/882: src\components\become-seller\templates\business-purpose\business-purpose.tsx
+2024-11-15 18:05:21,073 - INFO - Analyzing file 133/882: src\components\become-seller\templates\contact\contact.tsx
+2024-11-15 18:05:39,635 - INFO - Analyzing file 134/882: src\components\become-seller\templates\dashboard-showcase\dashboard-showcase.tsx
+2024-11-15 18:05:54,094 - INFO - Analyzing file 135/882: src\components\become-seller\templates\faq\faq-section.tsx
+2024-11-15 18:06:11,893 - INFO - Analyzing file 136/882: src\components\become-seller\templates\fee-and-commission\commission-item.tsx
+2024-11-15 18:06:28,712 - INFO - Analyzing file 137/882: src\components\become-seller\templates\fee-and-commission\fee-and-commission.tsx
+2024-11-15 18:06:46,940 - INFO - Analyzing file 138/882: src\components\become-seller\templates\guideline\guideline-item.tsx
+2024-11-15 18:07:02,498 - INFO - Analyzing file 139/882: src\components\become-seller\templates\guideline\guideline.tsx
+2024-11-15 18:07:19,982 - INFO - Analyzing file 140/882: src\components\become-seller\templates\seller-opportunity\seller-opportunity.tsx
+2024-11-15 18:07:43,006 - INFO - Analyzing file 141/882: src\components\become-seller\templates\start-selling\selling-step.tsx
+2024-11-15 18:07:56,849 - INFO - Analyzing file 142/882: src\components\become-seller\templates\start-selling\start-selling.tsx
+2024-11-15 18:08:20,868 - INFO - Analyzing file 143/882: src\components\become-seller\templates\user-story\customer-stories.tsx
+2024-11-15 18:08:35,016 - INFO - Analyzing file 144/882: src\components\become-seller\templates\user-story\customer-story.tsx
+2024-11-15 18:08:48,527 - INFO - Analyzing file 145/882: src\components\card\action\action.tsx
+2024-11-15 18:09:00,678 - INFO - Analyzing file 146/882: src\components\card\add-new-card-modal.tsx
+2024-11-15 18:09:13,296 - INFO - Analyzing file 147/882: src\components\card\card-view-header.tsx
+2024-11-15 18:09:26,343 - INFO - Analyzing file 148/882: src\components\card\card-view.tsx
+2024-11-15 18:09:49,294 - INFO - Analyzing file 149/882: src\components\card\delete-view.tsx
+2024-11-15 18:10:06,956 - INFO - Analyzing file 150/882: src\components\card\my-cards.tsx
+2024-11-15 18:10:22,845 - INFO - Analyzing file 151/882: src\components\card\stripe\stripe-card-form.tsx
+2024-11-15 18:10:48,752 - INFO - Analyzing file 152/882: src\components\cart\cart-counter-button.tsx
+2024-11-15 18:11:08,882 - INFO - Analyzing file 153/882: src\components\cart\cart-counter-icon-button.tsx
+2024-11-15 18:11:21,695 - INFO - Analyzing file 154/882: src\components\cart\cart-item.tsx
+2024-11-15 18:11:36,904 - INFO - Analyzing file 155/882: src\components\cart\cart-sidebar-view.tsx
+2024-11-15 18:11:53,814 - INFO - Analyzing file 156/882: src\components\categories\categories.tsx
+2024-11-15 18:12:13,581 - INFO - Analyzing file 157/882: src\components\categories\filter-category-grid.tsx
+2024-11-15 18:12:35,446 - INFO - Analyzing file 158/882: src\components\categories\sliding-card-category.tsx
+2024-11-15 18:12:51,001 - INFO - Analyzing file 159/882: src\components\categories\sliding-vertical-rectangle-categories.tsx
+2024-11-15 18:13:09,527 - INFO - Analyzing file 160/882: src\components\categories\sticky-sidebar-boxed-categories.tsx
+2024-11-15 18:13:29,227 - INFO - Analyzing file 161/882: src\components\categories\sticky-sidebar-list-categories.tsx
+2024-11-15 18:13:48,106 - INFO - Analyzing file 162/882: src\components\checkout\address-grid-guest.tsx
+2024-11-15 18:14:03,845 - INFO - Analyzing file 163/882: src\components\checkout\address-grid.tsx
+2024-11-15 18:14:20,000 - INFO - Analyzing file 164/882: src\components\checkout\check-availability-action.tsx
+2024-11-15 18:14:35,697 - INFO - Analyzing file 165/882: src\components\checkout\contact\add-or-update.tsx
+2024-11-15 18:14:53,050 - INFO - Analyzing file 166/882: src\components\checkout\contact\contact-grid.tsx
+2024-11-15 18:15:03,970 - INFO - Analyzing file 167/882: src\components\checkout\coupon.tsx
+2024-11-15 18:15:23,012 - INFO - Analyzing file 168/882: src\components\checkout\create-or-update-guest.tsx
+2024-11-15 18:15:36,099 - INFO - Analyzing file 169/882: src\components\checkout\digital\cart-item.tsx
+2024-11-15 18:15:43,562 - INFO - Analyzing file 170/882: src\components\checkout\digital\checkout-cart.tsx
+2024-11-15 18:16:02,342 - INFO - Analyzing file 171/882: src\components\checkout\digital\item-info-row.tsx
+2024-11-15 18:16:13,496 - INFO - Analyzing file 172/882: src\components\checkout\digital\unverified-item-list.tsx
+2024-11-15 18:16:34,071 - INFO - Analyzing file 173/882: src\components\checkout\digital\verified-item-list.tsx
+2024-11-15 18:16:53,947 - INFO - Analyzing file 174/882: src\components\checkout\guest-name.tsx
+2024-11-15 18:17:07,441 - INFO - Analyzing file 175/882: src\components\checkout\item\item-card.tsx
+2024-11-15 18:17:23,489 - INFO - Analyzing file 176/882: src\components\checkout\item\item-info-row.tsx
+2024-11-15 18:17:36,347 - INFO - Analyzing file 177/882: src\components\checkout\item\unverified-item-list.tsx
+2024-11-15 18:17:49,679 - INFO - Analyzing file 178/882: src\components\checkout\item\verified-item-list.tsx
+2024-11-15 18:18:04,313 - INFO - Analyzing file 179/882: src\components\checkout\order-note.tsx
+2024-11-15 18:18:16,847 - INFO - Analyzing file 180/882: src\components\checkout\payment\cash-on-delivery.tsx
+2024-11-15 18:18:27,299 - INFO - Analyzing file 181/882: src\components\checkout\payment\copy-original.tsx
+2024-11-15 18:18:48,347 - INFO - Analyzing file 182/882: src\components\checkout\payment\copy-payment.tsx
+2024-11-15 18:19:06,885 - INFO - Analyzing file 183/882: src\components\checkout\payment\payment-grid.tsx
+2024-11-15 18:19:14,838 - INFO - Analyzing file 184/882: src\components\checkout\payment\payment-online.tsx
+2024-11-15 18:19:30,667 - INFO - Analyzing file 185/882: src\components\checkout\payment\payment-sub-grid.tsx
+2024-11-15 18:19:47,345 - INFO - Analyzing file 186/882: src\components\checkout\payment\payment-variable-case.tsx
+2024-11-15 18:19:53,955 - INFO - Analyzing file 187/882: src\components\checkout\place-order-action.tsx
+2024-11-15 18:20:07,943 - INFO - Analyzing file 188/882: src\components\checkout\right-side-view.tsx
+2024-11-15 18:20:27,086 - INFO - Analyzing file 189/882: src\components\checkout\schedule\schedule-card.tsx
+2024-11-15 18:20:41,408 - INFO - Analyzing file 190/882: src\components\checkout\schedule\schedule-grid.tsx
+2024-11-15 18:20:53,893 - INFO - Analyzing file 191/882: src\components\checkout\wallet\wallet.tsx
+2024-11-15 18:21:10,582 - INFO - Analyzing file 192/882: src\components\common\access-denied.tsx
+2024-11-15 18:21:24,024 - INFO - Analyzing file 193/882: src\components\common\feature-not-available.tsx
+2024-11-15 18:21:39,344 - INFO - Analyzing file 194/882: src\components\cta\call-to-action.tsx
+2024-11-15 18:21:53,093 - INFO - Analyzing file 195/882: src\components\dashboard\sidebar.tsx
+2024-11-15 18:22:07,649 - INFO - Analyzing file 196/882: src\components\faq\faq.tsx
+2024-11-15 18:22:18,032 - INFO - Analyzing file 197/882: src\components\flash-sale\details-view.tsx
+2024-11-15 18:22:32,135 - INFO - Analyzing file 198/882: src\components\flash-sale\flash-sale-card.tsx
+2024-11-15 18:22:54,515 - INFO - Analyzing file 199/882: src\components\flash-sale\flash-sale.tsx
+2024-11-15 18:23:15,839 - INFO - Analyzing file 200/882: src\components\form\google-places-autocomplete.tsx
+2024-11-15 18:23:27,020 - INFO - Analyzing file 201/882: src\components\form\location-based-shop-form.tsx
+2024-11-15 18:23:45,789 - INFO - Analyzing file 202/882: src\components\icons\anonymous-icon.tsx
+2024-11-15 18:23:55,233 - INFO - Analyzing file 203/882: src\components\icons\arrow-down.tsx
+2024-11-15 18:24:12,771 - INFO - Analyzing file 204/882: src\components\icons\arrow-narrow-left.tsx
+2024-11-15 18:24:31,072 - INFO - Analyzing file 205/882: src\components\icons\arrow-next.tsx
+2024-11-15 18:24:49,626 - INFO - Analyzing file 206/882: src\components\icons\arrow-prev.tsx
+2024-11-15 18:25:02,040 - INFO - Analyzing file 207/882: src\components\icons\arrow-right.tsx
+2024-11-15 18:25:18,885 - INFO - Analyzing file 208/882: src\components\icons\back-arrow-round.tsx
+2024-11-15 18:25:32,339 - INFO - Analyzing file 209/882: src\components\icons\bell-icon.tsx
+2024-11-15 18:25:41,615 - INFO - Analyzing file 210/882: src\components\icons\calendar.tsx
+2024-11-15 18:25:55,891 - INFO - Analyzing file 211/882: src\components\icons\caret-down.tsx
+2024-11-15 18:26:13,497 - INFO - Analyzing file 212/882: src\components\icons\cart-check-bag.tsx
+2024-11-15 18:26:29,995 - INFO - Analyzing file 213/882: src\components\icons\cart-outlined.tsx
+2024-11-15 18:26:43,762 - INFO - Analyzing file 214/882: src\components\icons\cart.tsx
+2024-11-15 18:26:56,768 - INFO - Analyzing file 215/882: src\components\icons\category\accessories.tsx
+2024-11-15 18:27:20,399 - INFO - Analyzing file 216/882: src\components\icons\category\baby-care.tsx
+2024-11-15 18:27:36,249 - INFO - Analyzing file 217/882: src\components\icons\category\bath-oil.tsx
+2024-11-15 18:27:56,932 - INFO - Analyzing file 218/882: src\components\icons\category\beauty-care.tsx
+2024-11-15 18:28:18,317 - INFO - Analyzing file 219/882: src\components\icons\category\beauty-health.tsx
+2024-11-15 18:28:37,233 - INFO - Analyzing file 220/882: src\components\icons\category\bed.tsx
+2024-11-15 18:28:51,805 - INFO - Analyzing file 221/882: src\components\icons\category\beverage.tsx
+2024-11-15 18:29:11,070 - INFO - Analyzing file 222/882: src\components\icons\category\blender.tsx
+2024-11-15 18:29:26,168 - INFO - Analyzing file 223/882: src\components\icons\category\book-shelf.tsx
+2024-11-15 18:29:43,314 - INFO - Analyzing file 224/882: src\components\icons\category\breakfast.tsx
+2024-11-15 18:29:56,463 - INFO - Analyzing file 225/882: src\components\icons\category\camera.tsx
+2024-11-15 18:30:14,875 - INFO - Analyzing file 226/882: src\components\icons\category\center-table.tsx
+2024-11-15 18:30:31,153 - INFO - Analyzing file 227/882: src\components\icons\category\chair.tsx
+2024-11-15 18:30:48,224 - INFO - Analyzing file 228/882: src\components\icons\category\console.tsx
+2024-11-15 18:31:01,919 - INFO - Analyzing file 229/882: src\components\icons\category\contraceptive.tsx
+2024-11-15 18:31:16,694 - INFO - Analyzing file 230/882: src\components\icons\category\cooking.tsx
+2024-11-15 18:31:24,567 - INFO - Analyzing file 231/882: src\components\icons\category\dairy.tsx
+2024-11-15 18:31:38,615 - INFO - Analyzing file 232/882: src\components\icons\category\deodorant.tsx
+2024-11-15 18:31:50,977 - INFO - Analyzing file 233/882: src\components\icons\category\diapers.tsx
+2024-11-15 18:32:07,812 - INFO - Analyzing file 234/882: src\components\icons\category\dressing-table.tsx
+2024-11-15 18:32:21,222 - INFO - Analyzing file 235/882: src\components\icons\category\eyes-icon.tsx
+2024-11-15 18:32:38,655 - INFO - Analyzing file 236/882: src\components\icons\category\eyes.tsx
+2024-11-15 18:32:53,042 - INFO - Analyzing file 237/882: src\components\icons\category\face-skin-care.tsx
+2024-11-15 18:33:25,121 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:33:25,125 - ERROR - Error analyzing src\components\icons\category\face-skin-care.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:33:25,628 - INFO - Analyzing file 238/882: src\components\icons\category\face.tsx
+2024-11-15 18:33:44,240 - INFO - Analyzing file 239/882: src\components\icons\category\facial-care.tsx
+2024-11-15 18:34:04,250 - INFO - Analyzing file 240/882: src\components\icons\category\feeders.tsx
+2024-11-15 18:34:21,115 - INFO - Analyzing file 241/882: src\components\icons\category\feminine-hygiene.tsx
+2024-11-15 18:34:30,235 - INFO - Analyzing file 242/882: src\components\icons\category\first-aid-kit.tsx
+2024-11-15 18:34:42,932 - INFO - Analyzing file 243/882: src\components\icons\category\fruits-vegetable.tsx
+2024-11-15 18:35:02,769 - INFO - Analyzing file 244/882: src\components\icons\category\gadget-accessories.tsx
+2024-11-15 18:35:10,904 - INFO - Analyzing file 245/882: src\components\icons\category\hand-bag.tsx
+2024-11-15 18:35:26,285 - INFO - Analyzing file 246/882: src\components\icons\category\headphone.tsx
+2024-11-15 18:35:47,085 - INFO - Analyzing file 247/882: src\components\icons\category\health-protein.tsx
+2024-11-15 18:36:06,090 - INFO - Analyzing file 248/882: src\components\icons\category\health-wellness.tsx
+2024-11-15 18:36:38,131 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:36:38,132 - ERROR - Error analyzing src\components\icons\category\health-wellness.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:36:38,639 - INFO - Analyzing file 249/882: src\components\icons\category\herb.tsx
+2024-11-15 18:36:46,901 - INFO - Analyzing file 250/882: src\components\icons\category\home-cleaning.tsx
+2024-11-15 18:37:06,935 - INFO - Analyzing file 251/882: src\components\icons\category\index.tsx
+2024-11-15 18:37:22,827 - INFO - Analyzing file 252/882: src\components\icons\category\indoor-plants.tsx
+2024-11-15 18:37:41,630 - INFO - Analyzing file 253/882: src\components\icons\category\laptop-bag.tsx
+2024-11-15 18:37:49,919 - INFO - Analyzing file 254/882: src\components\icons\category\laptop.tsx
+2024-11-15 18:38:16,204 - INFO - Analyzing file 255/882: src\components\icons\category\lips.tsx
+2024-11-15 18:38:29,109 - INFO - Analyzing file 256/882: src\components\icons\category\meat-fish.tsx
+2024-11-15 18:38:38,830 - INFO - Analyzing file 257/882: src\components\icons\category\microwave.tsx
+2024-11-15 18:38:57,194 - INFO - Analyzing file 258/882: src\components\icons\category\mobile.tsx
+2024-11-15 18:39:11,248 - INFO - Analyzing file 259/882: src\components\icons\category\monitor.tsx
+2024-11-15 18:39:26,953 - INFO - Analyzing file 260/882: src\components\icons\category\oral-care.tsx
+2024-11-15 18:39:43,486 - INFO - Analyzing file 261/882: src\components\icons\category\oral.tsx
+2024-11-15 18:40:12,328 - INFO - Analyzing file 262/882: src\components\icons\category\orchid.tsx
+2024-11-15 18:40:27,699 - INFO - Analyzing file 263/882: src\components\icons\category\outer-wear.tsx
+2024-11-15 18:40:37,588 - INFO - Analyzing file 264/882: src\components\icons\category\pants.tsx
+2024-11-15 18:40:49,548 - INFO - Analyzing file 265/882: src\components\icons\category\pet-care.tsx
+2024-11-15 18:41:07,314 - INFO - Analyzing file 266/882: src\components\icons\category\pregnancy.tsx
+2024-11-15 18:41:29,925 - INFO - Analyzing file 267/882: src\components\icons\category\purse.tsx
+2024-11-15 18:41:50,065 - INFO - Analyzing file 268/882: src\components\icons\category\reading-table.tsx
+2024-11-15 18:42:03,400 - INFO - Analyzing file 269/882: src\components\icons\category\relax-chair.tsx
+2024-11-15 18:42:18,530 - INFO - Analyzing file 270/882: src\components\icons\category\router.tsx
+2024-11-15 18:42:37,751 - INFO - Analyzing file 271/882: src\components\icons\category\seeds.tsx
+2024-11-15 18:42:57,478 - INFO - Analyzing file 272/882: src\components\icons\category\sexual-wellbeing.tsx
+2024-11-15 18:43:06,973 - INFO - Analyzing file 273/882: src\components\icons\category\shaving-needs.tsx
+2024-11-15 18:43:20,733 - INFO - Analyzing file 274/882: src\components\icons\category\shirts.tsx
+2024-11-15 18:43:38,675 - INFO - Analyzing file 275/882: src\components\icons\category\shoulder-bag.tsx
+2024-11-15 18:43:56,319 - INFO - Analyzing file 276/882: src\components\icons\category\skirts.tsx
+2024-11-15 18:44:07,943 - INFO - Analyzing file 277/882: src\components\icons\category\smart-watch.tsx
+2024-11-15 18:44:25,423 - INFO - Analyzing file 278/882: src\components\icons\category\snacks.tsx
+2024-11-15 18:44:42,205 - INFO - Analyzing file 279/882: src\components\icons\category\sofa.tsx
+2024-11-15 18:44:57,036 - INFO - Analyzing file 280/882: src\components\icons\category\sound-box.tsx
+2024-11-15 18:45:10,689 - INFO - Analyzing file 281/882: src\components\icons\category\storage.tsx
+2024-11-15 18:45:27,577 - INFO - Analyzing file 282/882: src\components\icons\category\succulent.tsx
+2024-11-15 18:45:45,097 - INFO - Analyzing file 283/882: src\components\icons\category\table.tsx
+2024-11-15 18:46:02,357 - INFO - Analyzing file 284/882: src\components\icons\category\tiny-veg.tsx
+2024-11-15 18:46:26,830 - INFO - Analyzing file 285/882: src\components\icons\category\tools.tsx
+2024-11-15 18:46:35,404 - INFO - Analyzing file 286/882: src\components\icons\category\tops.tsx
+2024-11-15 18:46:56,115 - INFO - Analyzing file 287/882: src\components\icons\category\wallet.tsx
+2024-11-15 18:47:05,722 - INFO - Analyzing file 288/882: src\components\icons\category\washing-machine.tsx
+2024-11-15 18:47:28,550 - INFO - Analyzing file 289/882: src\components\icons\category\women-dress.tsx
+2024-11-15 18:47:40,991 - INFO - Analyzing file 290/882: src\components\icons\check-icon-with-bg.tsx
+2024-11-15 18:47:59,424 - INFO - Analyzing file 291/882: src\components\icons\check-icon.tsx
+2024-11-15 18:48:15,315 - INFO - Analyzing file 292/882: src\components\icons\checked.tsx
+2024-11-15 18:48:28,274 - INFO - Analyzing file 293/882: src\components\icons\checkmark.tsx
+2024-11-15 18:48:41,200 - INFO - Analyzing file 294/882: src\components\icons\chevron-left.tsx
+2024-11-15 18:48:56,526 - INFO - Analyzing file 295/882: src\components\icons\chevron-right.tsx
+2024-11-15 18:49:14,782 - INFO - Analyzing file 296/882: src\components\icons\close-icon.tsx
+2024-11-15 18:49:29,316 - INFO - Analyzing file 297/882: src\components\icons\coupon-icon.tsx
+2024-11-15 18:50:00,843 - INFO - Analyzing file 298/882: src\components\icons\current-location.tsx
+2024-11-15 18:50:12,283 - INFO - Analyzing file 299/882: src\components\icons\dislike-icon.tsx
+2024-11-15 18:50:25,482 - INFO - Analyzing file 300/882: src\components\icons\divider.tsx
+2024-11-15 18:50:45,185 - INFO - Analyzing file 301/882: src\components\icons\email-icon.tsx
+2024-11-15 18:51:00,033 - INFO - Analyzing file 302/882: src\components\icons\empty-cart.tsx
+2024-11-15 18:51:08,329 - INFO - Analyzing file 303/882: src\components\icons\expand-less-icon.tsx
+2024-11-15 18:51:22,446 - INFO - Analyzing file 304/882: src\components\icons\expand-more-icon.tsx
+2024-11-15 18:51:40,097 - INFO - Analyzing file 305/882: src\components\icons\external-icon.tsx
+2024-11-15 18:51:48,864 - INFO - Analyzing file 306/882: src\components\icons\eye-icon.tsx
+2024-11-15 18:52:11,696 - INFO - Analyzing file 307/882: src\components\icons\eye-off-icon.tsx
+2024-11-15 18:52:24,520 - INFO - Analyzing file 308/882: src\components\icons\eye.tsx
+2024-11-15 18:52:40,295 - INFO - Analyzing file 309/882: src\components\icons\facebook.tsx
+2024-11-15 18:53:01,191 - INFO - Analyzing file 310/882: src\components\icons\faq-icon.tsx
+2024-11-15 18:53:18,739 - INFO - Analyzing file 311/882: src\components\icons\filter-icon.tsx
+2024-11-15 18:53:40,345 - INFO - Analyzing file 312/882: src\components\icons\flags\CNFlag.tsx
+2024-11-15 18:53:53,560 - INFO - Analyzing file 313/882: src\components\icons\flags\CNFlagRound.tsx
+2024-11-15 18:54:12,161 - INFO - Analyzing file 314/882: src\components\icons\flags\DEFlag.tsx
+2024-11-15 18:54:44,294 - INFO - Analyzing file 315/882: src\components\icons\flags\DEFlagRound.tsx
+2024-11-15 18:55:16,365 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:55:16,368 - ERROR - Error analyzing src\components\icons\flags\DEFlagRound.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:55:16,872 - INFO - Analyzing file 316/882: src\components\icons\flags\ESFlag.tsx
+2024-11-15 18:55:48,924 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:55:48,928 - ERROR - Error analyzing src\components\icons\flags\ESFlag.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:55:49,430 - INFO - Analyzing file 317/882: src\components\icons\flags\ESFlagRound.tsx
+2024-11-15 18:56:21,531 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:56:21,533 - ERROR - Error analyzing src\components\icons\flags\ESFlagRound.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:56:22,036 - INFO - Analyzing file 318/882: src\components\icons\flags\ILFlag.tsx
+2024-11-15 18:56:51,768 - INFO - Analyzing file 319/882: src\components\icons\flags\ILFlagRound.tsx
+2024-11-15 18:57:11,177 - INFO - Analyzing file 320/882: src\components\icons\flags\SAFlag.tsx
+2024-11-15 18:57:27,888 - INFO - Analyzing file 321/882: src\components\icons\flags\SAFlagRound.tsx
+2024-11-15 18:57:46,984 - INFO - Analyzing file 322/882: src\components\icons\flags\USFlag.tsx
+2024-11-15 18:58:09,453 - INFO - Analyzing file 323/882: src\components\icons\flags\USFlagRound.tsx
+2024-11-15 18:58:28,231 - INFO - Analyzing file 324/882: src\components\icons\google.tsx
+2024-11-15 18:58:53,710 - INFO - Analyzing file 325/882: src\components\icons\groups\baby-care-icon.tsx
+2024-11-15 18:59:25,762 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:59:25,763 - ERROR - Error analyzing src\components\icons\groups\baby-care-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 18:59:26,267 - INFO - Analyzing file 326/882: src\components\icons\groups\bakery-icon.tsx
+2024-11-15 18:59:51,906 - INFO - Analyzing file 327/882: src\components\icons\groups\book-icon.tsx
+2024-11-15 19:00:15,510 - INFO - Analyzing file 328/882: src\components\icons\groups\dress-icon.tsx
+2024-11-15 19:00:31,732 - INFO - Analyzing file 329/882: src\components\icons\groups\facial-care.tsx
+2024-11-15 19:00:54,595 - INFO - Analyzing file 330/882: src\components\icons\groups\fruits-vegetable.tsx
+2024-11-15 19:01:26,651 - INFO - Analyzing file 331/882: src\components\icons\groups\furniture-icon.tsx
+2024-11-15 19:01:52,859 - INFO - Analyzing file 332/882: src\components\icons\groups\gadgets-icon.tsx
+2024-11-15 19:02:17,529 - INFO - Analyzing file 333/882: src\components\icons\groups\handbag-icon.tsx
+2024-11-15 19:02:35,858 - INFO - Analyzing file 334/882: src\components\icons\groups\home-appliance-icon.tsx
+2024-11-15 19:02:57,600 - INFO - Analyzing file 335/882: src\components\icons\groups\index.tsx
+2024-11-15 19:03:22,644 - INFO - Analyzing file 336/882: src\components\icons\groups\medicine-icon.tsx
+2024-11-15 19:03:38,099 - INFO - Analyzing file 337/882: src\components\icons\groups\micro-greens-icon.tsx
+2024-11-15 19:03:53,005 - INFO - Analyzing file 338/882: src\components\icons\groups\plant-icon.tsx
+2024-11-15 19:04:12,366 - INFO - Analyzing file 339/882: src\components\icons\groups\restaurant-icon.tsx
+2024-11-15 19:04:24,165 - INFO - Analyzing file 340/882: src\components\icons\hand-sign.tsx
+2024-11-15 19:04:40,602 - INFO - Analyzing file 341/882: src\components\icons\heart-fill.tsx
+2024-11-15 19:05:07,105 - INFO - Analyzing file 342/882: src\components\icons\heart-ghost.tsx
+2024-11-15 19:05:28,024 - INFO - Analyzing file 343/882: src\components\icons\heart-outline.tsx
+2024-11-15 19:05:47,411 - INFO - Analyzing file 344/882: src\components\icons\help-icon.tsx
+2024-11-15 19:06:08,668 - INFO - Analyzing file 345/882: src\components\icons\home-icon-new.tsx
+2024-11-15 19:06:34,124 - INFO - Analyzing file 346/882: src\components\icons\home-icon.tsx
+2024-11-15 19:06:58,718 - INFO - Analyzing file 347/882: src\components\icons\index.ts
+2024-11-15 19:07:20,354 - INFO - Analyzing file 348/882: src\components\icons\instagram.tsx
+2024-11-15 19:07:44,724 - INFO - Analyzing file 349/882: src\components\icons\lang-icon.tsx
+2024-11-15 19:08:10,820 - INFO - Analyzing file 350/882: src\components\icons\lang-switcher-icon.tsx
+2024-11-15 19:08:31,850 - INFO - Analyzing file 351/882: src\components\icons\like-icon.tsx
+2024-11-15 19:08:51,045 - INFO - Analyzing file 352/882: src\components\icons\long-arrow-icon.tsx
+2024-11-15 19:09:06,008 - INFO - Analyzing file 353/882: src\components\icons\long-arrow-right.tsx
+2024-11-15 19:09:19,365 - INFO - Analyzing file 354/882: src\components\icons\map-pin.tsx
+2024-11-15 19:09:37,445 - INFO - Analyzing file 355/882: src\components\icons\menu-icon.tsx
+2024-11-15 19:10:01,882 - INFO - Analyzing file 356/882: src\components\icons\minus-icon.tsx
+2024-11-15 19:10:19,079 - INFO - Analyzing file 357/882: src\components\icons\mobile-icon.tsx
+2024-11-15 19:10:33,408 - INFO - Analyzing file 358/882: src\components\icons\navbar-icon.tsx
+2024-11-15 19:10:56,108 - INFO - Analyzing file 359/882: src\components\icons\notification.tsx
+2024-11-15 19:11:12,569 - INFO - Analyzing file 360/882: src\components\icons\payment-gateways\bkash.tsx
+2024-11-15 19:11:33,807 - INFO - Analyzing file 361/882: src\components\icons\payment-gateways\flutterwave.tsx
+2024-11-15 19:11:49,998 - INFO - Analyzing file 362/882: src\components\icons\payment-gateways\iyzico.tsx
+2024-11-15 19:12:12,223 - INFO - Analyzing file 363/882: src\components\icons\payment-gateways\mollie.tsx
+2024-11-15 19:12:41,044 - INFO - Analyzing file 364/882: src\components\icons\payment-gateways\paymongo.tsx
+2024-11-15 19:12:58,286 - INFO - Analyzing file 365/882: src\components\icons\payment-gateways\paypal.tsx
+2024-11-15 19:13:30,353 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 19:13:30,355 - ERROR - Error analyzing src\components\icons\payment-gateways\paypal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 19:13:30,861 - INFO - Analyzing file 366/882: src\components\icons\payment-gateways\paystack.tsx
+2024-11-15 19:13:48,530 - INFO - Analyzing file 367/882: src\components\icons\payment-gateways\razorpay.tsx
+2024-11-15 19:14:06,128 - INFO - Analyzing file 368/882: src\components\icons\payment-gateways\sslcomerz.tsx
+2024-11-15 19:14:13,776 - INFO - Analyzing file 369/882: src\components\icons\payment-gateways\stripe.tsx
+2024-11-15 19:14:22,328 - INFO - Analyzing file 370/882: src\components\icons\payment-gateways\xendit.tsx
+2024-11-15 19:14:37,424 - INFO - Analyzing file 371/882: src\components\icons\pencil-icon.tsx
+2024-11-15 19:14:52,171 - INFO - Analyzing file 372/882: src\components\icons\pencil.tsx
+2024-11-15 19:15:10,495 - INFO - Analyzing file 373/882: src\components\icons\play-icon.tsx
+2024-11-15 19:15:21,220 - INFO - Analyzing file 374/882: src\components\icons\player\fullscreen-exit.tsx
+2024-11-15 19:15:38,662 - INFO - Analyzing file 375/882: src\components\icons\player\fullscreen.tsx
+2024-11-15 19:15:47,778 - INFO - Analyzing file 376/882: src\components\icons\player\index.ts
+2024-11-15 19:15:59,516 - INFO - Analyzing file 377/882: src\components\icons\player\mute.tsx
+2024-11-15 19:16:13,780 - INFO - Analyzing file 378/882: src\components\icons\player\pause.tsx
+2024-11-15 19:16:20,722 - INFO - Analyzing file 379/882: src\components\icons\player\play.tsx
+2024-11-15 19:16:34,474 - INFO - Analyzing file 380/882: src\components\icons\player\speaker.tsx
+2024-11-15 19:16:46,902 - INFO - Analyzing file 381/882: src\components\icons\plus-icon.tsx
+2024-11-15 19:17:02,543 - INFO - Analyzing file 382/882: src\components\icons\sad-face.tsx
+2024-11-15 19:17:31,006 - INFO - Analyzing file 383/882: src\components\icons\search-icon.tsx
+2024-11-15 19:17:51,269 - INFO - Analyzing file 384/882: src\components\icons\sellers\bullseye.tsx
+2024-11-15 19:18:16,363 - INFO - Analyzing file 385/882: src\components\icons\sellers\chat.tsx
+2024-11-15 19:18:31,613 - INFO - Analyzing file 386/882: src\components\icons\sellers\index.tsx
+2024-11-15 19:18:45,059 - INFO - Analyzing file 387/882: src\components\icons\sellers\receipt.tsx
+2024-11-15 19:19:02,747 - INFO - Analyzing file 388/882: src\components\icons\sellers\registered-document.tsx
+2024-11-15 19:19:15,272 - INFO - Analyzing file 389/882: src\components\icons\sellers\shopping-bag.tsx
+2024-11-15 19:19:32,892 - INFO - Analyzing file 390/882: src\components\icons\sellers\store.tsx
+2024-11-15 19:19:45,350 - INFO - Analyzing file 391/882: src\components\icons\send-icon.tsx
+2024-11-15 19:20:00,180 - INFO - Analyzing file 392/882: src\components\icons\shop\contact.tsx
+2024-11-15 19:20:17,990 - INFO - Analyzing file 393/882: src\components\icons\shop\coupon.tsx
+2024-11-15 19:20:39,120 - INFO - Analyzing file 394/882: src\components\icons\shop\faq.tsx
+2024-11-15 19:20:55,085 - INFO - Analyzing file 395/882: src\components\icons\shop\terms.tsx
+2024-11-15 19:21:09,558 - INFO - Analyzing file 396/882: src\components\icons\shop\web.tsx
+2024-11-15 19:21:25,626 - INFO - Analyzing file 397/882: src\components\icons\shopping-bag-icon.tsx
+2024-11-15 19:21:42,783 - INFO - Analyzing file 398/882: src\components\icons\social\facebook.tsx
+2024-11-15 19:22:03,173 - INFO - Analyzing file 399/882: src\components\icons\social\index.tsx
+2024-11-15 19:22:18,630 - INFO - Analyzing file 400/882: src\components\icons\social\instagram.tsx
+2024-11-15 19:22:27,451 - INFO - Analyzing file 401/882: src\components\icons\social\twitter.tsx
+2024-11-15 19:22:45,373 - INFO - Analyzing file 402/882: src\components\icons\social\youtube.tsx
+2024-11-15 19:23:06,163 - INFO - Analyzing file 403/882: src\components\icons\star-icon.tsx
+2024-11-15 19:23:20,784 - INFO - Analyzing file 404/882: src\components\icons\svg-loader.tsx
+2024-11-15 19:23:31,504 - INFO - Analyzing file 405/882: src\components\icons\terms-icon.tsx
+2024-11-15 19:23:41,507 - INFO - Analyzing file 406/882: src\components\icons\timer-separator.tsx
+2024-11-15 19:23:50,654 - INFO - Analyzing file 407/882: src\components\icons\toggle-icon.tsx
+2024-11-15 19:24:07,366 - INFO - Analyzing file 408/882: src\components\icons\trash.tsx
+2024-11-15 19:24:25,005 - INFO - Analyzing file 409/882: src\components\icons\twitter.tsx
+2024-11-15 19:24:41,534 - INFO - Analyzing file 410/882: src\components\icons\upload-icon.tsx
+2024-11-15 19:24:53,550 - INFO - Analyzing file 411/882: src\components\icons\user-icon.tsx
+2024-11-15 19:25:10,840 - INFO - Analyzing file 412/882: src\components\icons\user-outlined.tsx
+2024-11-15 19:25:33,462 - INFO - Analyzing file 413/882: src\components\icons\verify-icon.tsx
+2024-11-15 19:25:46,860 - INFO - Analyzing file 414/882: src\components\icons\youtube.tsx
+2024-11-15 19:26:01,589 - INFO - Analyzing file 415/882: src\components\layouts\_general.tsx
+2024-11-15 19:26:17,085 - INFO - Analyzing file 416/882: src\components\layouts\_home.tsx
+2024-11-15 19:26:33,885 - INFO - Analyzing file 417/882: src\components\layouts\classic.tsx
+2024-11-15 19:26:52,041 - INFO - Analyzing file 418/882: src\components\layouts\compact.tsx
+2024-11-15 19:27:08,907 - INFO - Analyzing file 419/882: src\components\layouts\filter-bar.tsx
+2024-11-15 19:27:29,258 - INFO - Analyzing file 420/882: src\components\layouts\footer.tsx
+2024-11-15 19:27:35,961 - INFO - Analyzing file 421/882: src\components\layouts\header-minimal.tsx
+2024-11-15 19:27:50,540 - INFO - Analyzing file 422/882: src\components\layouts\header-with-megamenu.tsx
+2024-11-15 19:28:12,757 - INFO - Analyzing file 423/882: src\components\layouts\header.tsx
+2024-11-15 19:28:31,211 - INFO - Analyzing file 424/882: src\components\layouts\image-removebg-preview (1).png
+2024-11-15 19:28:31,223 - ERROR - Error analyzing src\components\layouts\image-removebg-preview (1).png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 19:28:31,728 - INFO - Analyzing file 425/882: src\components\layouts\layout-with-footer.tsx
+2024-11-15 19:28:49,418 - INFO - Analyzing file 426/882: src\components\layouts\layout.tsx
+2024-11-15 19:29:11,594 - INFO - Analyzing file 427/882: src\components\layouts\menu\authorized-menu.tsx
+2024-11-15 19:29:30,192 - INFO - Analyzing file 428/882: src\components\layouts\menu\groups-menu.tsx
+2024-11-15 19:29:45,719 - INFO - Analyzing file 429/882: src\components\layouts\menu\join-button.tsx
+2024-11-15 19:29:59,574 - INFO - Analyzing file 430/882: src\components\layouts\menu\static-menu.tsx
+2024-11-15 19:30:14,055 - INFO - Analyzing file 431/882: src\components\layouts\minimal.tsx
+2024-11-15 19:30:35,427 - INFO - Analyzing file 432/882: src\components\layouts\mobile-menu\mobile-authorized-menu.tsx
+2024-11-15 19:30:54,936 - INFO - Analyzing file 433/882: src\components\layouts\mobile-menu\mobile-category-menu.tsx
+2024-11-15 19:31:12,849 - INFO - Analyzing file 434/882: src\components\layouts\mobile-menu\mobile-main-menu.tsx
+2024-11-15 19:31:31,011 - INFO - Analyzing file 435/882: src\components\layouts\mobile-navigation.tsx
+2024-11-15 19:31:49,819 - INFO - Analyzing file 436/882: src\components\layouts\modern.tsx
+2024-11-15 19:32:17,085 - INFO - Analyzing file 437/882: src\components\layouts\standard.tsx
+2024-11-15 19:32:29,422 - INFO - Analyzing file 438/882: src\components\maintenance\index.tsx
+2024-11-15 19:32:53,490 - INFO - Analyzing file 439/882: src\components\maintenance\layout.tsx
+2024-11-15 19:33:10,787 - INFO - Analyzing file 440/882: src\components\maintenance\more-info.tsx
+2024-11-15 19:33:25,560 - INFO - Analyzing file 441/882: src\components\maintenance\news-letter.tsx
+2024-11-15 19:33:36,243 - INFO - Analyzing file 442/882: src\components\manufacturer\card.tsx
+2024-11-15 19:34:01,113 - INFO - Analyzing file 443/882: src\components\manufacturer\details.tsx
+2024-11-15 19:34:16,471 - INFO - Analyzing file 444/882: src\components\manufacturer\manufacturers-grid.tsx
+2024-11-15 19:34:38,016 - INFO - Analyzing file 445/882: src\components\manufacturer\top-manufacturers-grid.tsx
+2024-11-15 19:34:50,666 - INFO - Analyzing file 446/882: src\components\notifications\header-notification-icon.tsx
+2024-11-15 19:35:07,880 - INFO - Analyzing file 447/882: src\components\notifications\notification-lists.tsx
+2024-11-15 19:35:26,191 - INFO - Analyzing file 448/882: src\components\orders\order-card.tsx
+2024-11-15 19:35:44,308 - INFO - Analyzing file 449/882: src\components\orders\order-details.tsx
+2024-11-15 19:35:54,876 - INFO - Analyzing file 450/882: src\components\orders\order-items.tsx
+2024-11-15 19:36:10,470 - INFO - Analyzing file 451/882: src\components\orders\order-list-mobile.tsx
+2024-11-15 19:36:28,169 - INFO - Analyzing file 452/882: src\components\orders\order-list.tsx
+2024-11-15 19:36:47,796 - INFO - Analyzing file 453/882: src\components\orders\order-status-progress-box.tsx
+2024-11-15 19:37:03,925 - INFO - Analyzing file 454/882: src\components\orders\order-view-header.tsx
+2024-11-15 19:37:26,261 - INFO - Analyzing file 455/882: src\components\orders\order-view.tsx
+2024-11-15 19:37:34,014 - INFO - Analyzing file 456/882: src\components\orders\status-color.tsx
+2024-11-15 19:37:43,980 - INFO - Analyzing file 457/882: src\components\orders\suborder-items.tsx
+2024-11-15 19:37:55,225 - INFO - Analyzing file 458/882: src\components\otp\atom.ts
+2024-11-15 19:38:08,599 - INFO - Analyzing file 459/882: src\components\otp\code-verify-form.tsx
+2024-11-15 19:38:21,872 - INFO - Analyzing file 460/882: src\components\otp\otp-form.tsx
+2024-11-15 19:38:32,859 - INFO - Analyzing file 461/882: src\components\otp\otp-register-form.tsx
+2024-11-15 19:38:46,647 - INFO - Analyzing file 462/882: src\components\otp\phone-number-form.tsx
+2024-11-15 19:39:06,446 - INFO - Analyzing file 463/882: src\components\payment\add-new-payment-modal.tsx
+2024-11-15 19:39:26,046 - INFO - Analyzing file 464/882: src\components\payment\gateway-control\change-gateway.tsx
+2024-11-15 19:39:41,389 - INFO - Analyzing file 465/882: src\components\payment\gateway-control\gateway-modal.tsx
+2024-11-15 19:39:50,010 - INFO - Analyzing file 466/882: src\components\payment\pay-now-button.tsx
+2024-11-15 19:39:57,482 - INFO - Analyzing file 467/882: src\components\payment\payment-modal.tsx
+2024-11-15 19:40:13,396 - INFO - Analyzing file 468/882: src\components\payment\razorpay\razorpay-payment-modal.tsx
+2024-11-15 19:40:29,445 - INFO - Analyzing file 469/882: src\components\payment\saved-card-view-header.tsx
+2024-11-15 19:40:43,737 - INFO - Analyzing file 470/882: src\components\payment\stripe-element-modal.tsx
+2024-11-15 19:40:52,697 - INFO - Analyzing file 471/882: src\components\payment\stripe-element-view-header.tsx
+2024-11-15 19:41:07,718 - INFO - Analyzing file 472/882: src\components\payment\stripe\stripe-base-form.tsx
+2024-11-15 19:41:25,941 - INFO - Analyzing file 473/882: src\components\payment\stripe\stripe-element-base-form.tsx
+2024-11-15 19:41:46,024 - INFO - Analyzing file 474/882: src\components\payment\stripe\stripe-element-form.tsx
+2024-11-15 19:42:11,731 - INFO - Analyzing file 475/882: src\components\payment\stripe\stripe-payment-form.tsx
+2024-11-15 19:42:34,167 - INFO - Analyzing file 476/882: src\components\payment\stripe\stripe-payment-modal.tsx
+2024-11-15 19:42:50,438 - INFO - Analyzing file 477/882: src\components\payment\stripe\stripe-saved-cards-list.tsx
+2024-11-15 19:43:20,554 - INFO - Analyzing file 478/882: src\components\products\add-to-cart\add-to-cart-alt.tsx
+2024-11-15 19:43:32,105 - INFO - Analyzing file 479/882: src\components\products\add-to-cart\add-to-cart-btn.tsx
+2024-11-15 19:43:47,241 - INFO - Analyzing file 480/882: src\components\products\add-to-cart\add-to-cart-external.tsx
+2024-11-15 19:43:58,038 - INFO - Analyzing file 481/882: src\components\products\add-to-cart\add-to-cart.tsx
+2024-11-15 19:44:18,208 - INFO - Analyzing file 482/882: src\components\products\best-selling-products.tsx
+2024-11-15 19:44:37,152 - INFO - Analyzing file 483/882: src\components\products\cards\argon.tsx
+2024-11-15 19:44:52,668 - INFO - Analyzing file 484/882: src\components\products\cards\card.tsx
+2024-11-15 19:45:09,682 - INFO - Analyzing file 485/882: src\components\products\cards\fluorine.tsx
+2024-11-15 19:45:23,948 - INFO - Analyzing file 486/882: src\components\products\cards\helium.tsx
+2024-11-15 19:45:43,990 - INFO - Analyzing file 487/882: src\components\products\cards\krypton.tsx
+2024-11-15 19:46:03,840 - INFO - Analyzing file 488/882: src\components\products\cards\neon.tsx
+2024-11-15 19:46:23,939 - INFO - Analyzing file 489/882: src\components\products\cards\oganesson.tsx
+2024-11-15 19:46:42,024 - INFO - Analyzing file 490/882: src\components\products\cards\radon.tsx
+2024-11-15 19:47:04,383 - INFO - Analyzing file 491/882: src\components\products\cards\xenon.tsx
+2024-11-15 19:47:35,569 - INFO - Analyzing file 492/882: src\components\products\details\attributes.context.tsx
+2024-11-15 19:48:02,534 - INFO - Analyzing file 493/882: src\components\products\details\badge-groups.tsx
+2024-11-15 19:48:32,401 - INFO - Analyzing file 494/882: src\components\products\details\book-details.tsx
+2024-11-15 19:48:41,168 - INFO - Analyzing file 495/882: src\components\products\details\category-badges.tsx
+2024-11-15 19:49:05,643 - INFO - Analyzing file 496/882: src\components\products\details\details.tsx
+2024-11-15 19:49:22,421 - INFO - Analyzing file 497/882: src\components\products\details\favorite-button.tsx
+2024-11-15 19:49:46,868 - INFO - Analyzing file 498/882: src\components\products\details\popup.tsx
+2024-11-15 19:50:14,325 - INFO - Analyzing file 499/882: src\components\products\details\related-products.tsx
+2024-11-15 19:50:44,095 - INFO - Analyzing file 500/882: src\components\products\details\short-details.tsx
+2024-11-15 19:51:16,162 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 19:51:16,164 - ERROR - Error analyzing src\components\products\details\short-details.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 19:51:16,667 - INFO - Analyzing file 501/882: src\components\products\details\tag-groups.tsx
+2024-11-15 19:51:48,036 - INFO - Analyzing file 502/882: src\components\products\details\variation-groups.tsx
+2024-11-15 19:51:57,354 - INFO - Analyzing file 503/882: src\components\products\details\variation-price.tsx
+2024-11-15 19:52:19,966 - INFO - Analyzing file 504/882: src\components\products\downloadable-products.tsx
+2024-11-15 19:52:42,572 - INFO - Analyzing file 505/882: src\components\products\grid.tsx
+2024-11-15 19:52:53,027 - INFO - Analyzing file 506/882: src\components\products\grids\home.tsx
+2024-11-15 19:53:14,804 - INFO - Analyzing file 507/882: src\components\products\group-products.tsx
+2024-11-15 19:53:35,080 - INFO - Analyzing file 508/882: src\components\products\group-products\grid.tsx
+2024-11-15 19:53:53,012 - INFO - Analyzing file 509/882: src\components\products\group-products\slider.tsx
+2024-11-15 19:54:11,108 - INFO - Analyzing file 510/882: src\components\products\popular-products.tsx
+2024-11-15 19:54:27,479 - INFO - Analyzing file 511/882: src\components\products\selling-products.tsx
+2024-11-15 19:54:44,049 - INFO - Analyzing file 512/882: src\components\products\variation-modal.tsx
+2024-11-15 19:54:57,856 - INFO - Analyzing file 513/882: src\components\products\wishlist-products.tsx
+2024-11-15 19:55:19,530 - INFO - Analyzing file 514/882: src\components\profile\profile-add-or-update-contact.tsx
+2024-11-15 19:55:36,837 - INFO - Analyzing file 515/882: src\components\profile\profile-address.tsx
+2024-11-15 19:55:54,455 - INFO - Analyzing file 516/882: src\components\profile\profile-contact.tsx
+2024-11-15 19:56:09,630 - INFO - Analyzing file 517/882: src\components\profile\profile-form.tsx
+2024-11-15 19:56:25,677 - INFO - Analyzing file 518/882: src\components\profile\profile-update-email.tsx
+2024-11-15 19:56:33,062 - INFO - Analyzing file 519/882: src\components\promo-popup\index.tsx
+2024-11-15 19:56:45,753 - INFO - Analyzing file 520/882: src\components\promotions\promotion-slider.tsx
+2024-11-15 19:57:00,841 - INFO - Analyzing file 521/882: src\components\promotions\promotions.tsx
+2024-11-15 19:57:08,936 - INFO - Analyzing file 522/882: src\components\questions\my-questions.tsx
+2024-11-15 19:57:30,570 - INFO - Analyzing file 523/882: src\components\questions\product-questions.tsx
+2024-11-15 19:57:48,545 - INFO - Analyzing file 524/882: src\components\questions\question-card.tsx
+2024-11-15 19:58:03,460 - INFO - Analyzing file 525/882: src\components\questions\question-form.tsx
+2024-11-15 19:58:14,397 - INFO - Analyzing file 526/882: src\components\refunds\refund-form.tsx
+2024-11-15 19:58:32,776 - INFO - Analyzing file 527/882: src\components\refunds\refund-view.tsx
+2024-11-15 19:58:55,090 - INFO - Analyzing file 528/882: src\components\reports\report-view.tsx
+2024-11-15 19:59:12,012 - INFO - Analyzing file 529/882: src\components\review-popup\index.tsx
+2024-11-15 19:59:20,200 - INFO - Analyzing file 530/882: src\components\reviews\abuse-report.tsx
+2024-11-15 19:59:34,268 - INFO - Analyzing file 531/882: src\components\reviews\average-ratings.tsx
+2024-11-15 19:59:52,196 - INFO - Analyzing file 532/882: src\components\reviews\product-reviews.tsx
+2024-11-15 20:00:11,636 - INFO - Analyzing file 533/882: src\components\reviews\review-card.tsx
+2024-11-15 20:00:24,924 - INFO - Analyzing file 534/882: src\components\reviews\review-form.tsx
+2024-11-15 20:00:41,202 - INFO - Analyzing file 535/882: src\components\reviews\review-image-modal.tsx
+2024-11-15 20:00:54,841 - INFO - Analyzing file 536/882: src\components\reviews\sorting.tsx
+2024-11-15 20:01:12,318 - INFO - Analyzing file 537/882: src\components\reviews\star-filter.tsx
+2024-11-15 20:01:31,989 - INFO - Analyzing file 538/882: src\components\search-view\category-filter-view.tsx
+2024-11-15 20:01:48,229 - INFO - Analyzing file 539/882: src\components\search-view\checkbox-group.tsx
+2024-11-15 20:01:58,411 - INFO - Analyzing file 540/882: src\components\search-view\manufacturer-filter-view.tsx
+2024-11-15 20:02:11,524 - INFO - Analyzing file 541/882: src\components\search-view\price-filter.tsx
+2024-11-15 20:02:28,373 - INFO - Analyzing file 542/882: src\components\search-view\search-count.tsx
+2024-11-15 20:02:44,306 - INFO - Analyzing file 543/882: src\components\search-view\sidebar-filter.tsx
+2024-11-15 20:03:06,269 - INFO - Analyzing file 544/882: src\components\search-view\sorting.tsx
+2024-11-15 20:03:18,761 - INFO - Analyzing file 545/882: src\components\search-view\suggestion.tsx
+2024-11-15 20:03:34,370 - INFO - Analyzing file 546/882: src\components\search-view\tag-filter-view.tsx
+2024-11-15 20:03:48,200 - INFO - Analyzing file 547/882: src\components\seo\default-seo.tsx
+2024-11-15 20:04:03,273 - INFO - Analyzing file 548/882: src\components\seo\seo.tsx
+2024-11-15 20:04:12,936 - INFO - Analyzing file 549/882: src\components\settings\subscribe-to-newsletter.tsx
+2024-11-15 20:04:21,998 - INFO - Analyzing file 550/882: src\components\settings\subscription-form.tsx
+2024-11-15 20:04:37,096 - INFO - Analyzing file 551/882: src\components\settings\super-admin-contact-form.tsx
+2024-11-15 20:04:50,542 - INFO - Analyzing file 552/882: src\components\settings\vendor-contact-form.tsx
+2024-11-15 20:05:06,646 - INFO - Analyzing file 553/882: src\components\shops\sidebar.tsx
+2024-11-15 20:05:24,022 - INFO - Analyzing file 554/882: src\components\store-notice\notice-highlightedBar.tsx
+2024-11-15 20:05:43,842 - INFO - Analyzing file 555/882: src\components\terms\terms.tsx
+2024-11-15 20:06:05,002 - INFO - Analyzing file 556/882: src\components\ui\accordion.tsx
+2024-11-15 20:06:24,761 - INFO - Analyzing file 557/882: src\components\ui\alert.tsx
+2024-11-15 20:06:33,373 - INFO - Analyzing file 558/882: src\components\ui\attribute.tsx
+2024-11-15 20:06:43,815 - INFO - Analyzing file 559/882: src\components\ui\author-card.tsx
+2024-11-15 20:07:01,109 - INFO - Analyzing file 560/882: src\components\ui\auto-suggestion.tsx
+2024-11-15 20:07:17,917 - INFO - Analyzing file 561/882: src\components\ui\avatar.tsx
+2024-11-15 20:07:39,051 - INFO - Analyzing file 562/882: src\components\ui\back-button.tsx
+2024-11-15 20:07:53,484 - INFO - Analyzing file 563/882: src\components\ui\badge.tsx
+2024-11-15 20:08:03,819 - INFO - Analyzing file 564/882: src\components\ui\boxed-attribute.tsx
+2024-11-15 20:08:17,933 - INFO - Analyzing file 565/882: src\components\ui\breadcrumb-button.tsx
+2024-11-15 20:08:31,150 - INFO - Analyzing file 566/882: src\components\ui\button.tsx
+2024-11-15 20:08:48,087 - INFO - Analyzing file 567/882: src\components\ui\cards\card.tsx
+2024-11-15 20:08:59,798 - INFO - Analyzing file 568/882: src\components\ui\cards\confirmation.tsx
+2024-11-15 20:09:18,569 - INFO - Analyzing file 569/882: src\components\ui\cards\coupon.tsx
+2024-11-15 20:09:33,066 - INFO - Analyzing file 570/882: src\components\ui\cards\near-shop.tsx
+2024-11-15 20:09:50,461 - INFO - Analyzing file 571/882: src\components\ui\cards\shop.tsx
+2024-11-15 20:10:03,046 - INFO - Analyzing file 572/882: src\components\ui\carousel.tsx
+2024-11-15 20:10:33,796 - INFO - Analyzing file 573/882: src\components\ui\category-breadcrumb-card.tsx
+2024-11-15 20:10:51,973 - INFO - Analyzing file 574/882: src\components\ui\category-card.tsx
+2024-11-15 20:11:10,406 - INFO - Analyzing file 575/882: src\components\ui\collapse.tsx
+2024-11-15 20:11:19,905 - INFO - Analyzing file 576/882: src\components\ui\countdown-timer\index.tsx
+2024-11-15 20:11:38,801 - INFO - Analyzing file 577/882: src\components\ui\countdown-timer\maintenance.tsx
+2024-11-15 20:11:56,431 - INFO - Analyzing file 578/882: src\components\ui\countdown.tsx
+2024-11-15 20:12:11,796 - INFO - Analyzing file 579/882: src\components\ui\counter.tsx
+2024-11-15 20:12:28,115 - INFO - Analyzing file 580/882: src\components\ui\disclosure.tsx
+2024-11-15 20:12:47,821 - INFO - Analyzing file 581/882: src\components\ui\drawer\drawer-portal.tsx
+2024-11-15 20:13:01,628 - INFO - Analyzing file 582/882: src\components\ui\drawer\drawer-wrapper.tsx
+2024-11-15 20:13:17,292 - INFO - Analyzing file 583/882: src\components\ui\drawer\drawer.tsx
+2024-11-15 20:13:38,063 - INFO - Analyzing file 584/882: src\components\ui\drawer\managed-drawer.tsx
+2024-11-15 20:13:55,633 - INFO - Analyzing file 585/882: src\components\ui\error-message.tsx
+2024-11-15 20:14:10,798 - INFO - Analyzing file 586/882: src\components\ui\forms\checkbox\boxed-checkbox.tsx
+2024-11-15 20:14:25,787 - INFO - Analyzing file 587/882: src\components\ui\forms\checkbox\checkbox.tsx
+2024-11-15 20:14:40,470 - INFO - Analyzing file 588/882: src\components\ui\forms\file-input.tsx
+2024-11-15 20:14:49,909 - INFO - Analyzing file 589/882: src\components\ui\forms\form.tsx
+2024-11-15 20:14:57,983 - INFO - Analyzing file 590/882: src\components\ui\forms\input.tsx
+2024-11-15 20:15:18,252 - INFO - Analyzing file 591/882: src\components\ui\forms\label.tsx
+2024-11-15 20:15:30,155 - INFO - Analyzing file 592/882: src\components\ui\forms\password-input.tsx
+2024-11-15 20:15:38,336 - INFO - Analyzing file 593/882: src\components\ui\forms\phone-input.tsx
+2024-11-15 20:15:45,689 - INFO - Analyzing file 594/882: src\components\ui\forms\radio\radio.module.css
+2024-11-15 20:15:56,562 - INFO - Analyzing file 595/882: src\components\ui\forms\radio\radio.tsx
+2024-11-15 20:16:09,421 - INFO - Analyzing file 596/882: src\components\ui\forms\range-slider.tsx
+2024-11-15 20:16:19,263 - INFO - Analyzing file 597/882: src\components\ui\forms\rate-input.tsx
+2024-11-15 20:16:29,531 - INFO - Analyzing file 598/882: src\components\ui\forms\text-area.tsx
+2024-11-15 20:16:43,086 - INFO - Analyzing file 599/882: src\components\ui\forms\uploader.tsx
+2024-11-15 20:16:56,178 - INFO - Analyzing file 600/882: src\components\ui\glow.tsx
+2024-11-15 20:17:07,345 - INFO - Analyzing file 601/882: src\components\ui\image.png
+2024-11-15 20:17:07,345 - ERROR - Error analyzing src\components\ui\image.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 20:17:07,853 - INFO - Analyzing file 602/882: src\components\ui\image.tsx
+2024-11-15 20:17:18,770 - INFO - Analyzing file 603/882: src\components\ui\language-switcher.tsx
+2024-11-15 20:17:36,012 - INFO - Analyzing file 604/882: src\components\ui\link.tsx
+2024-11-15 20:17:56,610 - INFO - Analyzing file 605/882: src\components\ui\list-menu.tsx
+2024-11-15 20:18:18,183 - INFO - Analyzing file 606/882: src\components\ui\loaders\author-loader.tsx
+2024-11-15 20:18:24,690 - INFO - Analyzing file 607/882: src\components\ui\loaders\bakery-categories-loader.tsx
+2024-11-15 20:18:36,941 - INFO - Analyzing file 608/882: src\components\ui\loaders\categories-loader.tsx
+2024-11-15 20:18:54,030 - INFO - Analyzing file 609/882: src\components\ui\loaders\coupon-loader.tsx
+2024-11-15 20:19:08,756 - INFO - Analyzing file 610/882: src\components\ui\loaders\faq-loader.tsx
+2024-11-15 20:19:15,432 - INFO - Analyzing file 611/882: src\components\ui\loaders\manufacturer-loader.tsx
+2024-11-15 20:19:31,458 - INFO - Analyzing file 612/882: src\components\ui\loaders\near-shop-loader.tsx
+2024-11-15 20:19:41,783 - INFO - Analyzing file 613/882: src\components\ui\loaders\notify-header-content.tsx
+2024-11-15 20:19:50,437 - INFO - Analyzing file 614/882: src\components\ui\loaders\notify-loader.tsx
+2024-11-15 20:20:04,529 - INFO - Analyzing file 615/882: src\components\ui\loaders\page-loader.tsx
+2024-11-15 20:20:26,330 - INFO - Analyzing file 616/882: src\components\ui\loaders\product-loader.tsx
+2024-11-15 20:20:36,820 - INFO - Analyzing file 617/882: src\components\ui\loaders\question-loader.tsx
+2024-11-15 20:20:45,232 - INFO - Analyzing file 618/882: src\components\ui\loaders\spinner\spinner.module.css
+2024-11-15 20:20:59,546 - INFO - Analyzing file 619/882: src\components\ui\loaders\spinner\spinner.tsx
+2024-11-15 20:21:08,592 - INFO - Analyzing file 620/882: src\components\ui\loaders\table-loader.tsx
+2024-11-15 20:21:23,330 - INFO - Analyzing file 621/882: src\components\ui\loaders\terms-list-loader.tsx
+2024-11-15 20:21:39,641 - INFO - Analyzing file 622/882: src\components\ui\loaders\terms-loader.tsx
+2024-11-15 20:21:56,685 - INFO - Analyzing file 623/882: src\components\ui\loaders\wishlist-loader.tsx
+2024-11-15 20:22:09,958 - INFO - Analyzing file 624/882: src\components\ui\logo.tsx
+2024-11-15 20:22:29,300 - INFO - Analyzing file 625/882: src\components\ui\mega-menu.tsx
+2024-11-15 20:22:42,080 - INFO - Analyzing file 626/882: src\components\ui\menu.tsx
+2024-11-15 20:22:56,484 - INFO - Analyzing file 627/882: src\components\ui\modal\managed-modal.tsx
+2024-11-15 20:23:08,513 - INFO - Analyzing file 628/882: src\components\ui\modal\modal.context.tsx
+2024-11-15 20:23:25,830 - INFO - Analyzing file 629/882: src\components\ui\modal\modal.tsx
+2024-11-15 20:23:41,323 - INFO - Analyzing file 630/882: src\components\ui\multi-range-slider\multi-range-slider.tsx
+2024-11-15 20:23:49,931 - INFO - Analyzing file 631/882: src\components\ui\not-found.tsx
+2024-11-15 20:24:04,942 - INFO - Analyzing file 632/882: src\components\ui\outlined-boxed-category.tsx
+2024-11-15 20:24:15,420 - INFO - Analyzing file 633/882: src\components\ui\pagination.tsx
+2024-11-15 20:24:27,765 - INFO - Analyzing file 634/882: src\components\ui\popover.tsx
+2024-11-15 20:24:44,801 - INFO - Analyzing file 635/882: src\components\ui\progress-box\progress-box.module.css
+2024-11-15 20:25:00,624 - INFO - Analyzing file 636/882: src\components\ui\progress-box\progress-box.tsx
+2024-11-15 20:25:10,357 - INFO - Analyzing file 637/882: src\components\ui\radio.tsx
+2024-11-15 20:25:28,380 - INFO - Analyzing file 638/882: src\components\ui\rating-badge.tsx
+2024-11-15 20:25:34,871 - INFO - Analyzing file 639/882: src\components\ui\rating-progress-bar.tsx
+2024-11-15 20:25:56,875 - INFO - Analyzing file 640/882: src\components\ui\scrollbar.tsx
+2024-11-15 20:26:17,186 - INFO - Analyzing file 641/882: src\components\ui\search\search-box.tsx
+2024-11-15 20:26:40,383 - INFO - Analyzing file 642/882: src\components\ui\search\search-with-suggestion.tsx
+2024-11-15 20:26:54,398 - INFO - Analyzing file 643/882: src\components\ui\search\search.context.tsx
+2024-11-15 20:27:01,530 - INFO - Analyzing file 644/882: src\components\ui\search\search.tsx
+2024-11-15 20:27:23,591 - INFO - Analyzing file 645/882: src\components\ui\section-block.tsx
+2024-11-15 20:27:33,615 - INFO - Analyzing file 646/882: src\components\ui\section-heading.tsx
+2024-11-15 20:27:47,099 - INFO - Analyzing file 647/882: src\components\ui\select\select.styles.ts
+2024-11-15 20:27:58,035 - INFO - Analyzing file 648/882: src\components\ui\select\select.tsx
+2024-11-15 20:28:13,345 - INFO - Analyzing file 649/882: src\components\ui\slider.tsx
+2024-11-15 20:28:23,865 - INFO - Analyzing file 650/882: src\components\ui\solid-boxed-categoty.tsx
+2024-11-15 20:28:39,054 - INFO - Analyzing file 651/882: src\components\ui\solid-card-category.tsx
+2024-11-15 20:28:52,807 - INFO - Analyzing file 652/882: src\components\ui\success.tsx
+2024-11-15 20:29:09,801 - INFO - Analyzing file 653/882: src\components\ui\table.tsx
+2024-11-15 20:29:20,433 - INFO - Analyzing file 654/882: src\components\ui\thumb-carousel.tsx
+2024-11-15 20:29:29,289 - INFO - Analyzing file 655/882: src\components\ui\tree-menu.tsx
+2024-11-15 20:29:49,428 - INFO - Analyzing file 656/882: src\components\ui\truncate.tsx
+2024-11-15 20:30:04,393 - INFO - Analyzing file 657/882: src\components\ui\validation-error.tsx
+2024-11-15 20:30:20,830 - INFO - Analyzing file 658/882: src\components\ui\video-player\range-slider.tsx
+2024-11-15 20:30:32,130 - INFO - Analyzing file 659/882: src\components\ui\video-player\video-player-control.tsx
+2024-11-15 20:30:41,466 - INFO - Analyzing file 660/882: src\components\ui\video-player\video-player-utils.ts
+2024-11-15 20:30:48,529 - INFO - Analyzing file 661/882: src\components\ui\video-player\video-player.tsx
+2024-11-15 20:31:10,444 - INFO - Analyzing file 662/882: src\config\get-env.ts
+2024-11-15 20:31:25,728 - INFO - Analyzing file 663/882: src\config\routes.ts
+2024-11-15 20:31:43,433 - INFO - Analyzing file 664/882: src\config\site.ts
+2024-11-15 20:31:56,904 - INFO - Analyzing file 665/882: src\context\notify-content.tsx
+2024-11-15 20:32:15,354 - INFO - Analyzing file 666/882: src\framework\graphql\author.ssr.ts
+2024-11-15 20:32:33,728 - INFO - Analyzing file 667/882: src\framework\graphql\author.ts
+2024-11-15 20:32:53,078 - INFO - Analyzing file 668/882: src\framework\graphql\authors-page.ssr.ts
+2024-11-15 20:33:08,875 - INFO - Analyzing file 669/882: src\framework\graphql\become-seller.ts
+2024-11-15 20:33:24,335 - INFO - Analyzing file 670/882: src\framework\graphql\card.ts
+2024-11-15 20:33:39,230 - INFO - Analyzing file 671/882: src\framework\graphql\category.ts
+2024-11-15 20:33:57,073 - INFO - Analyzing file 672/882: src\framework\graphql\client\index.ts
+2024-11-15 20:34:08,548 - INFO - Analyzing file 673/882: src\framework\graphql\client\query-provider.tsx
+2024-11-15 20:34:24,161 - INFO - Analyzing file 674/882: src\framework\graphql\client\variables.ts
+2024-11-15 20:34:32,298 - INFO - Analyzing file 675/882: src\framework\graphql\coupon.ssr.ts
+2024-11-15 20:34:51,694 - INFO - Analyzing file 676/882: src\framework\graphql\coupon.ts
+2024-11-15 20:35:01,617 - INFO - Analyzing file 677/882: src\framework\graphql\faq-ssr.ts
+2024-11-15 20:35:10,168 - INFO - Analyzing file 678/882: src\framework\graphql\faqs.ts
+2024-11-15 20:35:19,569 - INFO - Analyzing file 679/882: src\framework\graphql\flash-sale.ssr.ts
+2024-11-15 20:35:36,127 - INFO - Analyzing file 680/882: src\framework\graphql\flash-sales.ts
+2024-11-15 20:35:51,486 - INFO - Analyzing file 681/882: src\framework\graphql\general.ssr.ts
+2024-11-15 20:36:09,741 - INFO - Analyzing file 682/882: src\framework\graphql\home-pages.ssr.ts
+2024-11-15 20:36:30,073 - INFO - Analyzing file 683/882: src\framework\graphql\manufacturer.ssr.ts
+2024-11-15 20:36:47,588 - INFO - Analyzing file 684/882: src\framework\graphql\manufacturer.ts
+2024-11-15 20:36:57,319 - INFO - Analyzing file 685/882: src\framework\graphql\manufacturers-page.ssr.ts
+2024-11-15 20:37:05,913 - INFO - Analyzing file 686/882: src\framework\graphql\notify-logs.ssr.ts
+2024-11-15 20:37:22,071 - INFO - Analyzing file 687/882: src\framework\graphql\notify-logs.ts
+2024-11-15 20:37:36,875 - INFO - Analyzing file 688/882: src\framework\graphql\order.ssr.ts
+2024-11-15 20:37:50,727 - INFO - Analyzing file 689/882: src\framework\graphql\order.ts
+2024-11-15 20:37:58,551 - INFO - Analyzing file 690/882: src\framework\graphql\product.ssr.ts
+2024-11-15 20:38:17,759 - INFO - Analyzing file 691/882: src\framework\graphql\product.ts
+2024-11-15 20:38:27,235 - INFO - Analyzing file 692/882: src\framework\graphql\question.ts
+2024-11-15 20:38:34,388 - INFO - Analyzing file 693/882: src\framework\graphql\refund-policies.ssr.ts
+2024-11-15 20:38:45,909 - INFO - Analyzing file 694/882: src\framework\graphql\refund-policies.ts
+2024-11-15 20:38:57,667 - INFO - Analyzing file 695/882: src\framework\graphql\refund.ts
+2024-11-15 20:39:14,427 - INFO - Analyzing file 696/882: src\framework\graphql\report.ts
+2024-11-15 20:39:21,769 - INFO - Analyzing file 697/882: src\framework\graphql\review.ts
+2024-11-15 20:39:32,869 - INFO - Analyzing file 698/882: src\framework\graphql\search.ssr.ts
+2024-11-15 20:39:44,966 - INFO - Analyzing file 699/882: src\framework\graphql\settings.ts
+2024-11-15 20:39:55,303 - INFO - Analyzing file 700/882: src\framework\graphql\shop.ssr.ts
+2024-11-15 20:40:10,746 - INFO - Analyzing file 701/882: src\framework\graphql\shop.ts
+2024-11-15 20:40:17,710 - INFO - Analyzing file 702/882: src\framework\graphql\shops-page.ssr.ts
+2024-11-15 20:40:32,729 - INFO - Analyzing file 703/882: src\framework\graphql\store-notices.tsx
+2024-11-15 20:40:53,407 - INFO - Analyzing file 704/882: src\framework\graphql\tag.ts
+2024-11-15 20:41:07,332 - INFO - Analyzing file 705/882: src\framework\graphql\terms-and-conditions-ssr.ts
+2024-11-15 20:41:18,787 - INFO - Analyzing file 706/882: src\framework\graphql\terms-and-conditions.ts
+2024-11-15 20:41:31,267 - INFO - Analyzing file 707/882: src\framework\graphql\type.ts
+2024-11-15 20:41:41,365 - INFO - Analyzing file 708/882: src\framework\graphql\user.ts
+2024-11-15 20:41:50,139 - INFO - Analyzing file 709/882: src\framework\graphql\utils\auth-utils.ts
+2024-11-15 20:42:03,956 - INFO - Analyzing file 710/882: src\framework\graphql\utils\categories.ts
+2024-11-15 20:42:14,114 - INFO - Analyzing file 711/882: src\framework\graphql\utils\constants.ts
+2024-11-15 20:42:23,287 - INFO - Analyzing file 712/882: src\framework\graphql\utils\form-error.ts
+2024-11-15 20:42:34,361 - INFO - Analyzing file 713/882: src\framework\graphql\utils\maintenance-utils.ts
+2024-11-15 20:42:50,288 - INFO - Analyzing file 714/882: src\framework\graphql\utils\products.ts
+2024-11-15 20:43:01,245 - INFO - Analyzing file 715/882: src\framework\graphql\utils\query-helpers.ts
+2024-11-15 20:43:10,072 - INFO - Analyzing file 716/882: src\framework\graphql\utils\use-homepage.ts
+2024-11-15 20:43:22,444 - INFO - Analyzing file 717/882: src\framework\graphql\utils\use-layout.tsx
+2024-11-15 20:43:36,599 - INFO - Analyzing file 718/882: src\framework\graphql\wishlist.ts
+2024-11-15 20:43:45,462 - INFO - Analyzing file 719/882: src\framework\rest\author.ssr.ts
+2024-11-15 20:44:01,670 - INFO - Analyzing file 720/882: src\framework\rest\author.ts
+2024-11-15 20:44:20,466 - INFO - Analyzing file 721/882: src\framework\rest\authors-page.ssr.ts
+2024-11-15 20:44:35,229 - INFO - Analyzing file 722/882: src\framework\rest\become-seller.ts
+2024-11-15 20:44:53,464 - INFO - Analyzing file 723/882: src\framework\rest\card.ts
+2024-11-15 20:45:04,875 - INFO - Analyzing file 724/882: src\framework\rest\category.ts
+2024-11-15 20:45:16,127 - INFO - Analyzing file 725/882: src\framework\rest\client\api-endpoints.ts
+2024-11-15 20:45:25,432 - INFO - Analyzing file 726/882: src\framework\rest\client\http-client.ts
+2024-11-15 20:45:33,758 - INFO - Analyzing file 727/882: src\framework\rest\client\index.ts
+2024-11-15 20:45:48,173 - INFO - Analyzing file 728/882: src\framework\rest\client\query-provider.tsx
+2024-11-15 20:46:01,033 - INFO - Analyzing file 729/882: src\framework\rest\client\variables.ts
+2024-11-15 20:46:11,110 - INFO - Analyzing file 730/882: src\framework\rest\coupon.ssr.ts
+2024-11-15 20:46:26,835 - INFO - Analyzing file 731/882: src\framework\rest\coupon.ts
+2024-11-15 20:46:40,320 - INFO - Analyzing file 732/882: src\framework\rest\faq-ssr.ts
+2024-11-15 20:46:53,021 - INFO - Analyzing file 733/882: src\framework\rest\faqs.ts
+2024-11-15 20:47:08,427 - INFO - Analyzing file 734/882: src\framework\rest\flash-sale.ssr.ts
+2024-11-15 20:47:23,074 - INFO - Analyzing file 735/882: src\framework\rest\flash-sales.ts
+2024-11-15 20:47:38,554 - INFO - Analyzing file 736/882: src\framework\rest\general.ssr.ts
+2024-11-15 20:47:53,274 - INFO - Analyzing file 737/882: src\framework\rest\home-pages.ssr.ts
+2024-11-15 20:48:18,610 - INFO - Analyzing file 738/882: src\framework\rest\manufacturer.ssr.ts
+2024-11-15 20:48:37,743 - INFO - Analyzing file 739/882: src\framework\rest\manufacturer.ts
+2024-11-15 20:48:53,980 - INFO - Analyzing file 740/882: src\framework\rest\manufacturers-page.ssr.ts
+2024-11-15 20:49:15,990 - INFO - Analyzing file 741/882: src\framework\rest\notify-logs.ssr.ts
+2024-11-15 20:49:33,286 - INFO - Analyzing file 742/882: src\framework\rest\notify-logs.ts
+2024-11-15 20:49:43,013 - INFO - Analyzing file 743/882: src\framework\rest\order.ssr.ts
+2024-11-15 20:49:57,126 - INFO - Analyzing file 744/882: src\framework\rest\order.ts
+2024-11-15 20:50:14,099 - INFO - Analyzing file 745/882: src\framework\rest\product.ssr.ts
+2024-11-15 20:50:32,862 - INFO - Analyzing file 746/882: src\framework\rest\product.ts
+2024-11-15 20:50:52,899 - INFO - Analyzing file 747/882: src\framework\rest\question.ts
+2024-11-15 20:51:07,598 - INFO - Analyzing file 748/882: src\framework\rest\refund-policies.ssr.ts
+2024-11-15 20:51:19,072 - INFO - Analyzing file 749/882: src\framework\rest\refund-policies.ts
+2024-11-15 20:51:33,296 - INFO - Analyzing file 750/882: src\framework\rest\refund.ts
+2024-11-15 20:51:50,905 - INFO - Analyzing file 751/882: src\framework\rest\report.ts
+2024-11-15 20:52:02,575 - INFO - Analyzing file 752/882: src\framework\rest\review.ts
+2024-11-15 20:52:16,028 - INFO - Analyzing file 753/882: src\framework\rest\search.ssr.ts
+2024-11-15 20:52:38,460 - INFO - Analyzing file 754/882: src\framework\rest\settings.ts
+2024-11-15 20:52:49,838 - INFO - Analyzing file 755/882: src\framework\rest\shop.ssr.ts
+2024-11-15 20:53:06,950 - INFO - Analyzing file 756/882: src\framework\rest\shop.ts
+2024-11-15 20:53:29,492 - INFO - Analyzing file 757/882: src\framework\rest\shops-page.ssr.ts
+2024-11-15 20:53:42,413 - INFO - Analyzing file 758/882: src\framework\rest\store-notices.ts
+2024-11-15 20:53:53,773 - INFO - Analyzing file 759/882: src\framework\rest\tag.ts
+2024-11-15 20:54:07,378 - INFO - Analyzing file 760/882: src\framework\rest\terms-and-conditions-ssr.ts
+2024-11-15 20:54:25,460 - INFO - Analyzing file 761/882: src\framework\rest\terms-and-conditions.ts
+2024-11-15 20:54:42,860 - INFO - Analyzing file 762/882: src\framework\rest\type.ts
+2024-11-15 20:54:59,668 - INFO - Analyzing file 763/882: src\framework\rest\user.ts
+2024-11-15 20:55:06,753 - INFO - Analyzing file 764/882: src\framework\rest\utils\auth-utils.ts
+2024-11-15 20:55:18,965 - INFO - Analyzing file 765/882: src\framework\rest\utils\constants.ts
+2024-11-15 20:55:29,445 - INFO - Analyzing file 766/882: src\framework\rest\utils\data-mappers.ts
+2024-11-15 20:55:46,548 - INFO - Analyzing file 767/882: src\framework\rest\utils\format-products-args.ts
+2024-11-15 20:55:56,032 - INFO - Analyzing file 768/882: src\framework\rest\utils\maintenance-utils.ts
+2024-11-15 20:56:08,714 - INFO - Analyzing file 769/882: src\framework\rest\wishlist.ts
+2024-11-15 20:56:24,007 - INFO - Analyzing file 770/882: src\framework\static\faq.ts
+2024-11-15 20:56:32,709 - INFO - Analyzing file 771/882: src\framework\static\privacy.ts
+2024-11-15 20:56:39,450 - INFO - Analyzing file 772/882: src\framework\static\terms.ts
+2024-11-15 20:56:47,844 - INFO - Analyzing file 773/882: src\layouts\_dashboard.tsx
+2024-11-15 20:57:04,438 - INFO - Analyzing file 774/882: src\layouts\headers\header-search-atom.ts
+2024-11-15 20:57:15,573 - INFO - Analyzing file 775/882: src\lib\cart-animation.ts
+2024-11-15 20:57:31,334 - INFO - Analyzing file 776/882: src\lib\cn.ts
+2024-11-15 20:57:41,747 - INFO - Analyzing file 777/882: src\lib\constants\index.ts
+2024-11-15 20:57:54,221 - INFO - Analyzing file 778/882: src\lib\constants\order-status.ts
+2024-11-15 20:58:02,123 - INFO - Analyzing file 779/882: src\lib\display-product-preview-images.ts
+2024-11-15 20:58:17,581 - INFO - Analyzing file 780/882: src\lib\find-nested-data.tsx
+2024-11-15 20:58:25,854 - INFO - Analyzing file 781/882: src\lib\fix-dynamic-link.ts
+2024-11-15 20:58:34,343 - INFO - Analyzing file 782/882: src\lib\format-address.ts
+2024-11-15 20:58:47,610 - INFO - Analyzing file 783/882: src\lib\format-ordered-product.ts
+2024-11-15 20:58:57,028 - INFO - Analyzing file 784/882: src\lib\format-string.tsx
+2024-11-15 20:59:04,200 - INFO - Analyzing file 785/882: src\lib\get-icon.tsx
+2024-11-15 20:59:23,018 - INFO - Analyzing file 786/882: src\lib\get-preview-image.ts
+2024-11-15 20:59:34,144 - INFO - Analyzing file 787/882: src\lib\get-review.ts
+2024-11-15 20:59:42,004 - INFO - Analyzing file 788/882: src\lib\get-stripejs.ts
+2024-11-15 20:59:54,400 - INFO - Analyzing file 789/882: src\lib\get-variations.ts
+2024-11-15 21:00:06,879 - INFO - Analyzing file 790/882: src\lib\hooks\use-homepage.ts
+2024-11-15 21:00:20,873 - INFO - Analyzing file 791/882: src\lib\hooks\use-layout.tsx
+2024-11-15 21:00:40,871 - INFO - Analyzing file 792/882: src\lib\hooks\use-swiper-ref.ts
+2024-11-15 21:00:52,339 - INFO - Analyzing file 793/882: src\lib\hooks\use-token.ts
+2024-11-15 21:01:03,632 - INFO - Analyzing file 794/882: src\lib\is-even.ts
+2024-11-15 21:01:12,151 - INFO - Analyzing file 795/882: src\lib\is-negative.ts
+2024-11-15 21:01:17,905 - INFO - Analyzing file 796/882: src\lib\is-payment-pending.ts
+2024-11-15 21:01:24,125 - INFO - Analyzing file 797/882: src\lib\is-stripe-available.ts
+2024-11-15 21:01:36,224 - INFO - Analyzing file 798/882: src\lib\is-variation-selected.ts
+2024-11-15 21:01:42,514 - INFO - Analyzing file 799/882: src\lib\locals.tsx
+2024-11-15 21:01:58,194 - INFO - Analyzing file 800/882: src\lib\motion\fade-in-left.ts
+2024-11-15 21:02:08,617 - INFO - Analyzing file 801/882: src\lib\motion\fade-in-out.ts
+2024-11-15 21:02:27,582 - INFO - Analyzing file 802/882: src\lib\motion\fade-in-right.ts
+2024-11-15 21:02:39,520 - INFO - Analyzing file 803/882: src\lib\motion\height-collapse.ts
+2024-11-15 21:02:49,905 - INFO - Analyzing file 804/882: src\lib\motion\zoom-in-bottom.ts
+2024-11-15 21:03:05,093 - INFO - Analyzing file 805/882: src\lib\motion\zoom-in-out.ts
+2024-11-15 21:03:21,836 - INFO - Analyzing file 806/882: src\lib\motion\zoom-out-in.ts
+2024-11-15 21:03:34,907 - INFO - Analyzing file 807/882: src\lib\placeholders.tsx
+2024-11-15 21:03:50,799 - INFO - Analyzing file 808/882: src\lib\private-route.tsx
+2024-11-15 21:04:14,080 - INFO - Analyzing file 809/882: src\lib\range-map.ts
+2024-11-15 21:04:22,211 - INFO - Analyzing file 810/882: src\lib\reverse.ts
+2024-11-15 21:04:35,759 - INFO - Analyzing file 811/882: src\lib\sanitize-content.ts
+2024-11-15 21:04:44,059 - INFO - Analyzing file 812/882: src\lib\use-active-scroll.ts
+2024-11-15 21:04:52,748 - INFO - Analyzing file 813/882: src\lib\use-has-mounted.ts
+2024-11-15 21:05:14,741 - INFO - Analyzing file 814/882: src\lib\use-is-homepage.ts
+2024-11-15 21:05:33,103 - INFO - Analyzing file 815/882: src\lib\use-local-storage.ts
+2024-11-15 21:05:41,822 - INFO - Analyzing file 816/882: src\lib\use-location.tsx
+2024-11-15 21:06:02,182 - INFO - Analyzing file 817/882: src\lib\use-price.tsx
+2024-11-15 21:06:21,494 - INFO - Analyzing file 818/882: src\lib\use-razorpay.ts
+2024-11-15 21:06:30,095 - INFO - Analyzing file 819/882: src\lib\use-window-size.ts
+2024-11-15 21:06:42,915 - INFO - Analyzing file 820/882: src\pages\404.tsx
+2024-11-15 21:06:56,654 - INFO - Analyzing file 821/882: src\pages\[[...pages]].tsx
+2024-11-15 21:07:13,742 - INFO - Analyzing file 822/882: src\pages\[searchType]\search.tsx
+2024-11-15 21:07:36,359 - INFO - Analyzing file 823/882: src\pages\_app.tsx
+2024-11-15 21:07:56,638 - INFO - Analyzing file 824/882: src\pages\_document.tsx
+2024-11-15 21:08:14,591 - INFO - Analyzing file 825/882: src\pages\api\auth\[...nextauth].ts
+2024-11-15 21:08:24,085 - INFO - Analyzing file 826/882: src\pages\authors\[author].tsx
+2024-11-15 21:08:49,807 - INFO - Analyzing file 827/882: src\pages\authors\index.tsx
+2024-11-15 21:09:17,239 - INFO - Analyzing file 828/882: src\pages\become-seller\index.tsx
+2024-11-15 21:09:38,960 - INFO - Analyzing file 829/882: src\pages\cards.tsx
+2024-11-15 21:09:59,873 - INFO - Analyzing file 830/882: src\pages\change-password.tsx
+2024-11-15 21:10:15,445 - INFO - Analyzing file 831/882: src\pages\checkout\digital.tsx
+2024-11-15 21:10:40,099 - INFO - Analyzing file 832/882: src\pages\checkout\guest.tsx
+2024-11-15 21:11:03,405 - INFO - Analyzing file 833/882: src\pages\checkout\index.tsx
+2024-11-15 21:11:22,128 - INFO - Analyzing file 834/882: src\pages\contact.tsx
+2024-11-15 21:11:44,302 - INFO - Analyzing file 835/882: src\pages\customer-refund-policies.tsx
+2024-11-15 21:12:01,545 - INFO - Analyzing file 836/882: src\pages\downloads.tsx
+2024-11-15 21:12:20,995 - INFO - Analyzing file 837/882: src\pages\flash-sales\[slug]\index.tsx
+2024-11-15 21:12:50,419 - INFO - Analyzing file 838/882: src\pages\flash-sales\index.tsx
+2024-11-15 21:13:11,356 - INFO - Analyzing file 839/882: src\pages\help.tsx
+2024-11-15 21:13:25,552 - INFO - Analyzing file 840/882: src\pages\lander.tsx
+2024-11-15 21:13:47,857 - INFO - Analyzing file 841/882: src\pages\manufacturers\[manufacturer].tsx
+2024-11-15 21:14:13,806 - INFO - Analyzing file 842/882: src\pages\manufacturers\index.tsx
+2024-11-15 21:14:31,892 - INFO - Analyzing file 843/882: src\pages\notification\[id]\index.tsx
+2024-11-15 21:14:55,743 - INFO - Analyzing file 844/882: src\pages\notification\index.tsx
+2024-11-15 21:15:17,293 - INFO - Analyzing file 845/882: src\pages\offers.tsx
+2024-11-15 21:15:35,425 - INFO - Analyzing file 846/882: src\pages\orders\[tracking_number].tsx
+2024-11-15 21:15:57,204 - INFO - Analyzing file 847/882: src\pages\orders\[tracking_number]\payment.tsx
+2024-11-15 21:16:22,861 - INFO - Analyzing file 848/882: src\pages\orders\[tracking_number]\thank-you.tsx
+2024-11-15 21:16:44,033 - INFO - Analyzing file 849/882: src\pages\orders\index.tsx
+2024-11-15 21:17:12,588 - INFO - Analyzing file 850/882: src\pages\privacy.tsx
+2024-11-15 21:17:32,939 - INFO - Analyzing file 851/882: src\pages\products\[slug].tsx
+2024-11-15 21:18:03,681 - INFO - Analyzing file 852/882: src\pages\products\preview\[slug].tsx
+2024-11-15 21:18:22,902 - INFO - Analyzing file 853/882: src\pages\profile.tsx
+2024-11-15 21:18:44,045 - INFO - Analyzing file 854/882: src\pages\questions.tsx
+2024-11-15 21:19:02,443 - INFO - Analyzing file 855/882: src\pages\refunds.tsx
+2024-11-15 21:19:28,585 - INFO - Analyzing file 856/882: src\pages\reports.tsx
+2024-11-15 21:19:43,493 - INFO - Analyzing file 857/882: src\pages\shops\[slug]\contact.tsx
+2024-11-15 21:19:55,322 - INFO - Analyzing file 858/882: src\pages\shops\[slug]\faqs.tsx
+2024-11-15 21:20:17,682 - INFO - Analyzing file 859/882: src\pages\shops\[slug]\index.tsx
+2024-11-15 21:20:40,496 - INFO - Analyzing file 860/882: src\pages\shops\[slug]\offers.tsx
+2024-11-15 21:20:56,011 - INFO - Analyzing file 861/882: src\pages\shops\[slug]\terms.tsx
+2024-11-15 21:21:11,712 - INFO - Analyzing file 862/882: src\pages\shops\index.tsx
+2024-11-15 21:21:38,275 - INFO - Analyzing file 863/882: src\pages\shops\search.tsx
+2024-11-15 21:22:02,236 - INFO - Analyzing file 864/882: src\pages\terms.tsx
+2024-11-15 21:22:19,051 - INFO - Analyzing file 865/882: src\pages\vendor-refund-policies.tsx
+2024-11-15 21:22:29,356 - INFO - Analyzing file 866/882: src\pages\verify-email.tsx
+2024-11-15 21:22:46,657 - INFO - Analyzing file 867/882: src\pages\wishlists.tsx
+2024-11-15 21:23:13,056 - INFO - Analyzing file 868/882: src\store\authorization-atom.ts
+2024-11-15 21:23:31,128 - INFO - Analyzing file 869/882: src\store\checkout.ts
+2024-11-15 21:23:43,351 - INFO - Analyzing file 870/882: src\store\display-mobile-header-search-atom.ts
+2024-11-15 21:23:58,118 - INFO - Analyzing file 871/882: src\store\drawer-atom.ts
+2024-11-15 21:24:13,179 - INFO - Analyzing file 872/882: src\store\quick-cart\cart.context.tsx
+2024-11-15 21:24:33,974 - INFO - Analyzing file 873/882: src\store\quick-cart\cart.reducer.tsx
+2024-11-15 21:24:52,385 - INFO - Analyzing file 874/882: src\store\quick-cart\cart.utils.ts
+2024-11-15 21:25:01,996 - INFO - Analyzing file 875/882: src\store\quick-cart\generate-cart-item.ts
+2024-11-15 21:25:11,373 - INFO - Analyzing file 876/882: src\store\sticky-short-details-atom.ts
+2024-11-15 21:25:21,907 - INFO - Analyzing file 877/882: src\types\index.ts
+2024-11-15 21:25:30,041 - INFO - Analyzing file 878/882: tailwind.config.js
+2024-11-15 21:25:47,292 - INFO - Analyzing file 879/882: tsconfig.graphql.json
+2024-11-15 21:26:05,243 - INFO - Analyzing file 880/882: tsconfig.json
+2024-11-15 21:26:23,900 - INFO - Analyzing file 881/882: tsconfig.rest.json
+2024-11-15 21:26:39,236 - INFO - Analyzing file 882/882: vercel.json
+2024-11-15 21:26:55,088 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241115_212655.json
+2024-11-15 22:51:38,108 - INFO - Results saved to: D:/analysis_20241115_225131.txt
+2024-11-15 22:51:55,272 - INFO - Found 882 files to analyze
+2024-11-15 22:51:55,273 - INFO - Analyzing file 1/882: .eslintrc.json
+2024-11-15 22:51:55,274 - INFO - Using cached response for .eslintrc.json
+2024-11-15 22:51:55,776 - INFO - Analyzing file 2/882: additional.d.ts
+2024-11-15 22:51:55,776 - INFO - Using cached response for additional.d.ts
+2024-11-15 22:51:56,285 - INFO - Analyzing file 3/882: i18next.d.ts
+2024-11-15 22:51:56,285 - INFO - Using cached response for i18next.d.ts
+2024-11-15 22:51:56,793 - INFO - Analyzing file 4/882: lint-staged.config.js
+2024-11-15 22:51:56,793 - INFO - Using cached response for lint-staged.config.js
+2024-11-15 22:51:57,299 - INFO - Analyzing file 5/882: next-env.d.ts
+2024-11-15 22:51:57,299 - INFO - Using cached response for next-env.d.ts
+2024-11-15 22:51:57,804 - INFO - Analyzing file 6/882: next-i18next.config.js
+2024-11-15 22:51:57,804 - INFO - Using cached response for next-i18next.config.js
+2024-11-15 22:51:58,309 - INFO - Analyzing file 7/882: next-sitemap.config.js
+2024-11-15 22:51:58,311 - INFO - Using cached response for next-sitemap.config.js
+2024-11-15 22:51:58,815 - INFO - Analyzing file 8/882: next.config.js
+2024-11-15 22:51:58,815 - INFO - Using cached response for next.config.js
+2024-11-15 22:51:59,322 - INFO - Analyzing file 9/882: package.json
+2024-11-15 22:51:59,322 - INFO - Using cached response for package.json
+2024-11-15 22:51:59,827 - INFO - Analyzing file 10/882: postcss.config.js
+2024-11-15 22:51:59,827 - INFO - Using cached response for postcss.config.js
+2024-11-15 22:52:00,332 - INFO - Analyzing file 11/882: prettier.config.js
+2024-11-15 22:52:00,332 - INFO - Using cached response for prettier.config.js
+2024-11-15 22:52:00,839 - INFO - Analyzing file 12/882: public\access-denied.svg
+2024-11-15 22:52:00,839 - INFO - Using cached response for public\access-denied.svg
+2024-11-15 22:52:01,347 - INFO - Analyzing file 13/882: public\flash-sale-fallback.png
+2024-11-15 22:52:01,362 - ERROR - Error analyzing public\flash-sale-fallback.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:01,866 - INFO - Analyzing file 14/882: public\hqdefault.jpg
+2024-11-15 22:52:01,866 - ERROR - Error analyzing public\hqdefault.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 22:52:02,384 - INFO - Analyzing file 15/882: public\icons\apple-icon-180.png
+2024-11-15 22:52:02,388 - ERROR - Error analyzing public\icons\apple-icon-180.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:02,892 - INFO - Analyzing file 16/882: public\icons\manifest-icon-192.png
+2024-11-15 22:52:02,892 - ERROR - Error analyzing public\icons\manifest-icon-192.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:03,397 - INFO - Analyzing file 17/882: public\icons\manifest-icon-512.png
+2024-11-15 22:52:03,397 - ERROR - Error analyzing public\icons\manifest-icon-512.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:03,904 - INFO - Analyzing file 18/882: public\img\author-img-1.png
+2024-11-15 22:52:03,925 - ERROR - Error analyzing public\img\author-img-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:04,428 - INFO - Analyzing file 19/882: public\img\author-img-2.png
+2024-11-15 22:52:04,447 - ERROR - Error analyzing public\img\author-img-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:04,950 - INFO - Analyzing file 20/882: public\img\author-img-3.png
+2024-11-15 22:52:04,956 - ERROR - Error analyzing public\img\author-img-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:05,464 - INFO - Analyzing file 21/882: public\img\book-img.png
+2024-11-15 22:52:05,481 - ERROR - Error analyzing public\img\book-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:05,985 - INFO - Analyzing file 22/882: public\img\combo-banner-1.png
+2024-11-15 22:52:05,998 - ERROR - Error analyzing public\img\combo-banner-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:06,502 - INFO - Analyzing file 23/882: public\img\combo-banner-2.png
+2024-11-15 22:52:06,512 - ERROR - Error analyzing public\img\combo-banner-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:07,023 - INFO - Analyzing file 24/882: public\img\combo-banner-3.png
+2024-11-15 22:52:07,031 - ERROR - Error analyzing public\img\combo-banner-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:07,542 - INFO - Analyzing file 25/882: public\locales\ar\banner.json
+2024-11-15 22:52:07,546 - INFO - Using cached response for public\locales\ar\banner.json
+2024-11-15 22:52:08,051 - INFO - Analyzing file 26/882: public\locales\ar\common.json
+2024-11-15 22:52:08,051 - INFO - Using cached response for public\locales\ar\common.json
+2024-11-15 22:52:08,560 - INFO - Analyzing file 27/882: public\locales\ar\faq.json
+2024-11-15 22:52:08,564 - INFO - Using cached response for public\locales\ar\faq.json
+2024-11-15 22:52:09,075 - INFO - Analyzing file 28/882: public\locales\ar\policy.json
+2024-11-15 22:52:09,078 - INFO - Using cached response for public\locales\ar\policy.json
+2024-11-15 22:52:09,585 - INFO - Analyzing file 29/882: public\locales\ar\terms.json
+2024-11-15 22:52:09,585 - INFO - Using cached response for public\locales\ar\terms.json
+2024-11-15 22:52:10,092 - INFO - Analyzing file 30/882: public\locales\de\banner.json
+2024-11-15 22:52:10,096 - INFO - Using cached response for public\locales\de\banner.json
+2024-11-15 22:52:10,601 - INFO - Analyzing file 31/882: public\locales\de\common.json
+2024-11-15 22:52:10,601 - INFO - Using cached response for public\locales\de\common.json
+2024-11-15 22:52:11,111 - INFO - Analyzing file 32/882: public\locales\de\faq.json
+2024-11-15 22:52:11,112 - INFO - Using cached response for public\locales\de\faq.json
+2024-11-15 22:52:11,623 - INFO - Analyzing file 33/882: public\locales\de\policy.json
+2024-11-15 22:52:11,623 - INFO - Using cached response for public\locales\de\policy.json
+2024-11-15 22:52:12,128 - INFO - Analyzing file 34/882: public\locales\de\terms.json
+2024-11-15 22:52:12,131 - INFO - Using cached response for public\locales\de\terms.json
+2024-11-15 22:52:12,638 - INFO - Analyzing file 35/882: public\locales\en\banner.json
+2024-11-15 22:52:12,639 - INFO - Using cached response for public\locales\en\banner.json
+2024-11-15 22:52:13,145 - INFO - Analyzing file 36/882: public\locales\en\common.json
+2024-11-15 22:52:13,148 - INFO - Using cached response for public\locales\en\common.json
+2024-11-15 22:52:13,654 - INFO - Analyzing file 37/882: public\locales\en\faq.json
+2024-11-15 22:52:13,654 - INFO - Using cached response for public\locales\en\faq.json
+2024-11-15 22:52:14,161 - INFO - Analyzing file 38/882: public\locales\en\policy.json
+2024-11-15 22:52:14,163 - INFO - Using cached response for public\locales\en\policy.json
+2024-11-15 22:52:14,667 - INFO - Analyzing file 39/882: public\locales\en\terms.json
+2024-11-15 22:52:14,667 - INFO - Using cached response for public\locales\en\terms.json
+2024-11-15 22:52:15,176 - INFO - Analyzing file 40/882: public\locales\es\banner.json
+2024-11-15 22:52:15,179 - INFO - Using cached response for public\locales\es\banner.json
+2024-11-15 22:52:15,685 - INFO - Analyzing file 41/882: public\locales\es\common.json
+2024-11-15 22:52:15,685 - INFO - Using cached response for public\locales\es\common.json
+2024-11-15 22:52:16,193 - INFO - Analyzing file 42/882: public\locales\es\faq.json
+2024-11-15 22:52:16,196 - INFO - Using cached response for public\locales\es\faq.json
+2024-11-15 22:52:16,700 - INFO - Analyzing file 43/882: public\locales\es\policy.json
+2024-11-15 22:52:16,700 - INFO - Using cached response for public\locales\es\policy.json
+2024-11-15 22:52:17,207 - INFO - Analyzing file 44/882: public\locales\es\terms.json
+2024-11-15 22:52:17,207 - INFO - Using cached response for public\locales\es\terms.json
+2024-11-15 22:52:17,714 - INFO - Analyzing file 45/882: public\locales\he\banner.json
+2024-11-15 22:52:17,715 - INFO - Using cached response for public\locales\he\banner.json
+2024-11-15 22:52:18,221 - INFO - Analyzing file 46/882: public\locales\he\common.json
+2024-11-15 22:52:18,223 - INFO - Using cached response for public\locales\he\common.json
+2024-11-15 22:52:18,728 - INFO - Analyzing file 47/882: public\locales\he\faq.json
+2024-11-15 22:52:18,731 - INFO - Using cached response for public\locales\he\faq.json
+2024-11-15 22:52:19,235 - INFO - Analyzing file 48/882: public\locales\he\policy.json
+2024-11-15 22:52:19,235 - INFO - Using cached response for public\locales\he\policy.json
+2024-11-15 22:52:19,742 - INFO - Analyzing file 49/882: public\locales\he\terms.json
+2024-11-15 22:52:19,742 - INFO - Using cached response for public\locales\he\terms.json
+2024-11-15 22:52:20,248 - INFO - Analyzing file 50/882: public\locales\zh\banner.json
+2024-11-15 22:52:20,248 - INFO - Using cached response for public\locales\zh\banner.json
+2024-11-15 22:52:20,757 - INFO - Analyzing file 51/882: public\locales\zh\common.json
+2024-11-15 22:52:20,757 - INFO - Using cached response for public\locales\zh\common.json
+2024-11-15 22:52:21,268 - INFO - Analyzing file 52/882: public\locales\zh\faq.json
+2024-11-15 22:52:21,273 - INFO - Using cached response for public\locales\zh\faq.json
+2024-11-15 22:52:21,776 - INFO - Analyzing file 53/882: public\locales\zh\policy.json
+2024-11-15 22:52:21,780 - INFO - Using cached response for public\locales\zh\policy.json
+2024-11-15 22:52:22,286 - INFO - Analyzing file 54/882: public\locales\zh\terms.json
+2024-11-15 22:52:22,286 - INFO - Using cached response for public\locales\zh\terms.json
+2024-11-15 22:52:22,794 - INFO - Analyzing file 55/882: public\manifest.json
+2024-11-15 22:52:22,797 - INFO - Using cached response for public\manifest.json
+2024-11-15 22:52:23,305 - INFO - Analyzing file 56/882: public\master.png
+2024-11-15 22:52:23,316 - ERROR - Error analyzing public\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:23,818 - INFO - Analyzing file 57/882: public\mockup-img.png
+2024-11-15 22:52:23,818 - ERROR - Error analyzing public\mockup-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:24,328 - INFO - Analyzing file 58/882: public\mockup.png
+2024-11-15 22:52:24,329 - ERROR - Error analyzing public\mockup.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:24,837 - INFO - Analyzing file 59/882: public\mockup1.png
+2024-11-15 22:52:24,848 - ERROR - Error analyzing public\mockup1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:25,350 - INFO - Analyzing file 60/882: public\news-letter-icon.png
+2024-11-15 22:52:25,350 - ERROR - Error analyzing public\news-letter-icon.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:25,861 - INFO - Analyzing file 61/882: public\payment\discover.png
+2024-11-15 22:52:25,863 - ERROR - Error analyzing public\payment\discover.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:26,371 - INFO - Analyzing file 62/882: public\payment\iyzico.png
+2024-11-15 22:52:26,380 - ERROR - Error analyzing public\payment\iyzico.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:26,882 - INFO - Analyzing file 63/882: public\payment\master.png
+2024-11-15 22:52:26,882 - ERROR - Error analyzing public\payment\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:27,395 - INFO - Analyzing file 64/882: public\payment\mollie.png
+2024-11-15 22:52:27,396 - ERROR - Error analyzing public\payment\mollie.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:27,905 - INFO - Analyzing file 65/882: public\payment\paypal.png
+2024-11-15 22:52:27,912 - ERROR - Error analyzing public\payment\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:28,417 - INFO - Analyzing file 66/882: public\payment\paystack.png
+2024-11-15 22:52:28,417 - ERROR - Error analyzing public\payment\paystack.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:28,926 - INFO - Analyzing file 67/882: public\payment\razorpay.png
+2024-11-15 22:52:28,933 - ERROR - Error analyzing public\payment\razorpay.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:29,436 - INFO - Analyzing file 68/882: public\payment\skrill.png
+2024-11-15 22:52:29,436 - ERROR - Error analyzing public\payment\skrill.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:29,947 - INFO - Analyzing file 69/882: public\payment\sslcommerz.png
+2024-11-15 22:52:29,947 - ERROR - Error analyzing public\payment\sslcommerz.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:30,457 - INFO - Analyzing file 70/882: public\payment\stripe.png
+2024-11-15 22:52:30,463 - ERROR - Error analyzing public\payment\stripe.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:30,967 - INFO - Analyzing file 71/882: public\payment\visa.png
+2024-11-15 22:52:30,967 - ERROR - Error analyzing public\payment\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:31,477 - INFO - Analyzing file 72/882: public\payment\xendit-logo.png
+2024-11-15 22:52:31,482 - ERROR - Error analyzing public\payment\xendit-logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:31,988 - INFO - Analyzing file 73/882: public\paypal.png
+2024-11-15 22:52:31,988 - ERROR - Error analyzing public\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:32,498 - INFO - Analyzing file 74/882: public\promotion\offer-1.png
+2024-11-15 22:52:32,498 - ERROR - Error analyzing public\promotion\offer-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:33,009 - INFO - Analyzing file 75/882: public\promotion\offer-2.png
+2024-11-15 22:52:33,014 - ERROR - Error analyzing public\promotion\offer-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:33,521 - INFO - Analyzing file 76/882: public\promotion\offer-3.png
+2024-11-15 22:52:33,527 - ERROR - Error analyzing public\promotion\offer-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:34,029 - INFO - Analyzing file 77/882: public\promotion\offer-4.png
+2024-11-15 22:52:34,030 - ERROR - Error analyzing public\promotion\offer-4.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:34,541 - INFO - Analyzing file 78/882: public\promotion\offer-5.png
+2024-11-15 22:52:34,544 - ERROR - Error analyzing public\promotion\offer-5.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:35,051 - INFO - Analyzing file 79/882: public\robots.txt
+2024-11-15 22:52:35,051 - INFO - Using cached response for public\robots.txt
+2024-11-15 22:52:35,560 - INFO - Analyzing file 80/882: public\selling.png
+2024-11-15 22:52:35,568 - ERROR - Error analyzing public\selling.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:36,073 - INFO - Analyzing file 81/882: public\shop-fallback-cover-photo.png
+2024-11-15 22:52:36,073 - ERROR - Error analyzing public\shop-fallback-cover-photo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:36,582 - INFO - Analyzing file 82/882: public\visa.png
+2024-11-15 22:52:36,588 - ERROR - Error analyzing public\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:37,093 - INFO - Analyzing file 83/882: src\assets\app-store-btn.png
+2024-11-15 22:52:37,093 - ERROR - Error analyzing src\assets\app-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:37,603 - INFO - Analyzing file 84/882: src\assets\arrow-forward.png
+2024-11-15 22:52:37,603 - ERROR - Error analyzing src\assets\arrow-forward.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:38,116 - INFO - Analyzing file 85/882: src\assets\cards\amex.svg
+2024-11-15 22:52:38,116 - INFO - Using cached response for src\assets\cards\amex.svg
+2024-11-15 22:52:38,623 - INFO - Analyzing file 86/882: src\assets\cards\diners.svg
+2024-11-15 22:52:38,623 - INFO - Using cached response for src\assets\cards\diners.svg
+2024-11-15 22:52:39,129 - INFO - Analyzing file 87/882: src\assets\cards\discover.svg
+2024-11-15 22:52:39,129 - INFO - Using cached response for src\assets\cards\discover.svg
+2024-11-15 22:52:39,637 - INFO - Analyzing file 88/882: src\assets\cards\fallback-image.png
+2024-11-15 22:52:39,648 - ERROR - Error analyzing src\assets\cards\fallback-image.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:40,152 - INFO - Analyzing file 89/882: src\assets\cards\jcb.svg
+2024-11-15 22:52:40,152 - INFO - Using cached response for src\assets\cards\jcb.svg
+2024-11-15 22:52:40,660 - INFO - Analyzing file 90/882: src\assets\cards\mastercard.svg
+2024-11-15 22:52:40,661 - INFO - Using cached response for src\assets\cards\mastercard.svg
+2024-11-15 22:52:41,170 - INFO - Analyzing file 91/882: src\assets\cards\unionpay.svg
+2024-11-15 22:52:41,170 - INFO - Using cached response for src\assets\cards\unionpay.svg
+2024-11-15 22:52:41,678 - INFO - Analyzing file 92/882: src\assets\cards\visa.svg
+2024-11-15 22:52:41,682 - INFO - Using cached response for src\assets\cards\visa.svg
+2024-11-15 22:52:42,185 - INFO - Analyzing file 93/882: src\assets\category-img.png
+2024-11-15 22:52:42,185 - ERROR - Error analyzing src\assets\category-img.png: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 22:52:42,697 - INFO - Analyzing file 94/882: src\assets\commission.png
+2024-11-15 22:52:42,697 - ERROR - Error analyzing src\assets\commission.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:43,209 - INFO - Analyzing file 95/882: src\assets\contact-illustration.svg
+2024-11-15 22:52:43,209 - INFO - Using cached response for src\assets\contact-illustration.svg
+2024-11-15 22:52:43,715 - INFO - Analyzing file 96/882: src\assets\css\custom-plugins.css
+2024-11-15 22:52:43,715 - INFO - Using cached response for src\assets\css\custom-plugins.css
+2024-11-15 22:52:44,225 - INFO - Analyzing file 97/882: src\assets\css\main.css
+2024-11-15 22:52:44,227 - INFO - Using cached response for src\assets\css\main.css
+2024-11-15 22:52:44,730 - INFO - Analyzing file 98/882: src\assets\css\rich-text-editor.css
+2024-11-15 22:52:44,730 - INFO - Using cached response for src\assets\css\rich-text-editor.css
+2024-11-15 22:52:45,243 - INFO - Analyzing file 99/882: src\assets\no-result.svg
+2024-11-15 22:52:45,246 - INFO - Using cached response for src\assets\no-result.svg
+2024-11-15 22:52:45,753 - INFO - Analyzing file 100/882: src\assets\pattern.png
+2024-11-15 22:52:45,764 - ERROR - Error analyzing src\assets\pattern.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:46,267 - INFO - Analyzing file 101/882: src\assets\payment-card.png
+2024-11-15 22:52:46,267 - ERROR - Error analyzing src\assets\payment-card.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:46,778 - INFO - Analyzing file 102/882: src\assets\placeholders\avatar.svg
+2024-11-15 22:52:46,778 - INFO - Using cached response for src\assets\placeholders\avatar.svg
+2024-11-15 22:52:47,287 - INFO - Analyzing file 103/882: src\assets\placeholders\coupon.svg
+2024-11-15 22:52:47,288 - INFO - Using cached response for src\assets\placeholders\coupon.svg
+2024-11-15 22:52:47,795 - INFO - Analyzing file 104/882: src\assets\placeholders\logo.png
+2024-11-15 22:52:47,820 - ERROR - Error analyzing src\assets\placeholders\logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 22:52:48,324 - INFO - Analyzing file 105/882: src\assets\placeholders\logo1.svg
+2024-11-15 22:53:15,606 - INFO - Analysis stopped by user
+2024-11-15 22:53:20,383 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 22:53:20,385 - ERROR - Error analyzing src\assets\placeholders\logo1.svg: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 22:53:20,889 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241115_225320.json

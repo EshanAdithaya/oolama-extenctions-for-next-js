@@ -1,0 +1,35 @@
+2024-11-16 08:10:39,249 - INFO - Application started
+2024-11-16 08:10:40,804 - INFO - Attempting to connect to Ollama...
+2024-11-16 08:10:46,527 - INFO - Successfully connected to Ollama
+2024-11-16 08:10:55,966 - INFO - Selected project directory: C:/xampp/htdocs/MultiVendor01
+2024-11-16 08:10:55,967 - INFO - Scanning project at: C:\xampp\htdocs\MultiVendor01
+2024-11-16 08:11:15,702 - INFO - Found 883 files
+2024-11-16 08:11:15,704 - INFO - Files by extension:
+2024-11-16 08:11:15,705 - INFO -   .json: 37 files
+2024-11-16 08:11:15,706 - INFO -   .ts: 160 files
+2024-11-16 08:11:15,707 - INFO -   .js: 7 files
+2024-11-16 08:11:15,707 - INFO -   .svg: 15 files
+2024-11-16 08:11:15,708 - INFO -   .png: 49 files
+2024-11-16 08:11:15,709 - INFO -   .jpg: 1 files
+2024-11-16 08:11:15,709 - INFO -   .txt: 1 files
+2024-11-16 08:11:15,710 - INFO -   .css: 6 files
+2024-11-16 08:11:15,710 - INFO -   .tsx: 607 files
+2024-11-16 08:11:50,296 - INFO - Found 883 files to analyze
+2024-11-16 08:11:50,298 - INFO - Analyzing file 1/883: .eslintrc.json
+2024-11-16 08:11:59,511 - INFO - Analyzing file 2/883: additional.d.ts
+2024-11-16 08:12:10,516 - INFO - Analyzing file 3/883: i18next.d.ts
+2024-11-16 08:12:32,814 - INFO - Analyzing file 4/883: lint-staged.config.js
+2024-11-16 08:12:39,856 - INFO - Analyzing file 5/883: next-env.d.ts
+2024-11-16 08:12:52,435 - INFO - Analyzing file 6/883: next-i18next.config.js
+2024-11-16 08:13:24,496 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:13:24,499 - ERROR - Error analyzing next-i18next.config.js: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:13:25,000 - INFO - Analyzing file 7/883: next-sitemap.config.js
+2024-11-16 08:13:50,848 - INFO - Analyzing file 8/883: next.config.js
+2024-11-16 08:14:18,277 - INFO - Analyzing file 9/883: package.json
+2024-11-16 08:14:50,336 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:14:50,338 - ERROR - Error analyzing package.json: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:14:50,841 - INFO - Analyzing file 10/883: postcss.config.js
+2024-11-16 08:15:19,743 - INFO - Analyzing file 11/883: prettier.config.js
+2024-11-16 08:15:36,165 - INFO - Analyzing file 12/883: public\access-denied.svg
+2024-11-16 08:15:47,290 - INFO - Analysis stopped by user
+2024-11-16 08:15:57,905 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241116_081557.json

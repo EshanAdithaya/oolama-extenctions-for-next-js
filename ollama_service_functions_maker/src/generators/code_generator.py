@@ -158,7 +158,7 @@ Generate a complete {generation_type} following all project patterns and convent
             raise
 
     def generate_code_with_ollama(self, entity_path: str, entity_content: str, 
-                                generation_type: str, retry_count: int = 0) -> str:
+                            generation_type: str, retry_count: int = 0) -> str:
         """Generate code using Ollama with project context and retries"""
         try:
             context = self._prepare_generation_context(entity_path, entity_content, generation_type)
@@ -166,30 +166,36 @@ Generate a complete {generation_type} following all project patterns and convent
             system_prompt = self._create_system_prompt(generation_type)
             user_prompt = self._create_user_prompt(context, generation_type)
 
-            # Verify request data serialization
+            # Combine prompts for the generate endpoint
+            combined_prompt = f"System: {system_prompt}\n\nUser: {user_prompt}"
+
             request_data = {
                 "model": self.config.OLLAMA_MODEL,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                "stream": False
+                "prompt": combined_prompt,
+                "stream": False,
+                "options": {
+                    "temperature": 0.7,
+                    "top_p": 0.9,
+                    "stop": ["```"],
+                    "num_predict": 2048,
+                }
             }
 
             if not self._verify_json_serializable(request_data):
                 raise ValueError("Request data is not JSON serializable")
 
-            # Query Ollama
+            # Query Ollama using the generate endpoint
+            self.logger.debug(f"Sending request to {self.config.OLLAMA_BASE_URL}/api/v1/generate")
             response = requests.post(
-                f"{self.config.OLLAMA_BASE_URL}/api/chat",
+                f"{self.config.OLLAMA_BASE_URL}/api/v1/generate",
                 json=request_data,
-                timeout=60
+                timeout=120
             )
             
             response.raise_for_status()
             result = response.json()
             
-            generated_code = result.get('message', {}).get('content') or result.get('response', '')
+            generated_code = result.get('response', '')
             clean_code = self._extract_code_from_response(generated_code)
             
             if not self._validate_generated_code(clean_code, generation_type):
@@ -197,16 +203,22 @@ Generate a complete {generation_type} following all project patterns and convent
                 
             return clean_code
 
-        except Exception as e:
-            self.logger.error(f"Error generating {generation_type}: {str(e)}")
+        except requests.exceptions.ConnectionError:
+            self.logger.error("Cannot connect to Ollama server. Please ensure Ollama is running.")
             if retry_count < self.config.MAX_RETRIES:
-                self.logger.info(f"Retrying {generation_type} generation (attempt {retry_count + 1})")
+                sleep(self.config.RETRY_DELAY * (retry_count + 1))
                 return self.generate_code_with_ollama(
                     entity_path, entity_content, generation_type, retry_count + 1
                 )
             raise
-
-    # ... rest of the class implementation remains the same ...
+        except Exception as e:
+            self.logger.error(f"Error generating {generation_type}: {str(e)}")
+            if retry_count < self.config.MAX_RETRIES:
+                sleep(self.config.RETRY_DELAY * (retry_count + 1))
+                return self.generate_code_with_ollama(
+                    entity_path, entity_content, generation_type, retry_count + 1
+                )
+            raise
 
 
     def _make_json_serializable(self, obj, path="root"):
@@ -261,16 +273,9 @@ Generate a complete {generation_type} following all project patterns and convent
     def verify_ollama_connection(self) -> Tuple[bool, str]:
         """Verify Ollama connection and model availability"""
         try:
-            # Check if Ollama is running
-            response = requests.get(
-                f"{self.config.OLLAMA_BASE_URL}/api/version",
-                timeout=5
-            )
-            response.raise_for_status()
-
-            # Check if model is available
+            # Check if Ollama is running and model exists
             response = requests.post(
-                f"{self.config.OLLAMA_BASE_URL}/api/generate",
+                f"{self.config.OLLAMA_BASE_URL}/api/v1/generate",
                 json={
                     "model": self.config.OLLAMA_MODEL,
                     "prompt": "test",
@@ -281,9 +286,24 @@ Generate a complete {generation_type} following all project patterns and convent
             response.raise_for_status()
             return True, "Connection successful"
 
-        except requests.RequestException as e:
-            return False, str(e)
+        except requests.exceptions.ConnectionError:
+            return False, "Cannot connect to Ollama server. Please ensure Ollama is running with: ollama serve"
+        except requests.exceptions.RequestException as e:
+            error_msg = str(e)
+            if "404" in error_msg:
+                available_models = self._get_available_models()
+                return False, f"Model not found. Available models: {', '.join(available_models)}"
+            return False, error_msg
 
+    def _get_available_models(self) -> List[str]:
+        """Get list of available models"""
+        try:
+            response = requests.get(f"{self.config.OLLAMA_BASE_URL}/api/v1/tags")
+            response.raise_for_status()
+            models = response.json().get('models', [])
+            return [model['name'] for model in models]
+        except Exception:
+            return []
 
     def _extract_file_metadata(self, content: str) -> Dict:
         """Extract metadata from file content"""

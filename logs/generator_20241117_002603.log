@@ -1,0 +1,12 @@
+2024-11-17 00:26:03,217 - APIGenerator - INFO - Application started
+2024-11-17 00:27:37,660 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-17 00:27:47,222 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-17 00:27:55,543 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 00:27:55,567 - APIGenerator - INFO - Found 25 entities
+2024-11-17 00:28:07,095 - APIGenerator - INFO - Analyzing project structure...
+2024-11-17 00:28:07,125 - APIGenerator - INFO - Project analysis completed
+2024-11-17 00:28:07,126 - APIGenerator - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-17 00:29:07,620 - APIGenerator - INFO - Processing src\attributes\entities\attribute-value.entity.ts (2/25)
+2024-11-17 00:30:08,153 - APIGenerator - INFO - Processing src\auth\entities\permission.entity.ts (3/25)
+2024-11-17 00:31:08,607 - APIGenerator - INFO - Processing src\auth\entities\profile.entity.ts (4/25)
+2024-11-17 00:32:09,187 - APIGenerator - INFO - Processing src\auth\entities\user.entity.ts (5/25)

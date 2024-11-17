@@ -24,3 +24,123 @@
 2024-11-15 15:22:10,778 - INFO - Analyzing file 7/882: next-sitemap.config.js
 2024-11-15 15:22:21,002 - INFO - Analyzing file 8/882: next.config.js
 2024-11-15 15:22:43,971 - INFO - Analyzing file 9/882: package.json
+2024-11-15 15:23:16,025 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 15:23:16,027 - ERROR - Error analyzing package.json: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 15:23:16,530 - INFO - Analyzing file 10/882: postcss.config.js
+2024-11-15 15:23:36,262 - INFO - Analyzing file 11/882: prettier.config.js
+2024-11-15 15:23:55,900 - INFO - Analyzing file 12/882: public\access-denied.svg
+2024-11-15 15:24:12,622 - INFO - Analyzing file 13/882: public\flash-sale-fallback.png
+2024-11-15 15:24:12,647 - ERROR - Error analyzing public\flash-sale-fallback.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:13,149 - INFO - Analyzing file 14/882: public\hqdefault.jpg
+2024-11-15 15:24:13,159 - ERROR - Error analyzing public\hqdefault.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 15:24:13,662 - INFO - Analyzing file 15/882: public\icons\apple-icon-180.png
+2024-11-15 15:24:13,672 - ERROR - Error analyzing public\icons\apple-icon-180.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:14,174 - INFO - Analyzing file 16/882: public\icons\manifest-icon-192.png
+2024-11-15 15:24:14,177 - ERROR - Error analyzing public\icons\manifest-icon-192.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:14,679 - INFO - Analyzing file 17/882: public\icons\manifest-icon-512.png
+2024-11-15 15:24:14,682 - ERROR - Error analyzing public\icons\manifest-icon-512.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:15,184 - INFO - Analyzing file 18/882: public\img\author-img-1.png
+2024-11-15 15:24:15,199 - ERROR - Error analyzing public\img\author-img-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:15,702 - INFO - Analyzing file 19/882: public\img\author-img-2.png
+2024-11-15 15:24:15,711 - ERROR - Error analyzing public\img\author-img-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:16,216 - INFO - Analyzing file 20/882: public\img\author-img-3.png
+2024-11-15 15:24:16,225 - ERROR - Error analyzing public\img\author-img-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:16,729 - INFO - Analyzing file 21/882: public\img\book-img.png
+2024-11-15 15:24:16,742 - ERROR - Error analyzing public\img\book-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:17,245 - INFO - Analyzing file 22/882: public\img\combo-banner-1.png
+2024-11-15 15:24:17,255 - ERROR - Error analyzing public\img\combo-banner-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:17,759 - INFO - Analyzing file 23/882: public\img\combo-banner-2.png
+2024-11-15 15:24:17,771 - ERROR - Error analyzing public\img\combo-banner-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:18,273 - INFO - Analyzing file 24/882: public\img\combo-banner-3.png
+2024-11-15 15:24:18,287 - ERROR - Error analyzing public\img\combo-banner-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:24:18,790 - INFO - Analyzing file 25/882: public\locales\ar\banner.json
+2024-11-15 15:24:39,208 - INFO - Analyzing file 26/882: public\locales\ar\common.json
+2024-11-15 15:24:49,290 - INFO - Analyzing file 27/882: public\locales\ar\faq.json
+2024-11-15 15:25:07,540 - INFO - Analyzing file 28/882: public\locales\ar\policy.json
+2024-11-15 15:25:19,589 - INFO - Analyzing file 29/882: public\locales\ar\terms.json
+2024-11-15 15:25:34,995 - INFO - Analyzing file 30/882: public\locales\de\banner.json
+2024-11-15 15:25:50,980 - INFO - Analyzing file 31/882: public\locales\de\common.json
+2024-11-15 15:26:13,213 - INFO - Analyzing file 32/882: public\locales\de\faq.json
+2024-11-15 15:26:23,889 - INFO - Analyzing file 33/882: public\locales\de\policy.json
+2024-11-15 15:26:35,053 - INFO - Analyzing file 34/882: public\locales\de\terms.json
+2024-11-15 15:26:46,779 - INFO - Analyzing file 35/882: public\locales\en\banner.json
+2024-11-15 15:27:03,259 - INFO - Analyzing file 36/882: public\locales\en\common.json
+2024-11-15 15:27:19,421 - INFO - Analyzing file 37/882: public\locales\en\faq.json
+2024-11-15 15:27:27,976 - INFO - Analyzing file 38/882: public\locales\en\policy.json
+2024-11-15 15:27:38,352 - INFO - Analyzing file 39/882: public\locales\en\terms.json
+2024-11-15 15:28:02,268 - INFO - Analyzing file 40/882: public\locales\es\banner.json
+2024-11-15 15:28:15,951 - INFO - Analyzing file 41/882: public\locales\es\common.json
+2024-11-15 15:28:35,321 - INFO - Analyzing file 42/882: public\locales\es\faq.json
+2024-11-15 15:28:47,256 - INFO - Analyzing file 43/882: public\locales\es\policy.json
+2024-11-15 15:28:56,253 - INFO - Analyzing file 44/882: public\locales\es\terms.json
+2024-11-15 15:29:05,115 - INFO - Analyzing file 45/882: public\locales\he\banner.json
+2024-11-15 15:29:24,149 - INFO - Analyzing file 46/882: public\locales\he\common.json
+2024-11-15 15:29:33,385 - INFO - Analyzing file 47/882: public\locales\he\faq.json
+2024-11-15 15:29:54,298 - INFO - Analyzing file 48/882: public\locales\he\policy.json
+2024-11-15 15:30:05,339 - INFO - Analyzing file 49/882: public\locales\he\terms.json
+2024-11-15 15:30:14,971 - INFO - Analyzing file 50/882: public\locales\zh\banner.json
+2024-11-15 15:30:29,380 - INFO - Analyzing file 51/882: public\locales\zh\common.json
+2024-11-15 15:30:36,173 - INFO - Analyzing file 52/882: public\locales\zh\faq.json
+2024-11-15 15:30:48,044 - INFO - Analyzing file 53/882: public\locales\zh\policy.json
+2024-11-15 15:30:59,225 - INFO - Analyzing file 54/882: public\locales\zh\terms.json
+2024-11-15 15:31:09,016 - INFO - Analyzing file 55/882: public\manifest.json
+2024-11-15 15:31:32,959 - INFO - Analyzing file 56/882: public\master.png
+2024-11-15 15:31:32,972 - ERROR - Error analyzing public\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:33,476 - INFO - Analyzing file 57/882: public\mockup-img.png
+2024-11-15 15:31:33,491 - ERROR - Error analyzing public\mockup-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:33,996 - INFO - Analyzing file 58/882: public\mockup.png
+2024-11-15 15:31:34,002 - ERROR - Error analyzing public\mockup.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:34,506 - INFO - Analyzing file 59/882: public\mockup1.png
+2024-11-15 15:31:34,522 - ERROR - Error analyzing public\mockup1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:35,024 - INFO - Analyzing file 60/882: public\news-letter-icon.png
+2024-11-15 15:31:35,033 - ERROR - Error analyzing public\news-letter-icon.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:35,543 - INFO - Analyzing file 61/882: public\payment\discover.png
+2024-11-15 15:31:35,561 - ERROR - Error analyzing public\payment\discover.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:36,064 - INFO - Analyzing file 62/882: public\payment\iyzico.png
+2024-11-15 15:31:36,079 - ERROR - Error analyzing public\payment\iyzico.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:36,582 - INFO - Analyzing file 63/882: public\payment\master.png
+2024-11-15 15:31:36,596 - ERROR - Error analyzing public\payment\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:37,100 - INFO - Analyzing file 64/882: public\payment\mollie.png
+2024-11-15 15:31:37,110 - ERROR - Error analyzing public\payment\mollie.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:37,613 - INFO - Analyzing file 65/882: public\payment\paypal.png
+2024-11-15 15:31:37,631 - ERROR - Error analyzing public\payment\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:38,138 - INFO - Analyzing file 66/882: public\payment\paystack.png
+2024-11-15 15:31:38,154 - ERROR - Error analyzing public\payment\paystack.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:38,658 - INFO - Analyzing file 67/882: public\payment\razorpay.png
+2024-11-15 15:31:38,669 - ERROR - Error analyzing public\payment\razorpay.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:39,178 - INFO - Analyzing file 68/882: public\payment\skrill.png
+2024-11-15 15:31:39,192 - ERROR - Error analyzing public\payment\skrill.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:39,696 - INFO - Analyzing file 69/882: public\payment\sslcommerz.png
+2024-11-15 15:31:39,711 - ERROR - Error analyzing public\payment\sslcommerz.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:40,216 - INFO - Analyzing file 70/882: public\payment\stripe.png
+2024-11-15 15:31:40,230 - ERROR - Error analyzing public\payment\stripe.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:40,737 - INFO - Analyzing file 71/882: public\payment\visa.png
+2024-11-15 15:31:40,751 - ERROR - Error analyzing public\payment\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:41,256 - INFO - Analyzing file 72/882: public\payment\xendit-logo.png
+2024-11-15 15:31:41,273 - ERROR - Error analyzing public\payment\xendit-logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:41,777 - INFO - Analyzing file 73/882: public\paypal.png
+2024-11-15 15:31:41,800 - ERROR - Error analyzing public\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:42,309 - INFO - Analyzing file 74/882: public\promotion\offer-1.png
+2024-11-15 15:31:42,328 - ERROR - Error analyzing public\promotion\offer-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:42,833 - INFO - Analyzing file 75/882: public\promotion\offer-2.png
+2024-11-15 15:31:42,849 - ERROR - Error analyzing public\promotion\offer-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:43,355 - INFO - Analyzing file 76/882: public\promotion\offer-3.png
+2024-11-15 15:31:43,368 - ERROR - Error analyzing public\promotion\offer-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:43,876 - INFO - Analyzing file 77/882: public\promotion\offer-4.png
+2024-11-15 15:31:43,891 - ERROR - Error analyzing public\promotion\offer-4.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:44,398 - INFO - Analyzing file 78/882: public\promotion\offer-5.png
+2024-11-15 15:31:44,409 - ERROR - Error analyzing public\promotion\offer-5.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:31:44,917 - INFO - Analyzing file 79/882: public\robots.txt
+2024-11-15 15:32:05,089 - INFO - Analyzing file 80/882: public\selling.png
+2024-11-15 15:32:05,108 - ERROR - Error analyzing public\selling.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:32:05,615 - INFO - Analyzing file 81/882: public\shop-fallback-cover-photo.png
+2024-11-15 15:32:05,628 - ERROR - Error analyzing public\shop-fallback-cover-photo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:32:06,136 - INFO - Analyzing file 82/882: public\visa.png
+2024-11-15 15:32:06,148 - ERROR - Error analyzing public\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:32:06,654 - INFO - Analyzing file 83/882: src\assets\app-store-btn.png
+2024-11-15 15:32:06,666 - ERROR - Error analyzing src\assets\app-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:32:07,171 - INFO - Analyzing file 84/882: src\assets\arrow-forward.png
+2024-11-15 15:32:07,183 - ERROR - Error analyzing src\assets\arrow-forward.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 15:32:07,692 - INFO - Analyzing file 85/882: src\assets\cards\amex.svg
+2024-11-15 15:32:29,639 - INFO - Analysis stopped by user
+2024-11-15 15:32:33,573 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241115_153233.json

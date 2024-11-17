@@ -1,0 +1,3 @@
+2024-11-15 23:32:43,012 - INFO - Application started
+2024-11-15 23:32:53,154 - INFO - Attempting to connect to Ollama...
+2024-11-15 23:32:59,490 - INFO - Successfully connected to Ollama

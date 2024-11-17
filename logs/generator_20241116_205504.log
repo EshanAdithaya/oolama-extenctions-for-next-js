@@ -1,0 +1,11 @@
+2024-11-16 20:55:04,505 - INFO - Application started
+2024-11-16 20:55:10,952 - INFO - Testing connection to Ollama...
+2024-11-16 20:55:21,081 - INFO - Successfully connected to Ollama!
+2024-11-16 20:55:41,629 - INFO - Testing connection to Ollama...
+2024-11-16 20:55:45,711 - INFO - Connection error: Model 'qwen2.5-coder' not found or not loaded. Try running: ollama pull qwen2.5-coder
+2024-11-16 20:56:14,754 - INFO - Testing connection to Ollama...
+2024-11-16 20:56:27,110 - INFO - Successfully connected to Ollama!
+2024-11-16 20:56:46,219 - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-16 20:56:46,231 - INFO - Found 25 entities
+2024-11-16 20:57:20,296 - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-16 20:57:20,351 - INFO - Error generating files: dto.template.ts

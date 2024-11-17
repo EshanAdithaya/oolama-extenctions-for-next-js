@@ -1,0 +1,7 @@
+2024-11-16 21:17:04,774 - APIGenerator - INFO - Application started
+2024-11-16 21:17:09,269 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-16 21:17:18,147 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-16 21:17:28,658 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-16 21:17:28,668 - APIGenerator - INFO - Found 25 entities
+2024-11-16 21:17:44,493 - APIGenerator - INFO - Analyzing project structure...
+2024-11-16 21:17:44,679 - APIGenerator - INFO - Error generating files: 'SmartCodeGenerator' object has no attribute '_analyze_naming_patterns'

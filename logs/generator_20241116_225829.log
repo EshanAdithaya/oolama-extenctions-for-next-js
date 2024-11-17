@@ -1,0 +1,10 @@
+2024-11-16 22:58:29,838 - APIGenerator - INFO - Application started
+2024-11-16 22:58:48,596 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-16 22:58:55,919 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-16 22:59:07,497 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-16 22:59:07,530 - APIGenerator - INFO - Found 25 entities
+2024-11-16 22:59:17,844 - APIGenerator - INFO - Analyzing project structure...
+2024-11-16 22:59:18,234 - APIGenerator - INFO - Project analysis completed
+2024-11-16 22:59:18,234 - APIGenerator - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-16 22:59:21,245 - APIGenerator - INFO - Error processing src\addresses\entities\address.entity.ts: Object of type set is not JSON serializable
+2024-11-16 22:59:24,068 - APIGenerator - INFO - Generation completed successfully!

@@ -1,0 +1,35 @@
+2024-11-16 23:03:48,612 - APIGenerator - INFO - Application started
+2024-11-16 23:03:50,124 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-16 23:03:54,225 - APIGenerator - INFO - Connection error: Model 'llama2' not found or not loaded. Try running: ollama pull llama2
+2024-11-16 23:04:04,008 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-16 23:04:13,010 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-16 23:04:32,732 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-16 23:04:32,752 - APIGenerator - INFO - Found 25 entities
+2024-11-16 23:04:34,574 - APIGenerator - INFO - Analyzing project structure...
+2024-11-16 23:04:34,604 - APIGenerator - INFO - Project analysis completed
+2024-11-16 23:04:34,605 - APIGenerator - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-16 23:04:34,615 - APIGenerator - INFO - Processing src\attributes\entities\attribute-value.entity.ts (2/25)
+2024-11-16 23:04:34,623 - APIGenerator - INFO - Processing src\auth\entities\permission.entity.ts (3/25)
+2024-11-16 23:04:34,632 - APIGenerator - INFO - Processing src\auth\entities\profile.entity.ts (4/25)
+2024-11-16 23:04:34,640 - APIGenerator - INFO - Processing src\auth\entities\user.entity.ts (5/25)
+2024-11-16 23:04:34,649 - APIGenerator - INFO - Processing src\categories\entities\category.entity.ts (6/25)
+2024-11-16 23:04:34,658 - APIGenerator - INFO - Processing src\common\entities\attachment.entity.ts (7/25)
+2024-11-16 23:04:34,665 - APIGenerator - INFO - Processing src\common\entities\core.entity.ts (8/25)
+2024-11-16 23:04:34,672 - APIGenerator - INFO - Processing src\coupons\entities\coupon.entity.ts (9/25)
+2024-11-16 23:04:34,682 - APIGenerator - INFO - Processing src\feedbacks\entities\feedback.entity.ts (10/25)
+2024-11-16 23:04:34,690 - APIGenerator - INFO - Processing src\orders\entities\order-status.entity.ts (11/25)
+2024-11-16 23:04:34,699 - APIGenerator - INFO - Processing src\orders\entities\orders.entity.ts (12/25)
+2024-11-16 23:04:34,708 - APIGenerator - INFO - Processing src\payment-intent\entities\payment-intent-info.entity.ts (13/25)
+2024-11-16 23:04:34,715 - APIGenerator - INFO - Processing src\payment-intent\entities\payment-intent.entity.ts (14/25)
+2024-11-16 23:04:34,721 - APIGenerator - INFO - Processing src\products\entities\product.entity.ts (15/25)
+2024-11-16 23:04:34,730 - APIGenerator - INFO - Processing src\reviews\entities\reports.entity.ts (16/25)
+2024-11-16 23:04:34,738 - APIGenerator - INFO - Processing src\reviews\entities\review.entity.ts (17/25)
+2024-11-16 23:04:34,746 - APIGenerator - INFO - Processing src\settings\entities\settings.entity.ts (18/25)
+2024-11-16 23:04:34,753 - APIGenerator - INFO - Processing src\shop\entitits\balance.entity.ts (19/25)
+2024-11-16 23:04:34,760 - APIGenerator - INFO - Processing src\shop\entitits\payment-info.entity.ts (20/25)
+2024-11-16 23:04:34,767 - APIGenerator - INFO - Processing src\shop\entitits\shop-settings.entity.ts (21/25)
+2024-11-16 23:04:34,774 - APIGenerator - INFO - Processing src\shop\entitits\shop.entity.ts (22/25)
+2024-11-16 23:04:34,783 - APIGenerator - INFO - Processing src\tags\entities\tag.entity.ts (23/25)
+2024-11-16 23:04:34,791 - APIGenerator - INFO - Processing src\types\entities\type-settings.entity.ts (24/25)
+2024-11-16 23:04:34,798 - APIGenerator - INFO - Processing src\types\entities\type.entity.ts (25/25)
+2024-11-16 23:04:34,805 - APIGenerator - INFO - Generation completed successfully!

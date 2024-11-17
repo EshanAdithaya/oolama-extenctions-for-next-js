@@ -1,0 +1,10 @@
+2024-11-16 21:29:53,260 - APIGenerator - INFO - Application started
+2024-11-16 21:29:57,322 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-16 21:30:03,940 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-16 21:30:20,154 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-16 21:30:20,170 - APIGenerator - INFO - Found 25 entities
+2024-11-16 21:30:31,525 - APIGenerator - INFO - Analyzing project structure...
+2024-11-16 21:30:31,563 - APIGenerator - INFO - Project analysis completed
+2024-11-16 21:30:31,563 - APIGenerator - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-16 21:30:34,571 - APIGenerator - INFO - Error processing src\addresses\entities\address.entity.ts: cannot access local variable 'entity_name' where it is not associated with a value
+2024-11-16 21:30:55,069 - APIGenerator - INFO - Generation completed successfully!

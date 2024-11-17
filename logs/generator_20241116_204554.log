@@ -1,0 +1,3 @@
+2024-11-16 20:45:54,460 - INFO - Application started
+2024-11-16 20:45:59,093 - INFO - Testing connection to Ollama...
+2024-11-16 20:46:06,127 - INFO - Connection error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=5)

@@ -1,0 +1,887 @@
+2024-11-15 23:43:33,617 - INFO - Application started
+2024-11-15 23:43:35,590 - INFO - Attempting to connect to Ollama...
+2024-11-15 23:43:40,852 - INFO - Successfully connected to Ollama
+2024-11-15 23:45:19,309 - INFO - Selected project directory: C:/xampp/htdocs/MultiVendor01
+2024-11-15 23:45:19,310 - INFO - Scanning project at: C:\xampp\htdocs\MultiVendor01
+2024-11-15 23:45:34,335 - INFO - Found 883 files
+2024-11-15 23:45:34,336 - INFO - Files by extension:
+2024-11-15 23:45:34,337 - INFO -   .json: 37 files
+2024-11-15 23:45:34,338 - INFO -   .ts: 160 files
+2024-11-15 23:45:34,338 - INFO -   .js: 7 files
+2024-11-15 23:45:34,339 - INFO -   .svg: 15 files
+2024-11-15 23:45:34,340 - INFO -   .png: 49 files
+2024-11-15 23:45:34,340 - INFO -   .jpg: 1 files
+2024-11-15 23:45:34,341 - INFO -   .txt: 1 files
+2024-11-15 23:45:34,342 - INFO -   .css: 6 files
+2024-11-15 23:45:34,342 - INFO -   .tsx: 607 files
+2024-11-15 23:50:09,304 - INFO - Found 883 files to analyze
+2024-11-15 23:50:09,305 - INFO - Analyzing file 1/883: .eslintrc.json
+2024-11-15 23:50:23,065 - INFO - Analyzing file 2/883: additional.d.ts
+2024-11-15 23:50:33,156 - INFO - Analyzing file 3/883: i18next.d.ts
+2024-11-15 23:50:56,964 - INFO - Analyzing file 4/883: lint-staged.config.js
+2024-11-15 23:51:09,135 - INFO - Analyzing file 5/883: next-env.d.ts
+2024-11-15 23:51:23,487 - INFO - Analyzing file 6/883: next-i18next.config.js
+2024-11-15 23:51:50,276 - INFO - Analyzing file 7/883: next-sitemap.config.js
+2024-11-15 23:51:56,736 - INFO - Analyzing file 8/883: next.config.js
+2024-11-15 23:52:26,677 - INFO - Analyzing file 9/883: package.json
+2024-11-15 23:52:58,751 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 23:52:58,753 - ERROR - Error analyzing package.json: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-15 23:52:59,255 - INFO - Analyzing file 10/883: postcss.config.js
+2024-11-15 23:53:16,286 - INFO - Analyzing file 11/883: prettier.config.js
+2024-11-15 23:53:34,048 - INFO - Analyzing file 12/883: public\access-denied.svg
+2024-11-15 23:54:03,363 - INFO - Analyzing file 13/883: public\flash-sale-fallback.png
+2024-11-15 23:54:03,368 - ERROR - Error analyzing public\flash-sale-fallback.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:03,871 - INFO - Analyzing file 14/883: public\hqdefault.jpg
+2024-11-15 23:54:03,877 - ERROR - Error analyzing public\hqdefault.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-15 23:54:04,380 - INFO - Analyzing file 15/883: public\icons\apple-icon-180.png
+2024-11-15 23:54:04,386 - ERROR - Error analyzing public\icons\apple-icon-180.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:04,889 - INFO - Analyzing file 16/883: public\icons\manifest-icon-192.png
+2024-11-15 23:54:04,894 - ERROR - Error analyzing public\icons\manifest-icon-192.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:05,401 - INFO - Analyzing file 17/883: public\icons\manifest-icon-512.png
+2024-11-15 23:54:05,408 - ERROR - Error analyzing public\icons\manifest-icon-512.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:05,912 - INFO - Analyzing file 18/883: public\img\author-img-1.png
+2024-11-15 23:54:05,916 - ERROR - Error analyzing public\img\author-img-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:06,420 - INFO - Analyzing file 19/883: public\img\author-img-2.png
+2024-11-15 23:54:06,427 - ERROR - Error analyzing public\img\author-img-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:06,930 - INFO - Analyzing file 20/883: public\img\author-img-3.png
+2024-11-15 23:54:06,937 - ERROR - Error analyzing public\img\author-img-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:07,440 - INFO - Analyzing file 21/883: public\img\book-img.png
+2024-11-15 23:54:07,444 - ERROR - Error analyzing public\img\book-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:07,947 - INFO - Analyzing file 22/883: public\img\combo-banner-1.png
+2024-11-15 23:54:07,952 - ERROR - Error analyzing public\img\combo-banner-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:08,456 - INFO - Analyzing file 23/883: public\img\combo-banner-2.png
+2024-11-15 23:54:08,463 - ERROR - Error analyzing public\img\combo-banner-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:08,966 - INFO - Analyzing file 24/883: public\img\combo-banner-3.png
+2024-11-15 23:54:08,973 - ERROR - Error analyzing public\img\combo-banner-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-15 23:54:09,478 - INFO - Analyzing file 25/883: public\locales\ar\banner.json
+2024-11-15 23:54:24,241 - INFO - Analyzing file 26/883: public\locales\ar\common.json
+2024-11-15 23:54:37,330 - INFO - Analyzing file 27/883: public\locales\ar\faq.json
+2024-11-15 23:54:49,055 - INFO - Analyzing file 28/883: public\locales\ar\policy.json
+2024-11-15 23:55:01,778 - INFO - Analyzing file 29/883: public\locales\ar\terms.json
+2024-11-15 23:55:16,476 - INFO - Analyzing file 30/883: public\locales\de\banner.json
+2024-11-15 23:55:29,361 - INFO - Analyzing file 31/883: public\locales\de\common.json
+2024-11-15 23:55:43,556 - INFO - Analyzing file 32/883: public\locales\de\faq.json
+2024-11-15 23:55:56,404 - INFO - Analyzing file 33/883: public\locales\de\policy.json
+2024-11-15 23:56:07,855 - INFO - Analyzing file 34/883: public\locales\de\terms.json
+2024-11-15 23:56:19,558 - INFO - Analyzing file 35/883: public\locales\en\banner.json
+2024-11-15 23:56:31,891 - INFO - Analyzing file 36/883: public\locales\en\common.json
+2024-11-15 23:56:57,290 - INFO - Analyzing file 37/883: public\locales\en\faq.json
+2024-11-15 23:57:09,291 - INFO - Analyzing file 38/883: public\locales\en\policy.json
+2024-11-15 23:57:26,175 - INFO - Analyzing file 39/883: public\locales\en\terms.json
+2024-11-15 23:57:38,299 - INFO - Analyzing file 40/883: public\locales\es\banner.json
+2024-11-15 23:57:59,726 - INFO - Analyzing file 41/883: public\locales\es\common.json
+2024-11-15 23:58:11,184 - INFO - Analyzing file 42/883: public\locales\es\faq.json
+2024-11-15 23:58:21,197 - INFO - Analyzing file 43/883: public\locales\es\policy.json
+2024-11-15 23:58:38,479 - INFO - Analyzing file 44/883: public\locales\es\terms.json
+2024-11-15 23:58:52,340 - INFO - Analyzing file 45/883: public\locales\he\banner.json
+2024-11-15 23:59:12,339 - INFO - Analyzing file 46/883: public\locales\he\common.json
+2024-11-15 23:59:23,275 - INFO - Analyzing file 47/883: public\locales\he\faq.json
+2024-11-15 23:59:42,432 - INFO - Analyzing file 48/883: public\locales\he\policy.json
+2024-11-15 23:59:58,261 - INFO - Analyzing file 49/883: public\locales\he\terms.json
+2024-11-16 00:00:12,676 - INFO - Analyzing file 50/883: public\locales\zh\banner.json
+2024-11-16 00:00:36,400 - INFO - Analyzing file 51/883: public\locales\zh\common.json
+2024-11-16 00:00:47,802 - INFO - Analyzing file 52/883: public\locales\zh\faq.json
+2024-11-16 00:01:06,724 - INFO - Analyzing file 53/883: public\locales\zh\policy.json
+2024-11-16 00:01:16,585 - INFO - Analyzing file 54/883: public\locales\zh\terms.json
+2024-11-16 00:01:28,619 - INFO - Analyzing file 55/883: public\manifest.json
+2024-11-16 00:01:51,629 - INFO - Analyzing file 56/883: public\master.png
+2024-11-16 00:01:51,635 - ERROR - Error analyzing public\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:52,137 - INFO - Analyzing file 57/883: public\mockup-img.png
+2024-11-16 00:01:52,142 - ERROR - Error analyzing public\mockup-img.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:52,644 - INFO - Analyzing file 58/883: public\mockup.png
+2024-11-16 00:01:52,650 - ERROR - Error analyzing public\mockup.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:53,154 - INFO - Analyzing file 59/883: public\mockup1.png
+2024-11-16 00:01:53,159 - ERROR - Error analyzing public\mockup1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:53,662 - INFO - Analyzing file 60/883: public\news-letter-icon.png
+2024-11-16 00:01:53,671 - ERROR - Error analyzing public\news-letter-icon.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:54,174 - INFO - Analyzing file 61/883: public\payment\discover.png
+2024-11-16 00:01:54,179 - ERROR - Error analyzing public\payment\discover.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:54,683 - INFO - Analyzing file 62/883: public\payment\iyzico.png
+2024-11-16 00:01:54,686 - ERROR - Error analyzing public\payment\iyzico.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:55,189 - INFO - Analyzing file 63/883: public\payment\master.png
+2024-11-16 00:01:55,195 - ERROR - Error analyzing public\payment\master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:55,697 - INFO - Analyzing file 64/883: public\payment\mollie.png
+2024-11-16 00:01:55,702 - ERROR - Error analyzing public\payment\mollie.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:56,204 - INFO - Analyzing file 65/883: public\payment\paypal.png
+2024-11-16 00:01:56,210 - ERROR - Error analyzing public\payment\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:56,713 - INFO - Analyzing file 66/883: public\payment\paystack.png
+2024-11-16 00:01:56,717 - ERROR - Error analyzing public\payment\paystack.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:57,220 - INFO - Analyzing file 67/883: public\payment\razorpay.png
+2024-11-16 00:01:57,227 - ERROR - Error analyzing public\payment\razorpay.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:57,730 - INFO - Analyzing file 68/883: public\payment\skrill.png
+2024-11-16 00:01:57,739 - ERROR - Error analyzing public\payment\skrill.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:58,242 - INFO - Analyzing file 69/883: public\payment\sslcommerz.png
+2024-11-16 00:01:58,247 - ERROR - Error analyzing public\payment\sslcommerz.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:58,750 - INFO - Analyzing file 70/883: public\payment\stripe.png
+2024-11-16 00:01:58,754 - ERROR - Error analyzing public\payment\stripe.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:59,258 - INFO - Analyzing file 71/883: public\payment\visa.png
+2024-11-16 00:01:59,267 - ERROR - Error analyzing public\payment\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:01:59,770 - INFO - Analyzing file 72/883: public\payment\xendit-logo.png
+2024-11-16 00:01:59,776 - ERROR - Error analyzing public\payment\xendit-logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:00,280 - INFO - Analyzing file 73/883: public\paypal.png
+2024-11-16 00:02:00,284 - ERROR - Error analyzing public\paypal.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:00,787 - INFO - Analyzing file 74/883: public\promotion\offer-1.png
+2024-11-16 00:02:00,796 - ERROR - Error analyzing public\promotion\offer-1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:01,299 - INFO - Analyzing file 75/883: public\promotion\offer-2.png
+2024-11-16 00:02:01,308 - ERROR - Error analyzing public\promotion\offer-2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:01,816 - INFO - Analyzing file 76/883: public\promotion\offer-3.png
+2024-11-16 00:02:01,820 - ERROR - Error analyzing public\promotion\offer-3.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:02,324 - INFO - Analyzing file 77/883: public\promotion\offer-4.png
+2024-11-16 00:02:02,333 - ERROR - Error analyzing public\promotion\offer-4.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:02,839 - INFO - Analyzing file 78/883: public\promotion\offer-5.png
+2024-11-16 00:02:02,845 - ERROR - Error analyzing public\promotion\offer-5.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:03,348 - INFO - Analyzing file 79/883: public\robots.txt
+2024-11-16 00:02:24,893 - INFO - Analyzing file 80/883: public\selling.png
+2024-11-16 00:02:24,901 - ERROR - Error analyzing public\selling.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:25,404 - INFO - Analyzing file 81/883: public\shop-fallback-cover-photo.png
+2024-11-16 00:02:25,408 - ERROR - Error analyzing public\shop-fallback-cover-photo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:25,911 - INFO - Analyzing file 82/883: public\visa.png
+2024-11-16 00:02:25,916 - ERROR - Error analyzing public\visa.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:26,419 - INFO - Analyzing file 83/883: src\assets\app-store-btn.png
+2024-11-16 00:02:26,425 - ERROR - Error analyzing src\assets\app-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:26,929 - INFO - Analyzing file 84/883: src\assets\arrow-forward.png
+2024-11-16 00:02:26,933 - ERROR - Error analyzing src\assets\arrow-forward.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:02:27,437 - INFO - Analyzing file 85/883: src\assets\cards\amex.svg
+2024-11-16 00:02:49,646 - INFO - Analyzing file 86/883: src\assets\cards\diners.svg
+2024-11-16 00:03:06,027 - INFO - Analyzing file 87/883: src\assets\cards\discover.svg
+2024-11-16 00:03:30,418 - INFO - Analyzing file 88/883: src\assets\cards\fallback-image.png
+2024-11-16 00:03:30,425 - ERROR - Error analyzing src\assets\cards\fallback-image.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:03:30,927 - INFO - Analyzing file 89/883: src\assets\cards\jcb.svg
+2024-11-16 00:03:58,826 - INFO - Analyzing file 90/883: src\assets\cards\mastercard.svg
+2024-11-16 00:04:29,120 - INFO - Analyzing file 91/883: src\assets\cards\unionpay.svg
+2024-11-16 00:04:43,681 - INFO - Analyzing file 92/883: src\assets\cards\visa.svg
+2024-11-16 00:05:06,672 - INFO - Analyzing file 93/883: src\assets\category-img.png
+2024-11-16 00:05:06,679 - ERROR - Error analyzing src\assets\category-img.png: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2024-11-16 00:05:07,181 - INFO - Analyzing file 94/883: src\assets\commission.png
+2024-11-16 00:05:07,184 - ERROR - Error analyzing src\assets\commission.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:05:07,687 - INFO - Analyzing file 95/883: src\assets\contact-illustration.svg
+2024-11-16 00:05:20,214 - INFO - Analyzing file 96/883: src\assets\css\custom-plugins.css
+2024-11-16 00:05:29,886 - INFO - Analyzing file 97/883: src\assets\css\main.css
+2024-11-16 00:05:58,666 - INFO - Analyzing file 98/883: src\assets\css\rich-text-editor.css
+2024-11-16 00:06:28,747 - INFO - Analyzing file 99/883: src\assets\no-result.svg
+2024-11-16 00:06:47,313 - INFO - Analyzing file 100/883: src\assets\pattern.png
+2024-11-16 00:06:47,320 - ERROR - Error analyzing src\assets\pattern.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:06:47,823 - INFO - Analyzing file 101/883: src\assets\payment-card.png
+2024-11-16 00:06:47,832 - ERROR - Error analyzing src\assets\payment-card.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:06:48,334 - INFO - Analyzing file 102/883: src\assets\placeholders\avatar.svg
+2024-11-16 00:07:09,799 - INFO - Analyzing file 103/883: src\assets\placeholders\coupon.svg
+2024-11-16 00:07:26,954 - INFO - Analyzing file 104/883: src\assets\placeholders\logo.png
+2024-11-16 00:07:26,962 - ERROR - Error analyzing src\assets\placeholders\logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:07:27,467 - INFO - Analyzing file 105/883: src\assets\placeholders\logo.svg
+2024-11-16 00:07:58,284 - INFO - Analyzing file 106/883: src\assets\placeholders\logo1.svg
+2024-11-16 00:08:30,371 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:08:30,374 - ERROR - Error analyzing src\assets\placeholders\logo1.svg: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:08:30,878 - INFO - Analyzing file 107/883: src\assets\placeholders\product.svg
+2024-11-16 00:08:53,707 - INFO - Analyzing file 108/883: src\assets\play-store-btn.png
+2024-11-16 00:08:53,719 - ERROR - Error analyzing src\assets\play-store-btn.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:08:54,223 - INFO - Analyzing file 109/883: src\assets\stripe-card.png
+2024-11-16 00:08:54,231 - ERROR - Error analyzing src\assets\stripe-card.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:08:54,734 - INFO - Analyzing file 110/883: src\components\404\404.tsx
+2024-11-16 00:09:17,166 - INFO - Analyzing file 111/883: src\components\404\pexels-charlesdeluvio-1851164-removebg-preview.png
+2024-11-16 00:09:17,177 - ERROR - Error analyzing src\components\404\pexels-charlesdeluvio-1851164-removebg-preview.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 00:09:17,681 - INFO - Analyzing file 112/883: src\components\address\address-card.tsx
+2024-11-16 00:09:34,318 - INFO - Analyzing file 113/883: src\components\address\address-form.tsx
+2024-11-16 00:10:06,402 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:10:06,404 - ERROR - Error analyzing src\components\address\address-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:10:06,908 - INFO - Analyzing file 114/883: src\components\address\address-header.tsx
+2024-11-16 00:10:36,360 - INFO - Analyzing file 115/883: src\components\address\delete-view.tsx
+2024-11-16 00:10:56,953 - INFO - Analyzing file 116/883: src\components\auth\change-password-form.tsx
+2024-11-16 00:11:25,667 - INFO - Analyzing file 117/883: src\components\auth\forgot-password.tsx
+2024-11-16 00:11:56,632 - INFO - Analyzing file 118/883: src\components\auth\login-form.tsx
+2024-11-16 00:12:27,211 - INFO - Analyzing file 119/883: src\components\auth\otp-login.tsx
+2024-11-16 00:12:55,903 - INFO - Analyzing file 120/883: src\components\auth\register-form.tsx
+2024-11-16 00:13:12,548 - INFO - Analyzing file 121/883: src\components\auth\social-login.tsx
+2024-11-16 00:13:40,809 - INFO - Analyzing file 122/883: src\components\author\authors-grid.tsx
+2024-11-16 00:14:07,542 - INFO - Analyzing file 123/883: src\components\author\details\details.tsx
+2024-11-16 00:14:26,279 - INFO - Analyzing file 124/883: src\components\author\top-authors-grid.tsx
+2024-11-16 00:14:47,609 - INFO - Analyzing file 125/883: src\components\banners\banner-short.tsx
+2024-11-16 00:15:13,281 - INFO - Analyzing file 126/883: src\components\banners\banner-with-pagination.tsx
+2024-11-16 00:15:32,161 - INFO - Analyzing file 127/883: src\components\banners\banner-with-search.tsx
+2024-11-16 00:16:04,268 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:16:04,270 - ERROR - Error analyzing src\components\banners\banner-with-search.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:16:04,774 - INFO - Analyzing file 128/883: src\components\banners\banner-without-slider.tsx
+2024-11-16 00:16:29,560 - INFO - Analyzing file 129/883: src\components\banners\banner.tsx
+2024-11-16 00:16:48,099 - INFO - Analyzing file 130/883: src\components\banners\page-banner.tsx
+2024-11-16 00:17:20,155 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:17:20,157 - ERROR - Error analyzing src\components\banners\page-banner.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:17:20,661 - INFO - Analyzing file 131/883: src\components\become-seller\index.tsx
+2024-11-16 00:17:47,726 - INFO - Analyzing file 132/883: src\components\become-seller\templates\banner\banner.tsx
+2024-11-16 00:18:18,611 - INFO - Analyzing file 133/883: src\components\become-seller\templates\business-purpose\business-purpose-item.tsx
+2024-11-16 00:18:44,214 - INFO - Analyzing file 134/883: src\components\become-seller\templates\business-purpose\business-purpose.tsx
+2024-11-16 00:19:03,526 - INFO - Analyzing file 135/883: src\components\become-seller\templates\contact\contact.tsx
+2024-11-16 00:19:28,601 - INFO - Analyzing file 136/883: src\components\become-seller\templates\dashboard-showcase\dashboard-showcase.tsx
+2024-11-16 00:19:57,070 - INFO - Analyzing file 137/883: src\components\become-seller\templates\faq\faq-section.tsx
+2024-11-16 00:20:16,905 - INFO - Analyzing file 138/883: src\components\become-seller\templates\fee-and-commission\commission-item.tsx
+2024-11-16 00:20:44,143 - INFO - Analyzing file 139/883: src\components\become-seller\templates\fee-and-commission\fee-and-commission.tsx
+2024-11-16 00:21:16,163 - INFO - Analyzing file 140/883: src\components\become-seller\templates\guideline\guideline-item.tsx
+2024-11-16 00:21:38,904 - INFO - Analyzing file 141/883: src\components\become-seller\templates\guideline\guideline.tsx
+2024-11-16 00:21:58,686 - INFO - Analyzing file 142/883: src\components\become-seller\templates\seller-opportunity\seller-opportunity.tsx
+2024-11-16 00:22:14,370 - INFO - Analyzing file 143/883: src\components\become-seller\templates\start-selling\selling-step.tsx
+2024-11-16 00:22:31,133 - INFO - Analyzing file 144/883: src\components\become-seller\templates\start-selling\start-selling.tsx
+2024-11-16 00:22:56,505 - INFO - Analyzing file 145/883: src\components\become-seller\templates\user-story\customer-stories.tsx
+2024-11-16 00:23:13,189 - INFO - Analyzing file 146/883: src\components\become-seller\templates\user-story\customer-story.tsx
+2024-11-16 00:23:36,224 - INFO - Analyzing file 147/883: src\components\card\action\action.tsx
+2024-11-16 00:23:50,277 - INFO - Analyzing file 148/883: src\components\card\add-new-card-modal.tsx
+2024-11-16 00:24:14,922 - INFO - Analyzing file 149/883: src\components\card\card-view-header.tsx
+2024-11-16 00:24:36,862 - INFO - Analyzing file 150/883: src\components\card\card-view.tsx
+2024-11-16 00:25:06,308 - INFO - Analyzing file 151/883: src\components\card\delete-view.tsx
+2024-11-16 00:25:28,276 - INFO - Analyzing file 152/883: src\components\card\my-cards.tsx
+2024-11-16 00:25:49,953 - INFO - Analyzing file 153/883: src\components\card\stripe\stripe-card-form.tsx
+2024-11-16 00:26:15,263 - INFO - Analyzing file 154/883: src\components\cart\cart-counter-button.tsx
+2024-11-16 00:26:38,961 - INFO - Analyzing file 155/883: src\components\cart\cart-counter-icon-button.tsx
+2024-11-16 00:26:58,079 - INFO - Analyzing file 156/883: src\components\cart\cart-item.tsx
+2024-11-16 00:27:16,299 - INFO - Analyzing file 157/883: src\components\cart\cart-sidebar-view.tsx
+2024-11-16 00:27:48,232 - INFO - Analyzing file 158/883: src\components\categories\categories.tsx
+2024-11-16 00:28:17,323 - INFO - Analyzing file 159/883: src\components\categories\filter-category-grid.tsx
+2024-11-16 00:28:44,299 - INFO - Analyzing file 160/883: src\components\categories\sliding-card-category.tsx
+2024-11-16 00:29:11,875 - INFO - Analyzing file 161/883: src\components\categories\sliding-vertical-rectangle-categories.tsx
+2024-11-16 00:29:44,297 - INFO - Analyzing file 162/883: src\components\categories\sticky-sidebar-boxed-categories.tsx
+2024-11-16 00:30:13,870 - INFO - Analyzing file 163/883: src\components\categories\sticky-sidebar-list-categories.tsx
+2024-11-16 00:30:42,597 - INFO - Analyzing file 164/883: src\components\checkout\address-grid-guest.tsx
+2024-11-16 00:31:08,109 - INFO - Analyzing file 165/883: src\components\checkout\address-grid.tsx
+2024-11-16 00:31:26,500 - INFO - Analyzing file 166/883: src\components\checkout\check-availability-action.tsx
+2024-11-16 00:31:38,184 - INFO - Analyzing file 167/883: src\components\checkout\contact\add-or-update.tsx
+2024-11-16 00:32:05,720 - INFO - Analyzing file 168/883: src\components\checkout\contact\contact-grid.tsx
+2024-11-16 00:32:35,365 - INFO - Analyzing file 169/883: src\components\checkout\coupon.tsx
+2024-11-16 00:32:55,570 - INFO - Analyzing file 170/883: src\components\checkout\create-or-update-guest.tsx
+2024-11-16 00:33:21,901 - INFO - Analyzing file 171/883: src\components\checkout\digital\cart-item.tsx
+2024-11-16 00:33:45,999 - INFO - Analyzing file 172/883: src\components\checkout\digital\checkout-cart.tsx
+2024-11-16 00:34:08,378 - INFO - Analyzing file 173/883: src\components\checkout\digital\item-info-row.tsx
+2024-11-16 00:34:38,622 - INFO - Analyzing file 174/883: src\components\checkout\digital\unverified-item-list.tsx
+2024-11-16 00:35:02,736 - INFO - Analyzing file 175/883: src\components\checkout\digital\verified-item-list.tsx
+2024-11-16 00:35:30,962 - INFO - Analyzing file 176/883: src\components\checkout\guest-name.tsx
+2024-11-16 00:35:47,024 - INFO - Analyzing file 177/883: src\components\checkout\item\item-card.tsx
+2024-11-16 00:36:04,222 - INFO - Analyzing file 178/883: src\components\checkout\item\item-info-row.tsx
+2024-11-16 00:36:20,421 - INFO - Analyzing file 179/883: src\components\checkout\item\unverified-item-list.tsx
+2024-11-16 00:36:52,464 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:36:52,466 - ERROR - Error analyzing src\components\checkout\item\unverified-item-list.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:36:52,971 - INFO - Analyzing file 180/883: src\components\checkout\item\verified-item-list.tsx
+2024-11-16 00:37:10,009 - INFO - Analyzing file 181/883: src\components\checkout\order-note.tsx
+2024-11-16 00:37:37,261 - INFO - Analyzing file 182/883: src\components\checkout\payment\cash-on-delivery.tsx
+2024-11-16 00:37:53,967 - INFO - Analyzing file 183/883: src\components\checkout\payment\copy-original.tsx
+2024-11-16 00:38:10,363 - INFO - Analyzing file 184/883: src\components\checkout\payment\copy-payment.tsx
+2024-11-16 00:38:21,646 - INFO - Analyzing file 185/883: src\components\checkout\payment\payment-grid.tsx
+2024-11-16 00:38:37,913 - INFO - Analyzing file 186/883: src\components\checkout\payment\payment-online.tsx
+2024-11-16 00:38:55,371 - INFO - Analyzing file 187/883: src\components\checkout\payment\payment-sub-grid.tsx
+2024-11-16 00:39:15,967 - INFO - Analyzing file 188/883: src\components\checkout\payment\payment-variable-case.tsx
+2024-11-16 00:39:25,743 - INFO - Analyzing file 189/883: src\components\checkout\place-order-action.tsx
+2024-11-16 00:39:50,990 - INFO - Analyzing file 190/883: src\components\checkout\right-side-view.tsx
+2024-11-16 00:40:17,268 - INFO - Analyzing file 191/883: src\components\checkout\schedule\schedule-card.tsx
+2024-11-16 00:40:38,836 - INFO - Analyzing file 192/883: src\components\checkout\schedule\schedule-grid.tsx
+2024-11-16 00:40:53,323 - INFO - Analyzing file 193/883: src\components\checkout\wallet\wallet.tsx
+2024-11-16 00:41:16,501 - INFO - Analyzing file 194/883: src\components\common\access-denied.tsx
+2024-11-16 00:41:37,966 - INFO - Analyzing file 195/883: src\components\common\feature-not-available.tsx
+2024-11-16 00:42:06,083 - INFO - Analyzing file 196/883: src\components\cta\call-to-action.tsx
+2024-11-16 00:42:38,168 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:42:38,170 - ERROR - Error analyzing src\components\cta\call-to-action.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:42:38,674 - INFO - Analyzing file 197/883: src\components\dashboard\sidebar.tsx
+2024-11-16 00:43:05,566 - INFO - Analyzing file 198/883: src\components\faq\faq.tsx
+2024-11-16 00:43:37,900 - INFO - Analyzing file 199/883: src\components\flash-sale\details-view.tsx
+2024-11-16 00:44:04,950 - INFO - Analyzing file 200/883: src\components\flash-sale\flash-sale-card.tsx
+2024-11-16 00:44:16,912 - INFO - Analyzing file 201/883: src\components\flash-sale\flash-sale.tsx
+2024-11-16 00:44:30,846 - INFO - Analyzing file 202/883: src\components\form\google-places-autocomplete.tsx
+2024-11-16 00:44:52,586 - INFO - Analyzing file 203/883: src\components\form\location-based-shop-form.tsx
+2024-11-16 00:45:20,217 - INFO - Analyzing file 204/883: src\components\icons\anonymous-icon.tsx
+2024-11-16 00:45:49,277 - INFO - Analyzing file 205/883: src\components\icons\arrow-down.tsx
+2024-11-16 00:46:11,222 - INFO - Analyzing file 206/883: src\components\icons\arrow-narrow-left.tsx
+2024-11-16 00:46:36,348 - INFO - Analyzing file 207/883: src\components\icons\arrow-next.tsx
+2024-11-16 00:46:55,365 - INFO - Analyzing file 208/883: src\components\icons\arrow-prev.tsx
+2024-11-16 00:47:17,688 - INFO - Analyzing file 209/883: src\components\icons\arrow-right.tsx
+2024-11-16 00:47:38,586 - INFO - Analyzing file 210/883: src\components\icons\back-arrow-round.tsx
+2024-11-16 00:48:07,239 - INFO - Analyzing file 211/883: src\components\icons\bell-icon.tsx
+2024-11-16 00:48:34,225 - INFO - Analyzing file 212/883: src\components\icons\calendar.tsx
+2024-11-16 00:48:58,662 - INFO - Analyzing file 213/883: src\components\icons\caret-down.tsx
+2024-11-16 00:49:24,518 - INFO - Analyzing file 214/883: src\components\icons\cart-check-bag.tsx
+2024-11-16 00:49:52,143 - INFO - Analyzing file 215/883: src\components\icons\cart-outlined.tsx
+2024-11-16 00:50:20,704 - INFO - Analyzing file 216/883: src\components\icons\cart.tsx
+2024-11-16 00:50:34,612 - INFO - Analyzing file 217/883: src\components\icons\category\accessories.tsx
+2024-11-16 00:50:53,140 - INFO - Analyzing file 218/883: src\components\icons\category\baby-care.tsx
+2024-11-16 00:51:16,548 - INFO - Analyzing file 219/883: src\components\icons\category\bath-oil.tsx
+2024-11-16 00:51:44,719 - INFO - Analyzing file 220/883: src\components\icons\category\beauty-care.tsx
+2024-11-16 00:52:16,191 - INFO - Analyzing file 221/883: src\components\icons\category\beauty-health.tsx
+2024-11-16 00:52:48,249 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:52:48,250 - ERROR - Error analyzing src\components\icons\category\beauty-health.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:52:48,755 - INFO - Analyzing file 222/883: src\components\icons\category\bed.tsx
+2024-11-16 00:53:16,516 - INFO - Analyzing file 223/883: src\components\icons\category\beverage.tsx
+2024-11-16 00:53:37,453 - INFO - Analyzing file 224/883: src\components\icons\category\blender.tsx
+2024-11-16 00:54:09,517 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:54:09,518 - ERROR - Error analyzing src\components\icons\category\blender.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:54:10,023 - INFO - Analyzing file 225/883: src\components\icons\category\book-shelf.tsx
+2024-11-16 00:54:37,278 - INFO - Analyzing file 226/883: src\components\icons\category\breakfast.tsx
+2024-11-16 00:55:01,538 - INFO - Analyzing file 227/883: src\components\icons\category\camera.tsx
+2024-11-16 00:55:15,625 - INFO - Analyzing file 228/883: src\components\icons\category\center-table.tsx
+2024-11-16 00:55:46,187 - INFO - Analyzing file 229/883: src\components\icons\category\chair.tsx
+2024-11-16 00:56:18,242 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:56:18,244 - ERROR - Error analyzing src\components\icons\category\chair.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 00:56:18,748 - INFO - Analyzing file 230/883: src\components\icons\category\console.tsx
+2024-11-16 00:56:49,592 - INFO - Analyzing file 231/883: src\components\icons\category\contraceptive.tsx
+2024-11-16 00:57:13,997 - INFO - Analyzing file 232/883: src\components\icons\category\cooking.tsx
+2024-11-16 00:57:42,982 - INFO - Analyzing file 233/883: src\components\icons\category\dairy.tsx
+2024-11-16 00:58:14,767 - INFO - Analyzing file 234/883: src\components\icons\category\deodorant.tsx
+2024-11-16 00:58:34,628 - INFO - Analyzing file 235/883: src\components\icons\category\diapers.tsx
+2024-11-16 00:59:05,780 - INFO - Analyzing file 236/883: src\components\icons\category\dressing-table.tsx
+2024-11-16 00:59:32,743 - INFO - Analyzing file 237/883: src\components\icons\category\eyes-icon.tsx
+2024-11-16 00:59:55,103 - INFO - Analyzing file 238/883: src\components\icons\category\eyes.tsx
+2024-11-16 01:00:15,787 - INFO - Analyzing file 239/883: src\components\icons\category\face-skin-care.tsx
+2024-11-16 01:00:39,613 - INFO - Analyzing file 240/883: src\components\icons\category\face.tsx
+2024-11-16 01:00:52,934 - INFO - Analyzing file 241/883: src\components\icons\category\facial-care.tsx
+2024-11-16 01:01:22,287 - INFO - Analyzing file 242/883: src\components\icons\category\feeders.tsx
+2024-11-16 01:01:50,027 - INFO - Analyzing file 243/883: src\components\icons\category\feminine-hygiene.tsx
+2024-11-16 01:02:12,211 - INFO - Analyzing file 244/883: src\components\icons\category\first-aid-kit.tsx
+2024-11-16 01:02:40,293 - INFO - Analyzing file 245/883: src\components\icons\category\fruits-vegetable.tsx
+2024-11-16 01:03:12,364 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:03:12,367 - ERROR - Error analyzing src\components\icons\category\fruits-vegetable.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:03:12,870 - INFO - Analyzing file 246/883: src\components\icons\category\gadget-accessories.tsx
+2024-11-16 01:03:44,938 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:03:44,940 - ERROR - Error analyzing src\components\icons\category\gadget-accessories.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:03:45,443 - INFO - Analyzing file 247/883: src\components\icons\category\hand-bag.tsx
+2024-11-16 01:04:04,925 - INFO - Analyzing file 248/883: src\components\icons\category\headphone.tsx
+2024-11-16 01:04:36,993 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:04:36,995 - ERROR - Error analyzing src\components\icons\category\headphone.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:04:37,498 - INFO - Analyzing file 249/883: src\components\icons\category\health-protein.tsx
+2024-11-16 01:05:04,237 - INFO - Analyzing file 250/883: src\components\icons\category\health-wellness.tsx
+2024-11-16 01:05:30,396 - INFO - Analyzing file 251/883: src\components\icons\category\herb.tsx
+2024-11-16 01:05:57,369 - INFO - Analyzing file 252/883: src\components\icons\category\home-cleaning.tsx
+2024-11-16 01:06:29,455 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:06:29,456 - ERROR - Error analyzing src\components\icons\category\home-cleaning.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:06:29,962 - INFO - Analyzing file 253/883: src\components\icons\category\index.tsx
+2024-11-16 01:06:57,919 - INFO - Analyzing file 254/883: src\components\icons\category\indoor-plants.tsx
+2024-11-16 01:07:16,535 - INFO - Analyzing file 255/883: src\components\icons\category\laptop-bag.tsx
+2024-11-16 01:07:41,043 - INFO - Analyzing file 256/883: src\components\icons\category\laptop.tsx
+2024-11-16 01:08:08,122 - INFO - Analyzing file 257/883: src\components\icons\category\lips.tsx
+2024-11-16 01:08:35,425 - INFO - Analyzing file 258/883: src\components\icons\category\meat-fish.tsx
+2024-11-16 01:08:55,257 - INFO - Analyzing file 259/883: src\components\icons\category\microwave.tsx
+2024-11-16 01:09:14,502 - INFO - Analyzing file 260/883: src\components\icons\category\mobile.tsx
+2024-11-16 01:09:46,563 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:09:46,566 - ERROR - Error analyzing src\components\icons\category\mobile.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:09:47,070 - INFO - Analyzing file 261/883: src\components\icons\category\monitor.tsx
+2024-11-16 01:10:06,544 - INFO - Analyzing file 262/883: src\components\icons\category\oral-care.tsx
+2024-11-16 01:10:31,525 - INFO - Analyzing file 263/883: src\components\icons\category\oral.tsx
+2024-11-16 01:11:03,592 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:11:03,595 - ERROR - Error analyzing src\components\icons\category\oral.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:11:04,099 - INFO - Analyzing file 264/883: src\components\icons\category\orchid.tsx
+2024-11-16 01:11:29,806 - INFO - Analyzing file 265/883: src\components\icons\category\outer-wear.tsx
+2024-11-16 01:11:54,375 - INFO - Analyzing file 266/883: src\components\icons\category\pants.tsx
+2024-11-16 01:12:25,760 - INFO - Analyzing file 267/883: src\components\icons\category\pet-care.tsx
+2024-11-16 01:12:56,996 - INFO - Analyzing file 268/883: src\components\icons\category\pregnancy.tsx
+2024-11-16 01:13:20,765 - INFO - Analyzing file 269/883: src\components\icons\category\purse.tsx
+2024-11-16 01:13:41,338 - INFO - Analyzing file 270/883: src\components\icons\category\reading-table.tsx
+2024-11-16 01:14:13,397 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:14:13,398 - ERROR - Error analyzing src\components\icons\category\reading-table.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:14:13,903 - INFO - Analyzing file 271/883: src\components\icons\category\relax-chair.tsx
+2024-11-16 01:14:40,452 - INFO - Analyzing file 272/883: src\components\icons\category\router.tsx
+2024-11-16 01:15:12,517 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:15:12,519 - ERROR - Error analyzing src\components\icons\category\router.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:15:13,023 - INFO - Analyzing file 273/883: src\components\icons\category\seeds.tsx
+2024-11-16 01:15:45,090 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:15:45,092 - ERROR - Error analyzing src\components\icons\category\seeds.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:15:45,597 - INFO - Analyzing file 274/883: src\components\icons\category\sexual-wellbeing.tsx
+2024-11-16 01:16:10,332 - INFO - Analyzing file 275/883: src\components\icons\category\shaving-needs.tsx
+2024-11-16 01:16:27,802 - INFO - Analyzing file 276/883: src\components\icons\category\shirts.tsx
+2024-11-16 01:16:57,926 - INFO - Analyzing file 277/883: src\components\icons\category\shoulder-bag.tsx
+2024-11-16 01:17:25,338 - INFO - Analyzing file 278/883: src\components\icons\category\skirts.tsx
+2024-11-16 01:17:46,856 - INFO - Analyzing file 279/883: src\components\icons\category\smart-watch.tsx
+2024-11-16 01:18:06,920 - INFO - Analyzing file 280/883: src\components\icons\category\snacks.tsx
+2024-11-16 01:18:34,253 - INFO - Analyzing file 281/883: src\components\icons\category\sofa.tsx
+2024-11-16 01:18:44,803 - INFO - Analyzing file 282/883: src\components\icons\category\sound-box.tsx
+2024-11-16 01:19:16,858 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:19:16,860 - ERROR - Error analyzing src\components\icons\category\sound-box.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:19:17,363 - INFO - Analyzing file 283/883: src\components\icons\category\storage.tsx
+2024-11-16 01:19:34,625 - INFO - Analyzing file 284/883: src\components\icons\category\succulent.tsx
+2024-11-16 01:19:56,220 - INFO - Analyzing file 285/883: src\components\icons\category\table.tsx
+2024-11-16 01:20:22,477 - INFO - Analyzing file 286/883: src\components\icons\category\tiny-veg.tsx
+2024-11-16 01:20:40,036 - INFO - Analyzing file 287/883: src\components\icons\category\tools.tsx
+2024-11-16 01:20:53,415 - INFO - Analyzing file 288/883: src\components\icons\category\tops.tsx
+2024-11-16 01:21:23,832 - INFO - Analyzing file 289/883: src\components\icons\category\wallet.tsx
+2024-11-16 01:21:55,899 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:21:55,900 - ERROR - Error analyzing src\components\icons\category\wallet.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:21:56,404 - INFO - Analyzing file 290/883: src\components\icons\category\washing-machine.tsx
+2024-11-16 01:22:17,401 - INFO - Analyzing file 291/883: src\components\icons\category\women-dress.tsx
+2024-11-16 01:22:49,481 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:22:49,483 - ERROR - Error analyzing src\components\icons\category\women-dress.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:22:49,988 - INFO - Analyzing file 292/883: src\components\icons\check-icon-with-bg.tsx
+2024-11-16 01:23:22,050 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:23:22,053 - ERROR - Error analyzing src\components\icons\check-icon-with-bg.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:23:22,557 - INFO - Analyzing file 293/883: src\components\icons\check-icon.tsx
+2024-11-16 01:23:48,185 - INFO - Analyzing file 294/883: src\components\icons\checked.tsx
+2024-11-16 01:24:07,465 - INFO - Analyzing file 295/883: src\components\icons\checkmark.tsx
+2024-11-16 01:24:39,509 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:24:39,510 - ERROR - Error analyzing src\components\icons\checkmark.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:24:40,016 - INFO - Analyzing file 296/883: src\components\icons\chevron-left.tsx
+2024-11-16 01:25:01,221 - INFO - Analyzing file 297/883: src\components\icons\chevron-right.tsx
+2024-11-16 01:25:33,755 - INFO - Analyzing file 298/883: src\components\icons\close-icon.tsx
+2024-11-16 01:25:50,663 - INFO - Analyzing file 299/883: src\components\icons\coupon-icon.tsx
+2024-11-16 01:26:16,340 - INFO - Analyzing file 300/883: src\components\icons\current-location.tsx
+2024-11-16 01:26:34,439 - INFO - Analyzing file 301/883: src\components\icons\dislike-icon.tsx
+2024-11-16 01:27:06,505 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:27:06,507 - ERROR - Error analyzing src\components\icons\dislike-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:27:07,013 - INFO - Analyzing file 302/883: src\components\icons\divider.tsx
+2024-11-16 01:27:31,925 - INFO - Analyzing file 303/883: src\components\icons\email-icon.tsx
+2024-11-16 01:27:53,080 - INFO - Analyzing file 304/883: src\components\icons\empty-cart.tsx
+2024-11-16 01:28:25,146 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:28:25,147 - ERROR - Error analyzing src\components\icons\empty-cart.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:28:25,652 - INFO - Analyzing file 305/883: src\components\icons\expand-less-icon.tsx
+2024-11-16 01:28:53,839 - INFO - Analyzing file 306/883: src\components\icons\expand-more-icon.tsx
+2024-11-16 01:29:09,177 - INFO - Analyzing file 307/883: src\components\icons\external-icon.tsx
+2024-11-16 01:29:37,573 - INFO - Analyzing file 308/883: src\components\icons\eye-icon.tsx
+2024-11-16 01:29:56,212 - INFO - Analyzing file 309/883: src\components\icons\eye-off-icon.tsx
+2024-11-16 01:30:16,034 - INFO - Analyzing file 310/883: src\components\icons\eye.tsx
+2024-11-16 01:30:29,324 - INFO - Analyzing file 311/883: src\components\icons\facebook.tsx
+2024-11-16 01:30:52,133 - INFO - Analyzing file 312/883: src\components\icons\faq-icon.tsx
+2024-11-16 01:31:20,909 - INFO - Analyzing file 313/883: src\components\icons\filter-icon.tsx
+2024-11-16 01:31:38,282 - INFO - Analyzing file 314/883: src\components\icons\flags\CNFlag.tsx
+2024-11-16 01:32:00,770 - INFO - Analyzing file 315/883: src\components\icons\flags\CNFlagRound.tsx
+2024-11-16 01:32:10,332 - INFO - Analyzing file 316/883: src\components\icons\flags\DEFlag.tsx
+2024-11-16 01:32:35,832 - INFO - Analyzing file 317/883: src\components\icons\flags\DEFlagRound.tsx
+2024-11-16 01:33:03,009 - INFO - Analyzing file 318/883: src\components\icons\flags\ESFlag.tsx
+2024-11-16 01:33:30,565 - INFO - Analyzing file 319/883: src\components\icons\flags\ESFlagRound.tsx
+2024-11-16 01:33:56,152 - INFO - Analyzing file 320/883: src\components\icons\flags\ILFlag.tsx
+2024-11-16 01:34:16,717 - INFO - Analyzing file 321/883: src\components\icons\flags\ILFlagRound.tsx
+2024-11-16 01:34:34,924 - INFO - Analyzing file 322/883: src\components\icons\flags\SAFlag.tsx
+2024-11-16 01:35:06,341 - INFO - Analyzing file 323/883: src\components\icons\flags\SAFlagRound.tsx
+2024-11-16 01:35:22,583 - INFO - Analyzing file 324/883: src\components\icons\flags\USFlag.tsx
+2024-11-16 01:35:49,075 - INFO - Analyzing file 325/883: src\components\icons\flags\USFlagRound.tsx
+2024-11-16 01:36:15,469 - INFO - Analyzing file 326/883: src\components\icons\google.tsx
+2024-11-16 01:36:43,324 - INFO - Analyzing file 327/883: src\components\icons\groups\baby-care-icon.tsx
+2024-11-16 01:37:12,535 - INFO - Analyzing file 328/883: src\components\icons\groups\bakery-icon.tsx
+2024-11-16 01:37:42,139 - INFO - Analyzing file 329/883: src\components\icons\groups\book-icon.tsx
+2024-11-16 01:38:11,146 - INFO - Analyzing file 330/883: src\components\icons\groups\dress-icon.tsx
+2024-11-16 01:38:43,207 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:38:43,209 - ERROR - Error analyzing src\components\icons\groups\dress-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:38:43,713 - INFO - Analyzing file 331/883: src\components\icons\groups\facial-care.tsx
+2024-11-16 01:38:59,193 - INFO - Analyzing file 332/883: src\components\icons\groups\fruits-vegetable.tsx
+2024-11-16 01:39:31,262 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:39:31,264 - ERROR - Error analyzing src\components\icons\groups\fruits-vegetable.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:39:31,768 - INFO - Analyzing file 333/883: src\components\icons\groups\furniture-icon.tsx
+2024-11-16 01:39:57,986 - INFO - Analyzing file 334/883: src\components\icons\groups\gadgets-icon.tsx
+2024-11-16 01:40:30,048 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:40:30,049 - ERROR - Error analyzing src\components\icons\groups\gadgets-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:40:30,555 - INFO - Analyzing file 335/883: src\components\icons\groups\handbag-icon.tsx
+2024-11-16 01:40:50,898 - INFO - Analyzing file 336/883: src\components\icons\groups\home-appliance-icon.tsx
+2024-11-16 01:41:12,563 - INFO - Analyzing file 337/883: src\components\icons\groups\index.tsx
+2024-11-16 01:41:30,283 - INFO - Analyzing file 338/883: src\components\icons\groups\medicine-icon.tsx
+2024-11-16 01:41:55,231 - INFO - Analyzing file 339/883: src\components\icons\groups\micro-greens-icon.tsx
+2024-11-16 01:42:22,438 - INFO - Analyzing file 340/883: src\components\icons\groups\plant-icon.tsx
+2024-11-16 01:42:48,192 - INFO - Analyzing file 341/883: src\components\icons\groups\restaurant-icon.tsx
+2024-11-16 01:43:04,136 - INFO - Analyzing file 342/883: src\components\icons\hand-sign.tsx
+2024-11-16 01:43:28,631 - INFO - Analyzing file 343/883: src\components\icons\heart-fill.tsx
+2024-11-16 01:43:45,401 - INFO - Analyzing file 344/883: src\components\icons\heart-ghost.tsx
+2024-11-16 01:44:08,756 - INFO - Analyzing file 345/883: src\components\icons\heart-outline.tsx
+2024-11-16 01:44:36,821 - INFO - Analyzing file 346/883: src\components\icons\help-icon.tsx
+2024-11-16 01:44:57,363 - INFO - Analyzing file 347/883: src\components\icons\home-icon-new.tsx
+2024-11-16 01:45:27,301 - INFO - Analyzing file 348/883: src\components\icons\home-icon.tsx
+2024-11-16 01:45:51,536 - INFO - Analyzing file 349/883: src\components\icons\index.ts
+2024-11-16 01:46:20,171 - INFO - Analyzing file 350/883: src\components\icons\instagram.tsx
+2024-11-16 01:46:40,484 - INFO - Analyzing file 351/883: src\components\icons\lang-icon.tsx
+2024-11-16 01:47:00,161 - INFO - Analyzing file 352/883: src\components\icons\lang-switcher-icon.tsx
+2024-11-16 01:47:30,344 - INFO - Analyzing file 353/883: src\components\icons\like-icon.tsx
+2024-11-16 01:48:01,342 - INFO - Analyzing file 354/883: src\components\icons\long-arrow-icon.tsx
+2024-11-16 01:48:33,405 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:48:33,406 - ERROR - Error analyzing src\components\icons\long-arrow-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 01:48:33,913 - INFO - Analyzing file 355/883: src\components\icons\long-arrow-right.tsx
+2024-11-16 01:48:56,315 - INFO - Analyzing file 356/883: src\components\icons\map-pin.tsx
+2024-11-16 01:49:24,099 - INFO - Analyzing file 357/883: src\components\icons\menu-icon.tsx
+2024-11-16 01:49:51,380 - INFO - Analyzing file 358/883: src\components\icons\minus-icon.tsx
+2024-11-16 01:50:15,412 - INFO - Analyzing file 359/883: src\components\icons\mobile-icon.tsx
+2024-11-16 01:50:43,654 - INFO - Analyzing file 360/883: src\components\icons\navbar-icon.tsx
+2024-11-16 01:51:14,318 - INFO - Analyzing file 361/883: src\components\icons\notification.tsx
+2024-11-16 06:13:18,149 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:13:18,154 - ERROR - Error analyzing src\components\icons\notification.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:13:18,659 - INFO - Analyzing file 362/883: src\components\icons\payment-gateways\bkash.tsx
+2024-11-16 06:13:38,729 - INFO - Analyzing file 363/883: src\components\icons\payment-gateways\flutterwave.tsx
+2024-11-16 06:13:58,968 - INFO - Analyzing file 364/883: src\components\icons\payment-gateways\iyzico.tsx
+2024-11-16 06:14:30,679 - INFO - Analyzing file 365/883: src\components\icons\payment-gateways\mollie.tsx
+2024-11-16 06:15:00,552 - INFO - Analyzing file 366/883: src\components\icons\payment-gateways\paymongo.tsx
+2024-11-16 06:15:17,450 - INFO - Analyzing file 367/883: src\components\icons\payment-gateways\paypal.tsx
+2024-11-16 06:15:49,506 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:15:49,506 - ERROR - Error analyzing src\components\icons\payment-gateways\paypal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:15:50,011 - INFO - Analyzing file 368/883: src\components\icons\payment-gateways\paystack.tsx
+2024-11-16 06:16:16,208 - INFO - Analyzing file 369/883: src\components\icons\payment-gateways\razorpay.tsx
+2024-11-16 06:16:39,576 - INFO - Analyzing file 370/883: src\components\icons\payment-gateways\sslcomerz.tsx
+2024-11-16 06:16:50,131 - INFO - Analyzing file 371/883: src\components\icons\payment-gateways\stripe.tsx
+2024-11-16 06:17:17,872 - INFO - Analyzing file 372/883: src\components\icons\payment-gateways\xendit.tsx
+2024-11-16 06:17:49,914 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:17:49,916 - ERROR - Error analyzing src\components\icons\payment-gateways\xendit.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:17:50,418 - INFO - Analyzing file 373/883: src\components\icons\pencil-icon.tsx
+2024-11-16 06:18:09,563 - INFO - Analyzing file 374/883: src\components\icons\pencil.tsx
+2024-11-16 06:18:35,470 - INFO - Analyzing file 375/883: src\components\icons\play-icon.tsx
+2024-11-16 06:18:56,028 - INFO - Analyzing file 376/883: src\components\icons\player\fullscreen-exit.tsx
+2024-11-16 06:19:28,077 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:19:28,078 - ERROR - Error analyzing src\components\icons\player\fullscreen-exit.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:19:28,583 - INFO - Analyzing file 377/883: src\components\icons\player\fullscreen.tsx
+2024-11-16 06:19:42,087 - INFO - Analyzing file 378/883: src\components\icons\player\index.ts
+2024-11-16 06:20:04,164 - INFO - Analyzing file 379/883: src\components\icons\player\mute.tsx
+2024-11-16 06:20:22,452 - INFO - Analyzing file 380/883: src\components\icons\player\pause.tsx
+2024-11-16 06:20:32,909 - INFO - Analyzing file 381/883: src\components\icons\player\play.tsx
+2024-11-16 06:20:59,050 - INFO - Analyzing file 382/883: src\components\icons\player\speaker.tsx
+2024-11-16 06:21:21,939 - INFO - Analyzing file 383/883: src\components\icons\plus-icon.tsx
+2024-11-16 06:21:48,190 - INFO - Analyzing file 384/883: src\components\icons\sad-face.tsx
+2024-11-16 06:22:18,724 - INFO - Analyzing file 385/883: src\components\icons\search-icon.tsx
+2024-11-16 06:22:49,277 - INFO - Analyzing file 386/883: src\components\icons\sellers\bullseye.tsx
+2024-11-16 06:23:21,332 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:23:21,335 - ERROR - Error analyzing src\components\icons\sellers\bullseye.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:23:21,839 - INFO - Analyzing file 387/883: src\components\icons\sellers\chat.tsx
+2024-11-16 06:23:43,364 - INFO - Analyzing file 388/883: src\components\icons\sellers\index.tsx
+2024-11-16 06:24:04,071 - INFO - Analyzing file 389/883: src\components\icons\sellers\receipt.tsx
+2024-11-16 06:24:17,300 - INFO - Analyzing file 390/883: src\components\icons\sellers\registered-document.tsx
+2024-11-16 06:24:38,823 - INFO - Analyzing file 391/883: src\components\icons\sellers\shopping-bag.tsx
+2024-11-16 06:25:11,045 - INFO - Analyzing file 392/883: src\components\icons\sellers\store.tsx
+2024-11-16 06:25:37,448 - INFO - Analyzing file 393/883: src\components\icons\send-icon.tsx
+2024-11-16 06:26:09,531 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:26:09,533 - ERROR - Error analyzing src\components\icons\send-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:26:10,036 - INFO - Analyzing file 394/883: src\components\icons\shop\contact.tsx
+2024-11-16 06:26:42,110 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:26:42,113 - ERROR - Error analyzing src\components\icons\shop\contact.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:26:42,615 - INFO - Analyzing file 395/883: src\components\icons\shop\coupon.tsx
+2024-11-16 06:27:04,545 - INFO - Analyzing file 396/883: src\components\icons\shop\faq.tsx
+2024-11-16 06:27:31,364 - INFO - Analyzing file 397/883: src\components\icons\shop\terms.tsx
+2024-11-16 06:27:46,806 - INFO - Analyzing file 398/883: src\components\icons\shop\web.tsx
+2024-11-16 06:28:05,132 - INFO - Analyzing file 399/883: src\components\icons\shopping-bag-icon.tsx
+2024-11-16 06:28:36,257 - INFO - Analyzing file 400/883: src\components\icons\social\facebook.tsx
+2024-11-16 06:28:53,572 - INFO - Analyzing file 401/883: src\components\icons\social\index.tsx
+2024-11-16 06:29:06,770 - INFO - Analyzing file 402/883: src\components\icons\social\instagram.tsx
+2024-11-16 06:29:35,695 - INFO - Analyzing file 403/883: src\components\icons\social\twitter.tsx
+2024-11-16 06:30:06,664 - INFO - Analyzing file 404/883: src\components\icons\social\youtube.tsx
+2024-11-16 06:30:33,403 - INFO - Analyzing file 405/883: src\components\icons\star-icon.tsx
+2024-11-16 06:31:05,480 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:31:05,482 - ERROR - Error analyzing src\components\icons\star-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:31:05,985 - INFO - Analyzing file 406/883: src\components\icons\svg-loader.tsx
+2024-11-16 06:31:31,512 - INFO - Analyzing file 407/883: src\components\icons\terms-icon.tsx
+2024-11-16 06:31:55,825 - INFO - Analyzing file 408/883: src\components\icons\timer-separator.tsx
+2024-11-16 06:32:21,064 - INFO - Analyzing file 409/883: src\components\icons\toggle-icon.tsx
+2024-11-16 06:32:48,082 - INFO - Analyzing file 410/883: src\components\icons\trash.tsx
+2024-11-16 06:33:15,411 - INFO - Analyzing file 411/883: src\components\icons\twitter.tsx
+2024-11-16 06:33:43,301 - INFO - Analyzing file 412/883: src\components\icons\upload-icon.tsx
+2024-11-16 06:34:08,940 - INFO - Analyzing file 413/883: src\components\icons\user-icon.tsx
+2024-11-16 06:34:40,997 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:34:40,999 - ERROR - Error analyzing src\components\icons\user-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:34:41,502 - INFO - Analyzing file 414/883: src\components\icons\user-outlined.tsx
+2024-11-16 06:35:08,445 - INFO - Analyzing file 415/883: src\components\icons\verify-icon.tsx
+2024-11-16 06:35:38,613 - INFO - Analyzing file 416/883: src\components\icons\youtube.tsx
+2024-11-16 06:36:01,405 - INFO - Analyzing file 417/883: src\components\layouts\_general.tsx
+2024-11-16 06:36:33,489 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:36:33,492 - ERROR - Error analyzing src\components\layouts\_general.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:36:33,996 - INFO - Analyzing file 418/883: src\components\layouts\_home.tsx
+2024-11-16 06:37:04,049 - INFO - Analyzing file 419/883: src\components\layouts\classic.tsx
+2024-11-16 06:37:27,886 - INFO - Analyzing file 420/883: src\components\layouts\compact.tsx
+2024-11-16 06:37:58,171 - INFO - Analyzing file 421/883: src\components\layouts\filter-bar.tsx
+2024-11-16 06:38:27,013 - INFO - Analyzing file 422/883: src\components\layouts\footer.tsx
+2024-11-16 06:38:58,980 - INFO - Analyzing file 423/883: src\components\layouts\header-minimal.tsx
+2024-11-16 06:39:23,727 - INFO - Analyzing file 424/883: src\components\layouts\header-with-megamenu.tsx
+2024-11-16 06:39:55,832 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:39:55,833 - ERROR - Error analyzing src\components\layouts\header-with-megamenu.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:39:56,338 - INFO - Analyzing file 425/883: src\components\layouts\header.tsx
+2024-11-16 06:40:24,107 - INFO - Analyzing file 426/883: src\components\layouts\image-removebg-preview (1).png
+2024-11-16 06:40:24,120 - ERROR - Error analyzing src\components\layouts\image-removebg-preview (1).png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+2024-11-16 06:40:24,623 - INFO - Analyzing file 427/883: src\components\layouts\layout-with-footer.tsx
+2024-11-16 06:40:49,702 - INFO - Analyzing file 428/883: src\components\layouts\layout.tsx
+2024-11-16 06:41:20,345 - INFO - Analyzing file 429/883: src\components\layouts\menu\authorized-menu.tsx
+2024-11-16 06:41:52,442 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:41:52,445 - ERROR - Error analyzing src\components\layouts\menu\authorized-menu.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:41:52,949 - INFO - Analyzing file 430/883: src\components\layouts\menu\groups-menu.tsx
+2024-11-16 06:42:25,020 - INFO - Analyzing file 431/883: src\components\layouts\menu\join-button.tsx
+2024-11-16 06:42:54,885 - INFO - Analyzing file 432/883: src\components\layouts\menu\static-menu.tsx
+2024-11-16 06:43:26,968 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:43:26,969 - ERROR - Error analyzing src\components\layouts\menu\static-menu.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:43:27,472 - INFO - Analyzing file 433/883: src\components\layouts\minimal.tsx
+2024-11-16 06:43:52,001 - INFO - Analyzing file 434/883: src\components\layouts\mobile-menu\mobile-authorized-menu.tsx
+2024-11-16 06:44:05,549 - INFO - Analyzing file 435/883: src\components\layouts\mobile-menu\mobile-category-menu.tsx
+2024-11-16 06:44:37,629 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:44:37,632 - ERROR - Error analyzing src\components\layouts\mobile-menu\mobile-category-menu.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:44:38,136 - INFO - Analyzing file 436/883: src\components\layouts\mobile-menu\mobile-main-menu.tsx
+2024-11-16 06:45:09,048 - INFO - Analyzing file 437/883: src\components\layouts\mobile-navigation.tsx
+2024-11-16 06:45:41,105 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:45:41,106 - ERROR - Error analyzing src\components\layouts\mobile-navigation.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:45:41,610 - INFO - Analyzing file 438/883: src\components\layouts\modern.tsx
+2024-11-16 06:46:06,820 - INFO - Analyzing file 439/883: src\components\layouts\standard.tsx
+2024-11-16 06:46:36,657 - INFO - Analyzing file 440/883: src\components\maintenance\index.tsx
+2024-11-16 06:47:08,255 - INFO - Analyzing file 441/883: src\components\maintenance\layout.tsx
+2024-11-16 06:47:37,728 - INFO - Analyzing file 442/883: src\components\maintenance\more-info.tsx
+2024-11-16 06:48:05,420 - INFO - Analyzing file 443/883: src\components\maintenance\news-letter.tsx
+2024-11-16 06:48:33,054 - INFO - Analyzing file 444/883: src\components\manufacturer\card.tsx
+2024-11-16 06:49:05,111 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:49:05,114 - ERROR - Error analyzing src\components\manufacturer\card.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:49:05,626 - INFO - Analyzing file 445/883: src\components\manufacturer\details.tsx
+2024-11-16 06:49:37,703 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:49:37,706 - ERROR - Error analyzing src\components\manufacturer\details.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:49:38,210 - INFO - Analyzing file 446/883: src\components\manufacturer\manufacturers-grid.tsx
+2024-11-16 06:50:00,343 - INFO - Analyzing file 447/883: src\components\manufacturer\top-manufacturers-grid.tsx
+2024-11-16 06:50:32,638 - INFO - Analyzing file 448/883: src\components\notifications\header-notification-icon.tsx
+2024-11-16 06:51:04,697 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:51:04,699 - ERROR - Error analyzing src\components\notifications\header-notification-icon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:51:05,203 - INFO - Analyzing file 449/883: src\components\notifications\notification-lists.tsx
+2024-11-16 06:51:28,210 - INFO - Analyzing file 450/883: src\components\orders\order-card.tsx
+2024-11-16 06:52:00,305 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:52:00,308 - ERROR - Error analyzing src\components\orders\order-card.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:52:00,811 - INFO - Analyzing file 451/883: src\components\orders\order-details.tsx
+2024-11-16 06:52:32,893 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:52:32,896 - ERROR - Error analyzing src\components\orders\order-details.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:52:33,399 - INFO - Analyzing file 452/883: src\components\orders\order-items.tsx
+2024-11-16 06:53:05,497 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:53:05,498 - ERROR - Error analyzing src\components\orders\order-items.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:53:06,002 - INFO - Analyzing file 453/883: src\components\orders\order-list-mobile.tsx
+2024-11-16 06:53:33,236 - INFO - Analyzing file 454/883: src\components\orders\order-list.tsx
+2024-11-16 06:54:05,327 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:54:05,329 - ERROR - Error analyzing src\components\orders\order-list.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:54:05,835 - INFO - Analyzing file 455/883: src\components\orders\order-status-progress-box.tsx
+2024-11-16 06:54:27,341 - INFO - Analyzing file 456/883: src\components\orders\order-view-header.tsx
+2024-11-16 06:54:59,459 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:54:59,461 - ERROR - Error analyzing src\components\orders\order-view-header.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:54:59,967 - INFO - Analyzing file 457/883: src\components\orders\order-view.tsx
+2024-11-16 06:55:22,729 - INFO - Analyzing file 458/883: src\components\orders\status-color.tsx
+2024-11-16 06:55:42,296 - INFO - Analyzing file 459/883: src\components\orders\suborder-items.tsx
+2024-11-16 06:56:14,375 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:56:14,377 - ERROR - Error analyzing src\components\orders\suborder-items.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:56:14,880 - INFO - Analyzing file 460/883: src\components\otp\atom.ts
+2024-11-16 06:56:26,739 - INFO - Analyzing file 461/883: src\components\otp\code-verify-form.tsx
+2024-11-16 06:56:58,816 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:56:58,818 - ERROR - Error analyzing src\components\otp\code-verify-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:56:59,323 - INFO - Analyzing file 462/883: src\components\otp\otp-form.tsx
+2024-11-16 06:57:23,559 - INFO - Analyzing file 463/883: src\components\otp\otp-register-form.tsx
+2024-11-16 06:57:55,666 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:57:55,667 - ERROR - Error analyzing src\components\otp\otp-register-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:57:56,171 - INFO - Analyzing file 464/883: src\components\otp\phone-number-form.tsx
+2024-11-16 06:58:28,266 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:58:28,267 - ERROR - Error analyzing src\components\otp\phone-number-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:58:28,770 - INFO - Analyzing file 465/883: src\components\payment\add-new-payment-modal.tsx
+2024-11-16 06:59:00,864 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:59:00,866 - ERROR - Error analyzing src\components\payment\add-new-payment-modal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:59:01,369 - INFO - Analyzing file 466/883: src\components\payment\gateway-control\change-gateway.tsx
+2024-11-16 06:59:13,708 - INFO - Analyzing file 467/883: src\components\payment\gateway-control\gateway-modal.tsx
+2024-11-16 06:59:45,807 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:59:45,808 - ERROR - Error analyzing src\components\payment\gateway-control\gateway-modal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 06:59:46,311 - INFO - Analyzing file 468/883: src\components\payment\pay-now-button.tsx
+2024-11-16 07:00:18,407 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:00:18,409 - ERROR - Error analyzing src\components\payment\pay-now-button.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:00:18,913 - INFO - Analyzing file 469/883: src\components\payment\payment-modal.tsx
+2024-11-16 07:00:47,960 - INFO - Analyzing file 470/883: src\components\payment\razorpay\razorpay-payment-modal.tsx
+2024-11-16 07:01:07,335 - INFO - Analyzing file 471/883: src\components\payment\saved-card-view-header.tsx
+2024-11-16 07:01:39,432 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:01:39,435 - ERROR - Error analyzing src\components\payment\saved-card-view-header.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:01:39,943 - INFO - Analyzing file 472/883: src\components\payment\stripe-element-modal.tsx
+2024-11-16 07:02:12,042 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:02:12,043 - ERROR - Error analyzing src\components\payment\stripe-element-modal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:02:12,547 - INFO - Analyzing file 473/883: src\components\payment\stripe-element-view-header.tsx
+2024-11-16 07:02:33,238 - INFO - Analyzing file 474/883: src\components\payment\stripe\stripe-base-form.tsx
+2024-11-16 07:03:05,302 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:03:05,304 - ERROR - Error analyzing src\components\payment\stripe\stripe-base-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:03:05,807 - INFO - Analyzing file 475/883: src\components\payment\stripe\stripe-element-base-form.tsx
+2024-11-16 07:03:37,924 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:03:37,926 - ERROR - Error analyzing src\components\payment\stripe\stripe-element-base-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:03:38,429 - INFO - Analyzing file 476/883: src\components\payment\stripe\stripe-element-form.tsx
+2024-11-16 07:03:55,744 - INFO - Analyzing file 477/883: src\components\payment\stripe\stripe-payment-form.tsx
+2024-11-16 07:04:27,793 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:04:27,795 - ERROR - Error analyzing src\components\payment\stripe\stripe-payment-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:04:28,299 - INFO - Analyzing file 478/883: src\components\payment\stripe\stripe-payment-modal.tsx
+2024-11-16 07:04:52,408 - INFO - Analyzing file 479/883: src\components\payment\stripe\stripe-saved-cards-list.tsx
+2024-11-16 07:05:24,481 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:05:24,483 - ERROR - Error analyzing src\components\payment\stripe\stripe-saved-cards-list.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:05:24,986 - INFO - Analyzing file 480/883: src\components\products\add-to-cart\add-to-cart-alt.tsx
+2024-11-16 07:05:41,028 - INFO - Analyzing file 481/883: src\components\products\add-to-cart\add-to-cart-btn.tsx
+2024-11-16 07:06:09,719 - INFO - Analyzing file 482/883: src\components\products\add-to-cart\add-to-cart-external.tsx
+2024-11-16 07:06:26,649 - INFO - Analyzing file 483/883: src\components\products\add-to-cart\add-to-cart.tsx
+2024-11-16 07:06:57,802 - INFO - Analyzing file 484/883: src\components\products\best-selling-products.tsx
+2024-11-16 07:07:18,018 - INFO - Analyzing file 485/883: src\components\products\cards\argon.tsx
+2024-11-16 07:07:50,095 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:07:50,098 - ERROR - Error analyzing src\components\products\cards\argon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:07:50,602 - INFO - Analyzing file 486/883: src\components\products\cards\card.tsx
+2024-11-16 07:08:17,768 - INFO - Analyzing file 487/883: src\components\products\cards\fluorine.tsx
+2024-11-16 07:08:26,253 - INFO - Analyzing file 488/883: src\components\products\cards\helium.tsx
+2024-11-16 07:08:58,322 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:08:58,324 - ERROR - Error analyzing src\components\products\cards\helium.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:08:58,829 - INFO - Analyzing file 489/883: src\components\products\cards\krypton.tsx
+2024-11-16 07:09:30,919 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:09:30,922 - ERROR - Error analyzing src\components\products\cards\krypton.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:09:31,425 - INFO - Analyzing file 490/883: src\components\products\cards\neon.tsx
+2024-11-16 07:10:03,529 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:10:03,533 - ERROR - Error analyzing src\components\products\cards\neon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:10:04,036 - INFO - Analyzing file 491/883: src\components\products\cards\oganesson.tsx
+2024-11-16 07:10:26,612 - INFO - Analyzing file 492/883: src\components\products\cards\radon.tsx
+2024-11-16 07:10:58,708 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:10:58,710 - ERROR - Error analyzing src\components\products\cards\radon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:10:59,216 - INFO - Analyzing file 493/883: src\components\products\cards\xenon.tsx
+2024-11-16 07:11:31,319 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:11:31,321 - ERROR - Error analyzing src\components\products\cards\xenon.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:11:31,825 - INFO - Analyzing file 494/883: src\components\products\details\attributes.context.tsx
+2024-11-16 07:11:47,069 - INFO - Analyzing file 495/883: src\components\products\details\badge-groups.tsx
+2024-11-16 07:12:04,586 - INFO - Analyzing file 496/883: src\components\products\details\book-details.tsx
+2024-11-16 07:12:28,764 - INFO - Analyzing file 497/883: src\components\products\details\category-badges.tsx
+2024-11-16 07:12:56,267 - INFO - Analyzing file 498/883: src\components\products\details\details.tsx
+2024-11-16 07:13:05,887 - INFO - Analyzing file 499/883: src\components\products\details\favorite-button.tsx
+2024-11-16 07:13:37,954 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:13:37,956 - ERROR - Error analyzing src\components\products\details\favorite-button.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:13:38,459 - INFO - Analyzing file 500/883: src\components\products\details\popup.tsx
+2024-11-16 07:14:10,550 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:14:10,553 - ERROR - Error analyzing src\components\products\details\popup.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:14:11,056 - INFO - Analyzing file 501/883: src\components\products\details\related-products.tsx
+2024-11-16 07:14:26,301 - INFO - Analyzing file 502/883: src\components\products\details\short-details.tsx
+2024-11-16 07:14:58,381 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:14:58,383 - ERROR - Error analyzing src\components\products\details\short-details.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:14:58,887 - INFO - Analyzing file 503/883: src\components\products\details\tag-groups.tsx
+2024-11-16 07:15:31,403 - INFO - Analyzing file 504/883: src\components\products\details\variation-groups.tsx
+2024-11-16 07:15:49,174 - INFO - Analyzing file 505/883: src\components\products\details\variation-price.tsx
+2024-11-16 07:16:15,010 - INFO - Analyzing file 506/883: src\components\products\downloadable-products.tsx
+2024-11-16 07:16:41,379 - INFO - Analyzing file 507/883: src\components\products\grid.tsx
+2024-11-16 07:17:13,440 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:17:13,443 - ERROR - Error analyzing src\components\products\grid.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:17:13,946 - INFO - Analyzing file 508/883: src\components\products\grids\home.tsx
+2024-11-16 07:17:31,349 - INFO - Analyzing file 509/883: src\components\products\group-products.tsx
+2024-11-16 07:17:52,439 - INFO - Analyzing file 510/883: src\components\products\group-products\grid.tsx
+2024-11-16 07:18:16,324 - INFO - Analyzing file 511/883: src\components\products\group-products\slider.tsx
+2024-11-16 07:18:48,404 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:18:48,405 - ERROR - Error analyzing src\components\products\group-products\slider.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:18:48,908 - INFO - Analyzing file 512/883: src\components\products\popular-products.tsx
+2024-11-16 07:19:15,045 - INFO - Analyzing file 513/883: src\components\products\selling-products.tsx
+2024-11-16 07:19:37,450 - INFO - Analyzing file 514/883: src\components\products\variation-modal.tsx
+2024-11-16 07:19:57,924 - INFO - Analyzing file 515/883: src\components\products\wishlist-products.tsx
+2024-11-16 07:20:24,437 - INFO - Analyzing file 516/883: src\components\profile\profile-add-or-update-contact.tsx
+2024-11-16 07:20:49,854 - INFO - Analyzing file 517/883: src\components\profile\profile-address.tsx
+2024-11-16 07:21:21,912 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:21:21,913 - ERROR - Error analyzing src\components\profile\profile-address.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:21:22,415 - INFO - Analyzing file 518/883: src\components\profile\profile-contact.tsx
+2024-11-16 07:21:40,858 - INFO - Analyzing file 519/883: src\components\profile\profile-form.tsx
+2024-11-16 07:22:10,522 - INFO - Analyzing file 520/883: src\components\profile\profile-update-email.tsx
+2024-11-16 07:22:36,801 - INFO - Analyzing file 521/883: src\components\promo-popup\index.tsx
+2024-11-16 07:23:08,880 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:23:08,882 - ERROR - Error analyzing src\components\promo-popup\index.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:23:09,385 - INFO - Analyzing file 522/883: src\components\promotions\promotion-slider.tsx
+2024-11-16 07:23:38,345 - INFO - Analyzing file 523/883: src\components\promotions\promotions.tsx
+2024-11-16 07:23:57,722 - INFO - Analyzing file 524/883: src\components\questions\my-questions.tsx
+2024-11-16 07:24:16,909 - INFO - Analyzing file 525/883: src\components\questions\product-questions.tsx
+2024-11-16 07:24:49,004 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:24:49,006 - ERROR - Error analyzing src\components\questions\product-questions.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:24:49,511 - INFO - Analyzing file 526/883: src\components\questions\question-card.tsx
+2024-11-16 07:25:21,579 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:25:21,581 - ERROR - Error analyzing src\components\questions\question-card.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:25:22,083 - INFO - Analyzing file 527/883: src\components\questions\question-form.tsx
+2024-11-16 07:25:54,141 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:25:54,145 - ERROR - Error analyzing src\components\questions\question-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:25:54,647 - INFO - Analyzing file 528/883: src\components\refunds\refund-form.tsx
+2024-11-16 07:26:16,667 - INFO - Analyzing file 529/883: src\components\refunds\refund-view.tsx
+2024-11-16 07:26:48,595 - INFO - Analyzing file 530/883: src\components\reports\report-view.tsx
+2024-11-16 07:27:14,442 - INFO - Analyzing file 531/883: src\components\review-popup\index.tsx
+2024-11-16 07:27:32,367 - INFO - Analyzing file 532/883: src\components\reviews\abuse-report.tsx
+2024-11-16 07:27:46,009 - INFO - Analyzing file 533/883: src\components\reviews\average-ratings.tsx
+2024-11-16 07:28:18,081 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:28:18,084 - ERROR - Error analyzing src\components\reviews\average-ratings.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:28:18,588 - INFO - Analyzing file 534/883: src\components\reviews\product-reviews.tsx
+2024-11-16 07:28:44,164 - INFO - Analyzing file 535/883: src\components\reviews\review-card.tsx
+2024-11-16 07:29:14,975 - INFO - Analyzing file 536/883: src\components\reviews\review-form.tsx
+2024-11-16 07:29:47,070 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:29:47,072 - ERROR - Error analyzing src\components\reviews\review-form.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:29:47,576 - INFO - Analyzing file 537/883: src\components\reviews\review-image-modal.tsx
+2024-11-16 07:30:19,637 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:30:19,640 - ERROR - Error analyzing src\components\reviews\review-image-modal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:30:20,143 - INFO - Analyzing file 538/883: src\components\reviews\sorting.tsx
+2024-11-16 07:30:47,879 - INFO - Analyzing file 539/883: src\components\reviews\star-filter.tsx
+2024-11-16 07:31:02,663 - INFO - Analyzing file 540/883: src\components\search-view\category-filter-view.tsx
+2024-11-16 07:31:30,089 - INFO - Analyzing file 541/883: src\components\search-view\checkbox-group.tsx
+2024-11-16 07:31:51,559 - INFO - Analyzing file 542/883: src\components\search-view\manufacturer-filter-view.tsx
+2024-11-16 07:32:18,474 - INFO - Analyzing file 543/883: src\components\search-view\price-filter.tsx
+2024-11-16 07:32:41,560 - INFO - Analyzing file 544/883: src\components\search-view\search-count.tsx
+2024-11-16 07:33:01,085 - INFO - Analyzing file 545/883: src\components\search-view\sidebar-filter.tsx
+2024-11-16 07:33:33,173 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:33:33,176 - ERROR - Error analyzing src\components\search-view\sidebar-filter.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:33:33,680 - INFO - Analyzing file 546/883: src\components\search-view\sorting.tsx
+2024-11-16 07:34:06,245 - INFO - Analyzing file 547/883: src\components\search-view\suggestion.tsx
+2024-11-16 07:34:23,400 - INFO - Analyzing file 548/883: src\components\search-view\tag-filter-view.tsx
+2024-11-16 07:34:51,223 - INFO - Analyzing file 549/883: src\components\seo\default-seo.tsx
+2024-11-16 07:35:19,229 - INFO - Analyzing file 550/883: src\components\seo\seo.tsx
+2024-11-16 07:35:46,578 - INFO - Analyzing file 551/883: src\components\settings\subscribe-to-newsletter.tsx
+2024-11-16 07:36:04,748 - INFO - Analyzing file 552/883: src\components\settings\subscription-form.tsx
+2024-11-16 07:36:28,556 - INFO - Analyzing file 553/883: src\components\settings\super-admin-contact-form.tsx
+2024-11-16 07:36:54,813 - INFO - Analyzing file 554/883: src\components\settings\vendor-contact-form.tsx
+2024-11-16 07:37:15,767 - INFO - Analyzing file 555/883: src\components\shops\sidebar.tsx
+2024-11-16 07:37:47,852 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:37:47,853 - ERROR - Error analyzing src\components\shops\sidebar.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:37:48,362 - INFO - Analyzing file 556/883: src\components\store-notice\notice-highlightedBar.tsx
+2024-11-16 07:38:17,783 - INFO - Analyzing file 557/883: src\components\terms\terms.tsx
+2024-11-16 07:38:49,321 - INFO - Analyzing file 558/883: src\components\ui\accordion.tsx
+2024-11-16 07:39:21,832 - INFO - Analyzing file 559/883: src\components\ui\alert.tsx
+2024-11-16 07:39:41,829 - INFO - Analyzing file 560/883: src\components\ui\attribute.tsx
+2024-11-16 07:40:00,887 - INFO - Analyzing file 561/883: src\components\ui\author-card.tsx
+2024-11-16 07:40:24,981 - INFO - Analyzing file 562/883: src\components\ui\auto-suggestion.tsx
+2024-11-16 07:40:54,722 - INFO - Analyzing file 563/883: src\components\ui\avatar.tsx
+2024-11-16 07:41:21,850 - INFO - Analyzing file 564/883: src\components\ui\back-button.tsx
+2024-11-16 07:41:44,672 - INFO - Analyzing file 565/883: src\components\ui\badge.tsx
+2024-11-16 07:42:15,693 - INFO - Analyzing file 566/883: src\components\ui\boxed-attribute.tsx
+2024-11-16 07:42:32,321 - INFO - Analyzing file 567/883: src\components\ui\breadcrumb-button.tsx
+2024-11-16 07:43:04,385 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:43:04,388 - ERROR - Error analyzing src\components\ui\breadcrumb-button.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:43:04,891 - INFO - Analyzing file 568/883: src\components\ui\button.tsx
+2024-11-16 07:43:36,404 - INFO - Analyzing file 569/883: src\components\ui\cards\card.tsx
+2024-11-16 07:43:50,513 - INFO - Analyzing file 570/883: src\components\ui\cards\confirmation.tsx
+2024-11-16 07:44:10,707 - INFO - Analyzing file 571/883: src\components\ui\cards\coupon.tsx
+2024-11-16 07:44:38,605 - INFO - Analyzing file 572/883: src\components\ui\cards\near-shop.tsx
+2024-11-16 07:45:08,185 - INFO - Analyzing file 573/883: src\components\ui\cards\shop.tsx
+2024-11-16 07:45:40,275 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:45:40,278 - ERROR - Error analyzing src\components\ui\cards\shop.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:45:40,782 - INFO - Analyzing file 574/883: src\components\ui\carousel.tsx
+2024-11-16 07:46:12,834 - INFO - Analyzing file 575/883: src\components\ui\category-breadcrumb-card.tsx
+2024-11-16 07:46:38,357 - INFO - Analyzing file 576/883: src\components\ui\category-card.tsx
+2024-11-16 07:47:07,838 - INFO - Analyzing file 577/883: src\components\ui\collapse.tsx
+2024-11-16 07:47:33,280 - INFO - Analyzing file 578/883: src\components\ui\countdown-timer\index.tsx
+2024-11-16 07:48:05,704 - INFO - Analyzing file 579/883: src\components\ui\countdown-timer\maintenance.tsx
+2024-11-16 07:48:31,553 - INFO - Analyzing file 580/883: src\components\ui\countdown.tsx
+2024-11-16 07:48:42,323 - INFO - Analyzing file 581/883: src\components\ui\counter.tsx
+2024-11-16 07:49:14,410 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:49:14,413 - ERROR - Error analyzing src\components\ui\counter.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:49:14,920 - INFO - Analyzing file 582/883: src\components\ui\disclosure.tsx
+2024-11-16 07:49:39,350 - INFO - Analyzing file 583/883: src\components\ui\drawer\drawer-portal.tsx
+2024-11-16 07:50:10,309 - INFO - Analyzing file 584/883: src\components\ui\drawer\drawer-wrapper.tsx
+2024-11-16 07:50:39,817 - INFO - Analyzing file 585/883: src\components\ui\drawer\drawer.tsx
+2024-11-16 07:51:11,760 - INFO - Analyzing file 586/883: src\components\ui\drawer\managed-drawer.tsx
+2024-11-16 07:51:39,982 - INFO - Analyzing file 587/883: src\components\ui\error-message.tsx
+2024-11-16 07:51:57,182 - INFO - Analyzing file 588/883: src\components\ui\forms\checkbox\boxed-checkbox.tsx
+2024-11-16 07:52:04,829 - INFO - Analyzing file 589/883: src\components\ui\forms\checkbox\checkbox.tsx
+2024-11-16 07:52:29,708 - INFO - Analyzing file 590/883: src\components\ui\forms\file-input.tsx
+2024-11-16 07:52:42,452 - INFO - Analyzing file 591/883: src\components\ui\forms\form.tsx
+2024-11-16 07:53:10,522 - INFO - Analyzing file 592/883: src\components\ui\forms\input.tsx
+2024-11-16 07:53:32,602 - INFO - Analyzing file 593/883: src\components\ui\forms\label.tsx
+2024-11-16 07:53:59,458 - INFO - Analyzing file 594/883: src\components\ui\forms\password-input.tsx
+2024-11-16 07:54:14,191 - INFO - Analyzing file 595/883: src\components\ui\forms\phone-input.tsx
+2024-11-16 07:54:26,655 - INFO - Analyzing file 596/883: src\components\ui\forms\radio\radio.module.css
+2024-11-16 07:54:38,769 - INFO - Analyzing file 597/883: src\components\ui\forms\radio\radio.tsx
+2024-11-16 07:55:03,151 - INFO - Analyzing file 598/883: src\components\ui\forms\range-slider.tsx
+2024-11-16 07:55:10,621 - INFO - Analyzing file 599/883: src\components\ui\forms\rate-input.tsx
+2024-11-16 07:55:29,753 - INFO - Analyzing file 600/883: src\components\ui\forms\text-area.tsx
+2024-11-16 07:55:41,982 - INFO - Analyzing file 601/883: src\components\ui\forms\uploader.tsx
+2024-11-16 07:56:07,403 - INFO - Analyzing file 602/883: src\components\ui\glow.tsx
+2024-11-16 07:56:29,859 - INFO - Analyzing file 603/883: src\components\ui\image.tsx
+2024-11-16 07:56:48,969 - INFO - Analyzing file 604/883: src\components\ui\language-switcher.tsx
+2024-11-16 07:57:20,658 - INFO - Analyzing file 605/883: src\components\ui\link.tsx
+2024-11-16 07:57:52,750 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:57:52,752 - ERROR - Error analyzing src\components\ui\link.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 07:57:53,254 - INFO - Analyzing file 606/883: src\components\ui\list-menu.tsx
+2024-11-16 07:58:19,536 - INFO - Analyzing file 607/883: src\components\ui\loaders\author-loader.tsx
+2024-11-16 07:58:36,518 - INFO - Analyzing file 608/883: src\components\ui\loaders\bakery-categories-loader.tsx
+2024-11-16 07:59:06,897 - INFO - Analyzing file 609/883: src\components\ui\loaders\categories-loader.tsx
+2024-11-16 07:59:22,267 - INFO - Analyzing file 610/883: src\components\ui\loaders\coupon-loader.tsx
+2024-11-16 07:59:34,907 - INFO - Analyzing file 611/883: src\components\ui\loaders\faq-loader.tsx
+2024-11-16 07:59:50,079 - INFO - Analyzing file 612/883: src\components\ui\loaders\manufacturer-loader.tsx
+2024-11-16 08:00:04,573 - INFO - Analyzing file 613/883: src\components\ui\loaders\near-shop-loader.tsx
+2024-11-16 08:00:22,481 - INFO - Analyzing file 614/883: src\components\ui\loaders\notify-header-content.tsx
+2024-11-16 08:00:36,610 - INFO - Analyzing file 615/883: src\components\ui\loaders\notify-loader.tsx
+2024-11-16 08:01:02,208 - INFO - Analyzing file 616/883: src\components\ui\loaders\page-loader.tsx
+2024-11-16 08:01:17,932 - INFO - Analyzing file 617/883: src\components\ui\loaders\product-loader.tsx
+2024-11-16 08:01:32,198 - INFO - Analyzing file 618/883: src\components\ui\loaders\question-loader.tsx
+2024-11-16 08:01:53,667 - INFO - Analyzing file 619/883: src\components\ui\loaders\spinner\spinner.module.css
+2024-11-16 08:02:04,462 - INFO - Analyzing file 620/883: src\components\ui\loaders\spinner\spinner.tsx
+2024-11-16 08:02:34,877 - INFO - Analyzing file 621/883: src\components\ui\loaders\table-loader.tsx
+2024-11-16 08:02:49,902 - INFO - Analyzing file 622/883: src\components\ui\loaders\terms-list-loader.tsx
+2024-11-16 08:02:59,601 - INFO - Analyzing file 623/883: src\components\ui\loaders\terms-loader.tsx
+2024-11-16 08:03:21,834 - INFO - Analyzing file 624/883: src\components\ui\loaders\wishlist-loader.tsx
+2024-11-16 08:03:41,119 - INFO - Analyzing file 625/883: src\components\ui\logo.tsx
+2024-11-16 08:04:06,596 - INFO - Analyzing file 626/883: src\components\ui\mega-menu.tsx
+2024-11-16 08:04:36,444 - INFO - Analyzing file 627/883: src\components\ui\menu.tsx
+2024-11-16 08:05:05,444 - INFO - Analyzing file 628/883: src\components\ui\modal\managed-modal.tsx
+2024-11-16 08:05:37,528 - ERROR - Error querying Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:05:37,529 - ERROR - Error analyzing src\components\ui\modal\managed-modal.tsx: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2024-11-16 08:05:38,031 - INFO - Analyzing file 629/883: src\components\ui\modal\modal.context.tsx
+2024-11-16 08:05:50,160 - INFO - Analyzing file 630/883: src\components\ui\modal\modal.tsx
+2024-11-16 08:06:06,303 - INFO - Analyzing file 631/883: src\components\ui\multi-range-slider\multi-range-slider.tsx
+2024-11-16 08:06:26,822 - INFO - Analyzing file 632/883: src\components\ui\not-found.tsx
+2024-11-16 08:06:51,660 - INFO - Analyzing file 633/883: src\components\ui\outlined-boxed-category.tsx
+2024-11-16 08:07:16,046 - INFO - Analyzing file 634/883: src\components\ui\pagination.tsx
+2024-11-16 08:07:26,460 - INFO - Analysis stopped by user
+2024-11-16 08:07:43,937 - INFO - Analysis completed. Results saved to: analysis_results\analysis_20241116_080743.json
