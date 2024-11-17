@@ -1,19 +1,649 @@
-import os
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Set, Any, Tuple, Union
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Any, Union
 import logging
 import json
 import re
 import requests
-from concurrent.futures import ThreadPoolExecutor
+import time
 from time import sleep
+import os
+
+
+@dataclass
+class CodeGenerationConfig:
+    """Configuration for code generation"""
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "codellama"  # Default to codellama for better code generation
+    API_TIMEOUT: int = 120
+    MAX_RETRIES: int = 3
+    RETRY_DELAY: int = 2
+    TEMPLATE_DIR: Path = Path("templates")
+    CACHE_DIR: Path = Path(".cache")
+    
+    def validate(self) -> bool:
+        """Validate configuration"""
+        try:
+            self.CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            self.TEMPLATE_DIR.mkdir(parents=True, exist_ok=True)
+            
+            # Test connection to Ollama
+            response = requests.get(f"{self.OLLAMA_BASE_URL}/api/version", timeout=5)
+            response.raise_for_status()
+            return True
+        except Exception as e:
+            logging.error(f"Configuration validation failed: {str(e)}")
+            return False
+
+class OllamaClient:
+    """Client for interacting with Ollama API"""
+    
+    def __init__(self, config: CodeGenerationConfig):
+        self.config = config
+        self.logger = logging.getLogger('OllamaClient')
+        
+    def generate_code(self, entity_path: str, entity_content: str, 
+                     generation_type: str) -> str:
+        """Generate code using Ollama"""
+        try:
+            # Prepare context
+            context = self._prepare_context(entity_path, entity_content, generation_type)
+            
+            # Create prompts
+            system_prompt = self._create_system_prompt(generation_type)
+            user_prompt = self._create_user_prompt(context)
+            
+            # Combined prompt
+            full_prompt = f"{system_prompt}\n\n{user_prompt}"
+            
+            # Generate code
+            generated_code = self.ollama.generate_code(full_prompt)
+            
+            # Clean and validate
+            clean_code = self._clean_generated_code(generated_code)
+            if not self._validate_code(clean_code, generation_type):
+                raise ValueError("Generated code validation failed")
+                
+            return clean_code
+            
+        except Exception as e:
+            self.logger.error(f"Code generation failed: {str(e)}")
+            raise
+    
+    def _clean_generated_code(self, code: str) -> str:
+        """Clean generated code"""
+        # Remove markdown if present
+        code = re.sub(r'```typescript\n', '', code)
+        code = re.sub(r'```\n?', '', code)
+        return code.strip()
+    
+    def _validate_code(self, code: str, generation_type: str) -> bool:
+        """Validate generated code"""
+        if not code:
+            return False
+            
+        # Basic validation
+        if generation_type == 'dto':
+            required = ['@ApiProperty', 'export class', '@IsOptional']
+        elif generation_type == 'service':
+            required = ['@Injectable', 'constructor', 'async']
+        else:  # controller
+            required = ['@Controller', '@Get', '@Post', '@ApiTags']
+            
+        return all(req in code for req in required)
+
+    def _prepare_context(self, entity_path: str, entity_content: str, 
+                        generation_type: str) -> Dict:
+        """Prepare context for code generation"""
+        
+        # Basic context
+        context = {
+            'entity': {
+                'path': entity_path,
+                'content': entity_content,
+                'name': Path(entity_path).stem.replace('.entity', '')
+            },
+            'generation_type': generation_type,
+            'patterns': self.project_context.get('patterns', {}),
+            'similar_files': []
+        }
+
+    def check_connection(self) -> Tuple[bool, str]:
+        """Check connection to Ollama"""
+        try:
+            # Check version endpoint
+            response = requests.get(
+                f"{self.config.OLLAMA_BASE_URL}/api/version",
+                timeout=5
+            )
+            response.raise_for_status()
+            
+            # Test model availability
+            test_response = self.generate_code("// Test connection")
+            if test_response:
+                return True, "Connection successful"
+                
+        except Exception as e:
+            return False, str(e)
+            
+        return False, "Unknown error"
 
 class SmartCodeGenerator:
-    def __init__(self, config):
+    """Main code generation orchestrator"""
+    
+    def __init__(self, config: CodeGenerationConfig):
         self.config = config
         self.logger = logging.getLogger('SmartCodeGenerator')
+        self.ollama = OllamaClient(config)
         self.project_context = {}
-        self.entity_metadata = {}
+
+    def _find_similar_files(self, target_path: str) -> List[Dict]:
+        """Find similar files for context"""
+        similar = []
+        target_name = Path(target_path).stem.split('.')[0]
+        
+        for category in ['entities', 'dtos', 'services', 'controllers']:
+            if category in self.project_context:
+                for file in self.project_context[category]:
+                    file_name = Path(file['path']).stem.split('.')[0]
+                    if file_name != target_name and len(similar) < 3:
+                        similar.append(file)
+                
+        return similar
+
+    def generate_code_with_ollama(self, entity_path: str, entity_content: str, 
+                            generation_type: str, retry_count: int = 0) -> str:
+        """Generate code using Ollama with project context and retries"""
+        try:
+            context = self._prepare_generation_context(entity_path, entity_content, generation_type)
+            
+            system_prompt = self._create_system_prompt(generation_type)
+            user_prompt = self._create_user_prompt(context)
+
+            # Combine prompts for the generate endpoint
+            combined_prompt = f"System: {system_prompt}\n\nUser: {user_prompt}"
+
+            request_data = {
+                "model": self.config.OLLAMA_MODEL,
+                "prompt": combined_prompt,
+                "stream": False,
+                "options": {
+                    "temperature": 0.7,
+                    "top_p": 0.9,
+                    "stop": ["```"],
+                    "num_predict": 2048,
+                }
+            }
+
+            if not self._verify_json_serializable(request_data):
+                raise ValueError("Request data is not JSON serializable")
+
+            # Query Ollama using the generate endpoint
+            self.logger.debug(f"Sending request to {self.config.OLLAMA_BASE_URL}/api/generate")
+            response = requests.post(
+                f"{self.config.OLLAMA_BASE_URL}/api/generate",
+                json=request_data,
+                timeout=120
+            )
+            
+            response.raise_for_status()
+            result = response.json()
+            
+            generated_code = result.get('response', '')
+            clean_code = self._extract_code_from_response(generated_code)
+            
+            if not self._validate_generated_code(clean_code, generation_type):
+                raise ValueError("Generated code validation failed")
+                
+            return clean_code
+
+        except requests.exceptions.ConnectionError:
+            self.logger.error("Cannot connect to Ollama server. Please ensure Ollama is running.")
+            if retry_count < self.config.MAX_RETRIES:
+                sleep(self.config.RETRY_DELAY * (retry_count + 1))
+                return self.generate_code_with_ollama(
+                    entity_path, entity_content, generation_type, retry_count + 1
+                )
+            raise
+        except Exception as e:
+            self.logger.error(f"Error generating {generation_type}: {str(e)}")
+            if retry_count < self.config.MAX_RETRIES:
+                sleep(self.config.RETRY_DELAY * (retry_count + 1))
+                return self.generate_code_with_ollama(
+                    entity_path, entity_content, generation_type, retry_count + 1
+                )
+            raise
+
+    def _create_user_prompt(self, context: Dict) -> str:
+        """Create user prompt with context"""
+        return f"""Generate a {context['generation_type']} for the following entity:
+
+File: {context['entity']['path']}
+
+Content:
+{context['entity']['content']}
+
+Project Patterns:
+{json.dumps(context.get('project_patterns', {}), indent=2)}
+
+Similar Files:
+{self._format_similar_files(context.get('similar_files', []))}
+
+Requirements:
+1. Follow the existing project patterns
+2. Include all necessary imports
+3. Add comprehensive documentation
+4. Implement proper validation
+5. Follow TypeScript best practices"""
+
+    def _prepare_generation_context(self, entity_path: str, entity_content: str, 
+                                generation_type: str) -> Dict:
+        """Prepare context for code generation"""
+        try:
+            self.logger.debug("Starting context preparation")
+            
+            self.logger.debug("Extracting metadata")
+            entity_metadata = self._extract_file_metadata(entity_content)
+            
+            self.logger.debug("Finding similar files")
+            similar_files = self._find_similar_files(entity_path)
+            
+            self.logger.debug("Getting relationships")
+            relationships = self.project_context.get('relationships', {}).get(entity_path, {})
+            
+            # Extract entity name
+            entity_name = Path(entity_path).stem.replace('.entity', '')
+            
+            # Build context dictionary
+            context = {
+                'entity': {
+                    'name': entity_name,
+                    'path': str(entity_path),
+                    'content': entity_content,
+                    'metadata': self._make_json_serializable(entity_metadata)
+                },
+                'similar_files': self._make_json_serializable(similar_files),
+                'relationships': self._make_json_serializable(relationships),
+                'project_patterns': self._make_json_serializable(
+                    self.project_context.get('patterns', {})
+                ),
+                'generation_type': generation_type
+            }
+            
+            return context
+                
+        except Exception as e:
+            self.logger.error(f"Error preparing context: {str(e)}")
+            raise
+        
+    def analyze_project(self, source_path: Path) -> None:
+        """Analyze project structure"""
+        try:
+            self.logger.info(f"Analyzing project at {source_path}")
+            
+            # Reset context
+            self.project_context = {
+                'entities': [],
+                'services': [],
+                'controllers': [],
+                'dtos': [],
+                'common': [],
+                'patterns': {},
+                'relationships': {}
+            }
+            
+            # Scan project files
+            for root, _, files in os.walk(source_path):
+                for file in files:
+                    file_path = Path(root) / file
+                    if self._should_process_file(file_path):
+                        content = self._read_file(file_path)
+                        if content:
+                            self._process_file(file_path, content)
+                            
+            # Analyze patterns
+            self._analyze_patterns()
+            self.logger.info("Project analysis completed")
+            
+        except Exception as e:
+            self.logger.error(f"Project analysis failed: {str(e)}")
+            raise
+
+    def _should_process_file(self, file_path: Path) -> bool:
+        """Check if file should be processed"""
+        if any(ignore in str(file_path) for ignore in ['node_modules', '.git', 'dist']):
+            return False
+            
+        return file_path.suffix in ['.ts', '.tsx', '.js', '.jsx']
+        
+    def _read_file(self, file_path: Path) -> Optional[str]:
+        """Read file content safely"""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return f.read()
+        except Exception as e:
+            self.logger.warning(f"Error reading {file_path}: {str(e)}")
+            return None
+            
+    def _process_file(self, file_path: Path, content: str) -> None:
+        """Process individual file"""
+        try:
+            # Extract metadata
+            metadata = self._extract_metadata(content)
+            
+            # Categorize file
+            file_info = {
+                'path': str(file_path),
+                'content': content,
+                'metadata': metadata
+            }
+            
+            if 'entity' in file_path.name:
+                self.project_context['entities'].append(file_info)
+            elif 'service' in file_path.name:
+                self.project_context['services'].append(file_info)
+            elif 'controller' in file_path.name:
+                self.project_context['controllers'].append(file_info)
+            elif 'dto' in file_path.name:
+                self.project_context['dtos'].append(file_info)
+            else:
+                self.project_context['common'].append(file_info)
+                
+        except Exception as e:
+            self.logger.warning(f"Error processing {file_path}: {str(e)}")
+            
+    def _extract_metadata(self, content: str) -> Dict:
+        """Extract metadata from file content"""
+        metadata = {
+            'imports': [],
+            'exports': [],
+            'classes': [],
+            'interfaces': [],
+            'decorators': []
+        }
+        
+        # Extract patterns
+        import_pattern = r'import\s+.*?from\s+[\'"]([^\'"]+)[\'"]'
+        class_pattern = r'class\s+(\w+)'
+        interface_pattern = r'interface\s+(\w+)'
+        decorator_pattern = r'@(\w+)'
+        
+        metadata['imports'] = re.findall(import_pattern, content)
+        metadata['classes'] = re.findall(class_pattern, content)
+        metadata['interfaces'] = re.findall(interface_pattern, content)
+        metadata['decorators'] = re.findall(decorator_pattern, content)
+        
+        return metadata
+
+    def _analyze_patterns(self) -> None:
+        """Analyze project patterns and conventions"""
+        try:
+            patterns = {
+                'naming': self._analyze_naming_patterns(),
+                'decorators': self._analyze_decorator_patterns(),
+                'file_structure': self._analyze_file_structure(),
+                'validation': self._analyze_validation_patterns(),
+                'error_handling': self._analyze_error_patterns(),
+                'relationships': self._analyze_relationships()
+            }
+            
+            self.project_context['patterns'] = patterns
+            self.logger.info("Pattern analysis completed")
+            
+        except Exception as e:
+            self.logger.error(f"Pattern analysis failed: {str(e)}")
+            raise
+
+    def _analyze_naming_patterns(self) -> Dict:
+        """Analyze naming conventions"""
+        patterns = {
+            'entities': {},
+            'dtos': {},
+            'services': {},
+            'controllers': {},
+            'file_naming': {},
+            'class_naming': {},
+            'method_naming': {}
+        }
+        
+        try:
+            # Analyze file naming patterns
+            for category in ['entities', 'dtos', 'services', 'controllers']:
+                if category in self.project_context:
+                    for file_info in self.project_context[category]:
+                        file_path = Path(file_info['path'])
+                        
+                        # Extract file naming pattern
+                        name_parts = file_path.stem.split('.')
+                        if len(name_parts) > 1:
+                            pattern = '.'.join(name_parts[:-1])  # Everything before last part
+                            patterns['file_naming'][pattern] = patterns['file_naming'].get(pattern, 0) + 1
+                        
+                        # Extract class naming pattern
+                        for class_name in file_info['metadata'].get('classes', []):
+                            if class_name.endswith('DTO'):
+                                patterns['class_naming']['dto'] = 'PascalCase + DTO'
+                            elif class_name.endswith('Entity'):
+                                patterns['class_naming']['entity'] = 'PascalCase + Entity'
+                            elif class_name.endswith('Service'):
+                                patterns['class_naming']['service'] = 'PascalCase + Service'
+                            elif class_name.endswith('Controller'):
+                                patterns['class_naming']['controller'] = 'PascalCase + Controller'
+                                
+            return patterns
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing naming patterns: {str(e)}")
+            return patterns
+
+    def _analyze_decorator_patterns(self) -> Dict:
+        """Analyze decorator usage patterns"""
+        patterns = {
+            'entities': set(),
+            'dtos': set(),
+            'controllers': set(),
+            'services': set(),
+            'validation': set(),
+            'swagger': set()
+        }
+        
+        try:
+            # Analyze decorator usage across different file types
+            for file_type, files in self.project_context.items():
+                if isinstance(files, list):
+                    for file_info in files:
+                        for decorator in file_info['metadata'].get('decorators', []):
+                            # Categorize decorators
+                            if decorator.startswith(('Is', 'Min', 'Max', 'Length')):
+                                patterns['validation'].add(decorator)
+                            elif decorator.startswith('Api'):
+                                patterns['swagger'].add(decorator)
+                            elif decorator in ['Entity', 'Column', 'PrimaryColumn']:
+                                patterns['entities'].add(decorator)
+                            elif decorator in ['Injectable', 'Service']:
+                                patterns['services'].add(decorator)
+                            elif decorator in ['Controller', 'Get', 'Post', 'Put', 'Delete']:
+                                patterns['controllers'].add(decorator)
+                                
+            # Convert sets to lists for JSON serialization
+            return {k: list(v) for k, v in patterns.items()}
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing decorator patterns: {str(e)}")
+            return {k: list(v) for k, v in patterns.items()}
+
+    def _analyze_file_structure(self) -> Dict:
+        """Analyze project file structure patterns"""
+        patterns = {
+            'module_structure': {},
+            'feature_structure': {},
+            'common_folders': set(),
+            'test_structure': {}
+        }
+        
+        try:
+            # Analyze common project structure patterns
+            all_paths = []
+            for category in self.project_context:
+                if isinstance(self.project_context[category], list):
+                    for file_info in self.project_context[category]:
+                        all_paths.append(Path(file_info['path']))
+                        
+            # Analyze module/feature structure
+            for path in all_paths:
+                parts = path.parts
+                if len(parts) > 2:
+                    feature_folder = parts[-3] if len(parts) > 3 else parts[-2]
+                    if any(x in feature_folder for x in ['module', 'feature', 'domain']):
+                        structure = {
+                            'has_entity': any(p.endswith('.entity.ts') for p in all_paths if feature_folder in p.parts),
+                            'has_service': any(p.endswith('.service.ts') for p in all_paths if feature_folder in p.parts),
+                            'has_controller': any(p.endswith('.controller.ts') for p in all_paths if feature_folder in p.parts),
+                            'has_dto': any(p.endswith('.dto.ts') for p in all_paths if feature_folder in p.parts),
+                            'has_interface': any(p.endswith('.interface.ts') for p in all_paths if feature_folder in p.parts)
+                        }
+                        patterns['module_structure'][feature_folder] = structure
+                        
+            # Identify common folders
+            for path in all_paths:
+                common_folders = ['common', 'shared', 'utils', 'helpers', 'config']
+                patterns['common_folders'].update(
+                    folder for folder in path.parts 
+                    if folder.lower() in common_folders
+                )
+                
+            # Convert sets to lists for JSON serialization
+            patterns['common_folders'] = list(patterns['common_folders'])
+            return patterns
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing file structure: {str(e)}")
+            return patterns
+
+    def _analyze_validation_patterns(self) -> Dict:
+        """Analyze validation patterns"""
+        patterns = {
+            'class_validators': set(),
+            'custom_validators': set(),
+            'validation_pipes': set(),
+            'common_rules': {}
+        }
+        
+        try:
+            # Analyze validation patterns in DTOs
+            if 'dtos' in self.project_context:
+                for file_info in self.project_context['dtos']:
+                    content = file_info['content']
+                    
+                    # Extract class-validator decorators
+                    validator_pattern = r'@(\w+(?:Max|Min|Length|Contains|Matches|IsString|IsNumber|IsDate|IsBoolean|IsEmail|IsOptional|ValidateNested)\w*)'
+                    validators = re.findall(validator_pattern, content)
+                    patterns['class_validators'].update(validators)
+                    
+                    # Extract custom validators
+                    custom_pattern = r'class\s+(\w+(?:Validator|Guard|Pipe))\s+'
+                    custom = re.findall(custom_pattern, content)
+                    patterns['custom_validators'].update(custom)
+                    
+                    # Extract validation pipes
+                    pipe_pattern = r'@UsePipes\((\w+)\)'
+                    pipes = re.findall(pipe_pattern, content)
+                    patterns['validation_pipes'].update(pipes)
+            
+            # Convert sets to lists for JSON serialization
+            return {
+                'class_validators': list(patterns['class_validators']),
+                'custom_validators': list(patterns['custom_validators']),
+                'validation_pipes': list(patterns['validation_pipes']),
+                'common_rules': patterns['common_rules']
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing validation patterns: {str(e)}")
+            return {k: list(v) if isinstance(v, set) else v for k, v in patterns.items()}
+
+    def _analyze_error_patterns(self) -> Dict:
+        """Analyze error handling patterns"""
+        patterns = {
+            'exceptions': set(),
+            'error_handlers': set(),
+            'common_errors': {},
+            'error_filters': set()
+        }
+        
+        try:
+            for category in ['services', 'controllers']:
+                if category in self.project_context:
+                    for file_info in self.project_context[category]:
+                        content = file_info['content']
+                        
+                        # Extract thrown exceptions
+                        exception_pattern = r'throw\s+new\s+(\w+Error)'
+                        exceptions = re.findall(exception_pattern, content)
+                        patterns['exceptions'].update(exceptions)
+                        
+                        # Extract error handlers
+                        handler_pattern = r'@Catch\((\w+)\)'
+                        handlers = re.findall(handler_pattern, content)
+                        patterns['error_handlers'].update(handlers)
+                        
+                        # Extract error filters
+                        filter_pattern = r'class\s+(\w+Filter)\s+implements\s+ExceptionFilter'
+                        filters = re.findall(filter_pattern, content)
+                        patterns['error_filters'].update(filters)
+                        
+                        # Count common errors
+                        for exc in exceptions:
+                            patterns['common_errors'][exc] = patterns['common_errors'].get(exc, 0) + 1
+            
+            # Convert sets to lists for JSON serialization
+            return {
+                'exceptions': list(patterns['exceptions']),
+                'error_handlers': list(patterns['error_handlers']),
+                'error_filters': list(patterns['error_filters']),
+                'common_errors': patterns['common_errors']
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing error patterns: {str(e)}")
+            return {k: list(v) if isinstance(v, set) else v for k, v in patterns.items()}
+
+    def _analyze_relationships(self) -> Dict:
+        """Analyze entity relationships"""
+        patterns = {
+            'one_to_many': [],
+            'many_to_one': [],
+            'one_to_one': [],
+            'many_to_many': [],
+            'dependencies': {}
+        }
+        
+        try:
+            if 'entities' in self.project_context:
+                for file_info in self.project_context['entities']:
+                    content = file_info['content']
+                    file_path = file_info['path']
+                    
+                    # Extract relationships from decorators
+                    relationships = {
+                        'one_to_many': re.findall(r'@OneToMany\(\)\s+(\w+):', content),
+                        'many_to_one': re.findall(r'@ManyToOne\(\)\s+(\w+):', content),
+                        'one_to_one': re.findall(r'@OneToOne\(\)\s+(\w+):', content),
+                        'many_to_many': re.findall(r'@ManyToMany\(\)\s+(\w+):', content)
+                    }
+                    
+                    if any(rel for rel in relationships.values()):
+                        patterns['dependencies'][file_path] = relationships
+                        
+                    # Add to overall patterns
+                    for rel_type, rels in relationships.items():
+                        patterns[rel_type].extend(rels)
+                        
+            return patterns
+            
+        except Exception as e:
+            self.logger.error(f"Error analyzing relationships: {str(e)}")
+            return patterns
 
     def _deep_serialize(self, obj: Any, path: str = "root") -> Union[dict, list, str, int, float, bool, None]:
         """Deep serialize any object to JSON-compatible format"""
@@ -103,123 +733,40 @@ Requirements:
             self.logger.error(f"Error creating system prompt: {str(e)}")
             raise
 
-    def _create_user_prompt(self, context: Dict, generation_type: str) -> str:
-        """Create detailed user prompt with complete context"""
-        try:
-            # Serialize all parts of the context
-            serialized_context = self._deep_serialize(context)
-            
-            entity_content = serialized_context['entity']['content']
-            entity_path = serialized_context['entity']['path']
-            
-            # Create patterns section with serialized data
-            patterns_section = """Project Patterns:
-{}""".format(json.dumps({
-                'naming': serialized_context['project_patterns'].get('naming', {}),
-                'decorators': serialized_context['project_patterns'].get('decorators', {}),
-                'error_handling': serialized_context['project_patterns'].get('error_handling', {}),
-                'validation': serialized_context['project_patterns'].get('validation', {})
-            }, indent=2))
+    def _create_user_prompt(self, context: Dict) -> str:
+        """Create user prompt with context"""
+        return f"""Generate a {context['generation_type']} for the following entity:
 
-            # Add entity info
-            entity_section = f"""Entity Definition ({entity_path}):
-```typescript
-{entity_content}
-```"""
+File: {context['entity']['path']}
 
-            # Add relationships with serialized data
-            relationships_section = f"""Entity Relationships:
-{json.dumps(serialized_context.get('relationships', {}), indent=2)}"""
+Content:
+{context['entity']['content']}
 
-            # Add similar files from serialized data
-            examples_section = "Similar Existing Files:"
-            for file in serialized_context.get('similar_files', []):
-                examples_section += f"\n\nFile: {file['path']}\n```typescript\n{file['content']}\n```"
+Project Patterns:
+{json.dumps(context['patterns'], indent=2)}
 
-            # Create final prompt
-            prompt = f"""{entity_section}
+Similar Files:
+{self._format_similar_files(context['similar_files'])}
 
-{patterns_section}
+Requirements:
+1. Follow the existing project patterns
+2. Include all necessary imports
+3. Add comprehensive documentation
+4. Implement proper validation
+5. Follow TypeScript best practices"""
 
-{relationships_section}
 
-{examples_section}
 
-Generate a complete {generation_type} following all project patterns and conventions."""
 
-            # Verify the prompt can be serialized
-            if not self._verify_json_serializable({"prompt": prompt}):
-                raise ValueError("Generated prompt is not JSON serializable")
-
-            return prompt
-
-        except Exception as e:
-            self.logger.error(f"Error creating user prompt: {str(e)}")
-            raise
-
-    def generate_code_with_ollama(self, entity_path: str, entity_content: str, 
-                            generation_type: str, retry_count: int = 0) -> str:
-        """Generate code using Ollama with project context and retries"""
-        try:
-            context = self._prepare_generation_context(entity_path, entity_content, generation_type)
-            
-            system_prompt = self._create_system_prompt(generation_type)
-            user_prompt = self._create_user_prompt(context, generation_type)
-
-            # Combine prompts for the generate endpoint
-            combined_prompt = f"System: {system_prompt}\n\nUser: {user_prompt}"
-
-            request_data = {
-                "model": self.config.OLLAMA_MODEL,
-                "prompt": combined_prompt,
-                "stream": False,
-                "options": {
-                    "temperature": 0.7,
-                    "top_p": 0.9,
-                    "stop": ["```"],
-                    "num_predict": 2048,
-                }
-            }
-
-            if not self._verify_json_serializable(request_data):
-                raise ValueError("Request data is not JSON serializable")
-
-            # Query Ollama using the generate endpoint
-            self.logger.debug(f"Sending request to {self.config.OLLAMA_BASE_URL}/api/v1/generate")
-            response = requests.post(
-                f"{self.config.OLLAMA_BASE_URL}/api/v1/generate",
-                json=request_data,
-                timeout=120
-            )
-            
-            response.raise_for_status()
-            result = response.json()
-            
-            generated_code = result.get('response', '')
-            clean_code = self._extract_code_from_response(generated_code)
-            
-            if not self._validate_generated_code(clean_code, generation_type):
-                raise ValueError("Generated code validation failed")
-                
-            return clean_code
-
-        except requests.exceptions.ConnectionError:
-            self.logger.error("Cannot connect to Ollama server. Please ensure Ollama is running.")
-            if retry_count < self.config.MAX_RETRIES:
-                sleep(self.config.RETRY_DELAY * (retry_count + 1))
-                return self.generate_code_with_ollama(
-                    entity_path, entity_content, generation_type, retry_count + 1
-                )
-            raise
-        except Exception as e:
-            self.logger.error(f"Error generating {generation_type}: {str(e)}")
-            if retry_count < self.config.MAX_RETRIES:
-                sleep(self.config.RETRY_DELAY * (retry_count + 1))
-                return self.generate_code_with_ollama(
-                    entity_path, entity_content, generation_type, retry_count + 1
-                )
-            raise
-
+    def _format_similar_files(self, files: List[Dict]) -> str:
+        """Format similar files for prompt"""
+        formatted = []
+        for file in files:
+            formatted.append(f"File: {file['path']}\n")
+            formatted.append(file['content'])
+            formatted.append("\n---\n")
+        return "\n".join(formatted)
+    
 
     def _make_json_serializable(self, obj, path="root"):
         """Convert any object to a JSON serializable format with detailed logging"""
@@ -500,90 +1047,9 @@ Generate a complete {generation_type} following all project patterns and convent
                 self.logger.warning(f"Error analyzing validation patterns: {str(e)}")
                 return {k: list(v) for k, v in patterns.items()}
 
-    def _find_similar_files(self, file_type: str, limit: int = 3) -> List[Dict]:
-        """Find similar existing files in the project for context"""
-        try:
-            # Map file type to project context key
-            type_mapping = {
-                'dto': 'dtos',
-                'service': 'services',
-                'controller': 'controllers',
-                'entity': 'entities'
-            }
-            
-            category = type_mapping.get(file_type, '')
-            if not category or category not in self.project_context:
-                return []
-            
-            # Get files from appropriate category
-            files = self.project_context[category]
-            
-            # Sort by similarity to current pattern
-            # TODO: Implement more sophisticated similarity matching
-            return files[:limit]
-            
-        except Exception as e:
-            self.logger.warning(f"Error finding similar files: {str(e)}")
-            return []
+    
 
-    def _prepare_generation_context(self, entity_path: str, entity_content: str, 
-                                    generation_type: str) -> Dict:
-            """Prepare context for code generation"""
-            try:
-                self.logger.debug("Starting context preparation")
-                
-                self.logger.debug("Extracting metadata")
-                entity_metadata = self._extract_file_metadata(entity_content)
-                self.logger.debug(f"Metadata extracted: {type(entity_metadata)}")
-                
-                self.logger.debug("Finding similar files")
-                similar_files = self._find_similar_files(generation_type)
-                self.logger.debug(f"Similar files found: {len(similar_files)} files")
-                
-                self.logger.debug("Getting relationships")
-                relationships = self.project_context.get('relationships', {}).get(entity_path, {})
-                self.logger.debug(f"Relationships structure: {type(relationships)}")
-                
-                # Extract entity name
-                entity_name = Path(entity_path).stem.replace('.entity', '')
-                self.logger.debug(f"Entity name: {entity_name}")
-                
-                # Build context dictionary
-                self.logger.debug("Building context dictionary")
-                context = {
-                    'entity': {
-                        'name': entity_name,
-                        'path': str(entity_path),
-                        'content': entity_content,
-                        'metadata': self._make_json_serializable(entity_metadata, 'entity.metadata')
-                    },
-                    'similar_files': self._make_json_serializable(similar_files, 'similar_files'),
-                    'relationships': self._make_json_serializable(relationships, 'relationships'),
-                    'project_patterns': self._make_json_serializable(
-                        self.project_context.get('patterns', {}), 
-                        'project_patterns'
-                    ),
-                    'generation_type': generation_type
-                }
-                
-                # Verify serialization
-                self.logger.debug("Verifying context serialization")
-                try:
-                    json.dumps(context)
-                    self.logger.debug("Context successfully serialized to JSON")
-                except TypeError as e:
-                    self.logger.error(f"JSON serialization failed: {str(e)}")
-                    self.logger.debug("Context keys present: " + ", ".join(context.keys()))
-                    for key, value in context.items():
-                        self.logger.debug(f"Type of {key}: {type(value)}")
-                    raise
-                
-                return context
-                
-            except Exception as e:
-                self.logger.error(f"Error preparing context: {str(e)}")
-                self.logger.debug("Stack trace:", exc_info=True)
-                raise
+    
 
     def _filter_source_files(self, file_path: str) -> bool:
         """Filter function for source files"""

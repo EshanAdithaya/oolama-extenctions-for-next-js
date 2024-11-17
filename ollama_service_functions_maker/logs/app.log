@@ -3031,3 +3031,372 @@
 2024-11-17 00:34:05,715 - SmartCodeGenerator - ERROR - Error generating service: 404 Client Error: Not Found for url: http://localhost:11434/api/v1/generate
 2024-11-17 00:34:09,735 - SmartCodeGenerator - ERROR - Error generating service: 404 Client Error: Not Found for url: http://localhost:11434/api/v1/generate
 2024-11-17 07:46:28,612 - APIGenerator - INFO - Application started
+2024-11-17 08:08:17,761 - APIGenerator - INFO - Application started
+2024-11-17 08:08:27,614 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-17 08:08:40,572 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-17 08:08:47,626 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 08:08:47,656 - APIGenerator - INFO - Found 25 entities
+2024-11-17 08:09:00,171 - APIGenerator - INFO - Analyzing project structure...
+2024-11-17 08:09:00,173 - SmartCodeGenerator - INFO - Analyzing project structure at C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 08:09:00,173 - SmartCodeGenerator - ERROR - Error analyzing project: name 'os' is not defined
+2024-11-17 08:09:00,174 - APIGenerator - INFO - Error generating files: name 'os' is not defined
+2024-11-17 08:09:32,561 - APIGenerator - INFO - Application started
+2024-11-17 08:09:40,130 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-17 08:09:48,914 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-17 08:10:11,716 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 08:10:11,743 - APIGenerator - INFO - Found 25 entities
+2024-11-17 08:10:13,683 - APIGenerator - INFO - Analyzing project structure...
+2024-11-17 08:10:13,683 - SmartCodeGenerator - INFO - Analyzing project structure at C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 08:10:13,734 - SmartCodeGenerator - INFO - Project analysis completed
+2024-11-17 08:10:13,734 - APIGenerator - INFO - Project analysis completed
+2024-11-17 08:10:13,735 - APIGenerator - INFO - Processing src\addresses\entities\address.entity.ts (1/25)
+2024-11-17 08:10:13,736 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\addresses\entities\address.entity.ts
+2024-11-17 08:10:13,736 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\addresses\entities\address.entity.ts
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error generating dto for address: name 'sleep' is not defined
+2024-11-17 08:10:13,736 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\addresses\entities\address.entity.ts
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,736 - SmartCodeGenerator - ERROR - Error generating service for address: name 'sleep' is not defined
+2024-11-17 08:10:13,737 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\addresses\entities\address.entity.ts
+2024-11-17 08:10:13,737 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,737 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,737 - SmartCodeGenerator - ERROR - Error generating controller for address: name 'sleep' is not defined
+2024-11-17 08:10:13,738 - APIGenerator - INFO - Processing src\attributes\entities\attribute-value.entity.ts (2/25)
+2024-11-17 08:10:13,738 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\attributes\entities\attribute-value.entity.ts
+2024-11-17 08:10:13,738 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\attributes\entities\attribute-value.entity.ts
+2024-11-17 08:10:13,738 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,738 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,738 - SmartCodeGenerator - ERROR - Error generating dto for attribute-value: name 'sleep' is not defined
+2024-11-17 08:10:13,738 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\attributes\entities\attribute-value.entity.ts
+2024-11-17 08:10:13,741 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,741 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,742 - SmartCodeGenerator - ERROR - Error generating service for attribute-value: name 'sleep' is not defined
+2024-11-17 08:10:13,742 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\attributes\entities\attribute-value.entity.ts
+2024-11-17 08:10:13,742 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,742 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,742 - SmartCodeGenerator - ERROR - Error generating controller for attribute-value: name 'sleep' is not defined
+2024-11-17 08:10:13,743 - APIGenerator - INFO - Processing src\auth\entities\permission.entity.ts (3/25)
+2024-11-17 08:10:13,743 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\permission.entity.ts
+2024-11-17 08:10:13,744 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\permission.entity.ts
+2024-11-17 08:10:13,744 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,744 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,744 - SmartCodeGenerator - ERROR - Error generating dto for permission: name 'sleep' is not defined
+2024-11-17 08:10:13,744 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\permission.entity.ts
+2024-11-17 08:10:13,744 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,744 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,745 - SmartCodeGenerator - ERROR - Error generating service for permission: name 'sleep' is not defined
+2024-11-17 08:10:13,745 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\permission.entity.ts
+2024-11-17 08:10:13,745 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,745 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,745 - SmartCodeGenerator - ERROR - Error generating controller for permission: name 'sleep' is not defined
+2024-11-17 08:10:13,746 - APIGenerator - INFO - Processing src\auth\entities\profile.entity.ts (4/25)
+2024-11-17 08:10:13,746 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\profile.entity.ts
+2024-11-17 08:10:13,746 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\profile.entity.ts
+2024-11-17 08:10:13,746 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,746 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,746 - SmartCodeGenerator - ERROR - Error generating dto for profile: name 'sleep' is not defined
+2024-11-17 08:10:13,748 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\profile.entity.ts
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error generating service for profile: name 'sleep' is not defined
+2024-11-17 08:10:13,748 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\profile.entity.ts
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,748 - SmartCodeGenerator - ERROR - Error generating controller for profile: name 'sleep' is not defined
+2024-11-17 08:10:13,748 - APIGenerator - INFO - Processing src\auth\entities\user.entity.ts (5/25)
+2024-11-17 08:10:13,750 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\user.entity.ts
+2024-11-17 08:10:13,750 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\user.entity.ts
+2024-11-17 08:10:13,750 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,750 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,751 - SmartCodeGenerator - ERROR - Error generating dto for user: name 'sleep' is not defined
+2024-11-17 08:10:13,752 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\user.entity.ts
+2024-11-17 08:10:13,752 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,752 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,752 - SmartCodeGenerator - ERROR - Error generating service for user: name 'sleep' is not defined
+2024-11-17 08:10:13,752 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\auth\entities\user.entity.ts
+2024-11-17 08:10:13,752 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,753 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,753 - SmartCodeGenerator - ERROR - Error generating controller for user: name 'sleep' is not defined
+2024-11-17 08:10:13,753 - APIGenerator - INFO - Processing src\categories\entities\category.entity.ts (6/25)
+2024-11-17 08:10:13,754 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\categories\entities\category.entity.ts
+2024-11-17 08:10:13,754 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\categories\entities\category.entity.ts
+2024-11-17 08:10:13,754 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,754 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,754 - SmartCodeGenerator - ERROR - Error generating dto for category: name 'sleep' is not defined
+2024-11-17 08:10:13,755 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\categories\entities\category.entity.ts
+2024-11-17 08:10:13,755 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,755 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,755 - SmartCodeGenerator - ERROR - Error generating service for category: name 'sleep' is not defined
+2024-11-17 08:10:13,756 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\categories\entities\category.entity.ts
+2024-11-17 08:10:13,756 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,756 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,756 - SmartCodeGenerator - ERROR - Error generating controller for category: name 'sleep' is not defined
+2024-11-17 08:10:13,757 - APIGenerator - INFO - Processing src\common\entities\attachment.entity.ts (7/25)
+2024-11-17 08:10:13,758 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\attachment.entity.ts
+2024-11-17 08:10:13,758 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\attachment.entity.ts
+2024-11-17 08:10:13,758 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,758 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,758 - SmartCodeGenerator - ERROR - Error generating dto for attachment: name 'sleep' is not defined
+2024-11-17 08:10:13,759 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\attachment.entity.ts
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error generating service for attachment: name 'sleep' is not defined
+2024-11-17 08:10:13,760 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\attachment.entity.ts
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,760 - SmartCodeGenerator - ERROR - Error generating controller for attachment: name 'sleep' is not defined
+2024-11-17 08:10:13,762 - APIGenerator - INFO - Processing src\common\entities\core.entity.ts (8/25)
+2024-11-17 08:10:13,762 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\core.entity.ts
+2024-11-17 08:10:13,762 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\core.entity.ts
+2024-11-17 08:10:13,762 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,762 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,762 - SmartCodeGenerator - ERROR - Error generating dto for core: name 'sleep' is not defined
+2024-11-17 08:10:13,763 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\core.entity.ts
+2024-11-17 08:10:13,763 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,764 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,764 - SmartCodeGenerator - ERROR - Error generating service for core: name 'sleep' is not defined
+2024-11-17 08:10:13,764 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\common\entities\core.entity.ts
+2024-11-17 08:10:13,764 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,764 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,764 - SmartCodeGenerator - ERROR - Error generating controller for core: name 'sleep' is not defined
+2024-11-17 08:10:13,765 - APIGenerator - INFO - Processing src\coupons\entities\coupon.entity.ts (9/25)
+2024-11-17 08:10:13,765 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\coupons\entities\coupon.entity.ts
+2024-11-17 08:10:13,766 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\coupons\entities\coupon.entity.ts
+2024-11-17 08:10:13,766 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,766 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,766 - SmartCodeGenerator - ERROR - Error generating dto for coupon: name 'sleep' is not defined
+2024-11-17 08:10:13,767 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\coupons\entities\coupon.entity.ts
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error generating service for coupon: name 'sleep' is not defined
+2024-11-17 08:10:13,767 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\coupons\entities\coupon.entity.ts
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,767 - SmartCodeGenerator - ERROR - Error generating controller for coupon: name 'sleep' is not defined
+2024-11-17 08:10:13,767 - APIGenerator - INFO - Processing src\feedbacks\entities\feedback.entity.ts (10/25)
+2024-11-17 08:10:13,767 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\feedbacks\entities\feedback.entity.ts
+2024-11-17 08:10:13,770 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\feedbacks\entities\feedback.entity.ts
+2024-11-17 08:10:13,770 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,770 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,771 - SmartCodeGenerator - ERROR - Error generating dto for feedback: name 'sleep' is not defined
+2024-11-17 08:10:13,771 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\feedbacks\entities\feedback.entity.ts
+2024-11-17 08:10:13,771 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,771 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,771 - SmartCodeGenerator - ERROR - Error generating service for feedback: name 'sleep' is not defined
+2024-11-17 08:10:13,772 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\feedbacks\entities\feedback.entity.ts
+2024-11-17 08:10:13,772 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,772 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,773 - SmartCodeGenerator - ERROR - Error generating controller for feedback: name 'sleep' is not defined
+2024-11-17 08:10:13,773 - APIGenerator - INFO - Processing src\orders\entities\order-status.entity.ts (11/25)
+2024-11-17 08:10:13,773 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\order-status.entity.ts
+2024-11-17 08:10:13,774 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\order-status.entity.ts
+2024-11-17 08:10:13,774 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,774 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating dto for order-status: name 'sleep' is not defined
+2024-11-17 08:10:13,775 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\order-status.entity.ts
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating service for order-status: name 'sleep' is not defined
+2024-11-17 08:10:13,775 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\order-status.entity.ts
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating controller for order-status: name 'sleep' is not defined
+2024-11-17 08:10:13,775 - APIGenerator - INFO - Processing src\orders\entities\orders.entity.ts (12/25)
+2024-11-17 08:10:13,775 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\orders.entity.ts
+2024-11-17 08:10:13,775 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\orders.entity.ts
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,775 - SmartCodeGenerator - ERROR - Error generating dto for orders: name 'sleep' is not defined
+2024-11-17 08:10:13,775 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\orders.entity.ts
+2024-11-17 08:10:13,779 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,779 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,779 - SmartCodeGenerator - ERROR - Error generating service for orders: name 'sleep' is not defined
+2024-11-17 08:10:13,780 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\orders\entities\orders.entity.ts
+2024-11-17 08:10:13,780 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,780 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,780 - SmartCodeGenerator - ERROR - Error generating controller for orders: name 'sleep' is not defined
+2024-11-17 08:10:13,781 - APIGenerator - INFO - Processing src\payment-intent\entities\payment-intent-info.entity.ts (13/25)
+2024-11-17 08:10:13,781 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent-info.entity.ts
+2024-11-17 08:10:13,782 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent-info.entity.ts
+2024-11-17 08:10:13,782 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,782 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,782 - SmartCodeGenerator - ERROR - Error generating dto for payment-intent-info: name 'sleep' is not defined
+2024-11-17 08:10:13,782 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent-info.entity.ts
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error generating service for payment-intent-info: name 'sleep' is not defined
+2024-11-17 08:10:13,783 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent-info.entity.ts
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,783 - SmartCodeGenerator - ERROR - Error generating controller for payment-intent-info: name 'sleep' is not defined
+2024-11-17 08:10:13,784 - APIGenerator - INFO - Processing src\payment-intent\entities\payment-intent.entity.ts (14/25)
+2024-11-17 08:10:13,784 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent.entity.ts
+2024-11-17 08:10:13,784 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent.entity.ts
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error generating dto for payment-intent: name 'sleep' is not defined
+2024-11-17 08:10:13,784 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent.entity.ts
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,784 - SmartCodeGenerator - ERROR - Error generating service for payment-intent: name 'sleep' is not defined
+2024-11-17 08:10:13,784 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\payment-intent\entities\payment-intent.entity.ts
+2024-11-17 08:10:13,787 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,787 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,787 - SmartCodeGenerator - ERROR - Error generating controller for payment-intent: name 'sleep' is not defined
+2024-11-17 08:10:13,788 - APIGenerator - INFO - Processing src\products\entities\product.entity.ts (15/25)
+2024-11-17 08:10:13,788 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\products\entities\product.entity.ts
+2024-11-17 08:10:13,790 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\products\entities\product.entity.ts
+2024-11-17 08:10:13,790 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,790 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,790 - SmartCodeGenerator - ERROR - Error generating dto for product: name 'sleep' is not defined
+2024-11-17 08:10:13,790 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\products\entities\product.entity.ts
+2024-11-17 08:10:13,791 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,791 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,791 - SmartCodeGenerator - ERROR - Error generating service for product: name 'sleep' is not defined
+2024-11-17 08:10:13,791 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\products\entities\product.entity.ts
+2024-11-17 08:10:13,791 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,791 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,792 - SmartCodeGenerator - ERROR - Error generating controller for product: name 'sleep' is not defined
+2024-11-17 08:10:13,798 - APIGenerator - INFO - Processing src\reviews\entities\reports.entity.ts (16/25)
+2024-11-17 08:10:13,799 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\reports.entity.ts
+2024-11-17 08:10:13,799 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\reports.entity.ts
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error generating dto for reports: name 'sleep' is not defined
+2024-11-17 08:10:13,799 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\reports.entity.ts
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error generating service for reports: name 'sleep' is not defined
+2024-11-17 08:10:13,799 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\reports.entity.ts
+2024-11-17 08:10:13,799 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,802 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,802 - SmartCodeGenerator - ERROR - Error generating controller for reports: name 'sleep' is not defined
+2024-11-17 08:10:13,803 - APIGenerator - INFO - Processing src\reviews\entities\review.entity.ts (17/25)
+2024-11-17 08:10:13,803 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\review.entity.ts
+2024-11-17 08:10:13,804 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\review.entity.ts
+2024-11-17 08:10:13,804 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,804 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,804 - SmartCodeGenerator - ERROR - Error generating dto for review: name 'sleep' is not defined
+2024-11-17 08:10:13,805 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\review.entity.ts
+2024-11-17 08:10:13,805 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,805 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,805 - SmartCodeGenerator - ERROR - Error generating service for review: name 'sleep' is not defined
+2024-11-17 08:10:13,805 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\reviews\entities\review.entity.ts
+2024-11-17 08:10:13,806 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,806 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,806 - SmartCodeGenerator - ERROR - Error generating controller for review: name 'sleep' is not defined
+2024-11-17 08:10:13,807 - APIGenerator - INFO - Processing src\settings\entities\settings.entity.ts (18/25)
+2024-11-17 08:10:13,808 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\settings\entities\settings.entity.ts
+2024-11-17 08:10:13,808 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\settings\entities\settings.entity.ts
+2024-11-17 08:10:13,808 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,809 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,809 - SmartCodeGenerator - ERROR - Error generating dto for settings: name 'sleep' is not defined
+2024-11-17 08:10:13,809 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\settings\entities\settings.entity.ts
+2024-11-17 08:10:13,809 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,809 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,809 - SmartCodeGenerator - ERROR - Error generating service for settings: name 'sleep' is not defined
+2024-11-17 08:10:13,809 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\settings\entities\settings.entity.ts
+2024-11-17 08:10:13,810 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,810 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,810 - SmartCodeGenerator - ERROR - Error generating controller for settings: name 'sleep' is not defined
+2024-11-17 08:10:13,815 - APIGenerator - INFO - Processing src\shop\entitits\balance.entity.ts (19/25)
+2024-11-17 08:10:13,816 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\balance.entity.ts
+2024-11-17 08:10:13,816 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\balance.entity.ts
+2024-11-17 08:10:13,816 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,816 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,817 - SmartCodeGenerator - ERROR - Error generating dto for balance: name 'sleep' is not defined
+2024-11-17 08:10:13,817 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\balance.entity.ts
+2024-11-17 08:10:13,817 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,817 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,817 - SmartCodeGenerator - ERROR - Error generating service for balance: name 'sleep' is not defined
+2024-11-17 08:10:13,817 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\balance.entity.ts
+2024-11-17 08:10:13,817 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,818 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,818 - SmartCodeGenerator - ERROR - Error generating controller for balance: name 'sleep' is not defined
+2024-11-17 08:10:13,819 - APIGenerator - INFO - Processing src\shop\entitits\payment-info.entity.ts (20/25)
+2024-11-17 08:10:13,819 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\payment-info.entity.ts
+2024-11-17 08:10:13,819 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\payment-info.entity.ts
+2024-11-17 08:10:13,819 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,819 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,820 - SmartCodeGenerator - ERROR - Error generating dto for payment-info: name 'sleep' is not defined
+2024-11-17 08:10:13,820 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\payment-info.entity.ts
+2024-11-17 08:10:13,820 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,820 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,820 - SmartCodeGenerator - ERROR - Error generating service for payment-info: name 'sleep' is not defined
+2024-11-17 08:10:13,820 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\payment-info.entity.ts
+2024-11-17 08:10:13,821 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,821 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,821 - SmartCodeGenerator - ERROR - Error generating controller for payment-info: name 'sleep' is not defined
+2024-11-17 08:10:13,822 - APIGenerator - INFO - Processing src\shop\entitits\shop-settings.entity.ts (21/25)
+2024-11-17 08:10:13,823 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop-settings.entity.ts
+2024-11-17 08:10:13,823 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop-settings.entity.ts
+2024-11-17 08:10:13,823 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,823 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,823 - SmartCodeGenerator - ERROR - Error generating dto for shop-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,823 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop-settings.entity.ts
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error generating service for shop-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,824 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop-settings.entity.ts
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,824 - SmartCodeGenerator - ERROR - Error generating controller for shop-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,829 - APIGenerator - INFO - Processing src\shop\entitits\shop.entity.ts (22/25)
+2024-11-17 08:10:13,829 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop.entity.ts
+2024-11-17 08:10:13,829 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop.entity.ts
+2024-11-17 08:10:13,829 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,829 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,829 - SmartCodeGenerator - ERROR - Error generating dto for shop: name 'sleep' is not defined
+2024-11-17 08:10:13,829 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop.entity.ts
+2024-11-17 08:10:13,834 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,834 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,834 - SmartCodeGenerator - ERROR - Error generating service for shop: name 'sleep' is not defined
+2024-11-17 08:10:13,834 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\shop\entitits\shop.entity.ts
+2024-11-17 08:10:13,834 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,835 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,835 - SmartCodeGenerator - ERROR - Error generating controller for shop: name 'sleep' is not defined
+2024-11-17 08:10:13,835 - APIGenerator - INFO - Processing src\tags\entities\tag.entity.ts (23/25)
+2024-11-17 08:10:13,836 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\tags\entities\tag.entity.ts
+2024-11-17 08:10:13,836 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\tags\entities\tag.entity.ts
+2024-11-17 08:10:13,836 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,837 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,837 - SmartCodeGenerator - ERROR - Error generating dto for tag: name 'sleep' is not defined
+2024-11-17 08:10:13,838 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\tags\entities\tag.entity.ts
+2024-11-17 08:10:13,838 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,838 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,839 - SmartCodeGenerator - ERROR - Error generating service for tag: name 'sleep' is not defined
+2024-11-17 08:10:13,839 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\tags\entities\tag.entity.ts
+2024-11-17 08:10:13,839 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,839 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating controller for tag: name 'sleep' is not defined
+2024-11-17 08:10:13,840 - APIGenerator - INFO - Processing src\types\entities\type-settings.entity.ts (24/25)
+2024-11-17 08:10:13,840 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type-settings.entity.ts
+2024-11-17 08:10:13,840 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type-settings.entity.ts
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating dto for type-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,840 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type-settings.entity.ts
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating service for type-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,840 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type-settings.entity.ts
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,840 - SmartCodeGenerator - ERROR - Error generating controller for type-settings: name 'sleep' is not defined
+2024-11-17 08:10:13,848 - APIGenerator - INFO - Processing src\types\entities\type.entity.ts (25/25)
+2024-11-17 08:10:13,848 - SmartCodeGenerator - INFO - Processing entity: C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type.entity.ts
+2024-11-17 08:10:13,849 - SmartCodeGenerator - INFO - Generating dto for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type.entity.ts
+2024-11-17 08:10:13,849 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,850 - SmartCodeGenerator - ERROR - Error generating dto: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,850 - SmartCodeGenerator - ERROR - Error generating dto for type: name 'sleep' is not defined
+2024-11-17 08:10:13,850 - SmartCodeGenerator - INFO - Generating service for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type.entity.ts
+2024-11-17 08:10:13,850 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,851 - SmartCodeGenerator - ERROR - Error generating service: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,851 - SmartCodeGenerator - ERROR - Error generating service for type: name 'sleep' is not defined
+2024-11-17 08:10:13,851 - SmartCodeGenerator - INFO - Generating controller for C:\xampp\htdocs\Pawsome-custom-api\src\types\entities\type.entity.ts
+2024-11-17 08:10:13,851 - SmartCodeGenerator - ERROR - Error preparing context: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,851 - SmartCodeGenerator - ERROR - Error generating controller: SmartCodeGenerator._find_similar_files() missing 1 required positional argument: 'files'
+2024-11-17 08:10:13,851 - SmartCodeGenerator - ERROR - Error generating controller for type: name 'sleep' is not defined
+2024-11-17 08:10:13,852 - APIGenerator - INFO - Generation completed successfully!

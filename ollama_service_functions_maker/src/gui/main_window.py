@@ -22,7 +22,7 @@ class APIGeneratorGUI:
         self.root.title("Next.js API Generator")
         self.root.geometry("1200x800")
         
-        # Initialize components
+        # Initialize config and generators
         self.config = AnalyzerConfig()
         self.entity_analyzer = EntityAnalyzer()
         self.code_generator = SmartCodeGenerator(self.config)
@@ -365,29 +365,36 @@ class APIGeneratorGUI:
             messagebox.showwarning("Warning", "No entities selected")
             return
 
-        # Update config based on UI selections
-        self.config.GENERATE_SERVICES = self.gen_services.get()
-        self.config.GENERATE_DTOS = self.gen_dtos.get()
-        self.config.GENERATE_CONTROLLERS = self.gen_controllers.get()
-        self.config.GENERATE_SWAGGER = self.gen_swagger.get()
+        try:
+            # Update config based on UI selections
+            self.config.GENERATE_SERVICES = self.gen_services.get()
+            self.config.GENERATE_DTOS = self.gen_dtos.get()
+            self.config.GENERATE_CONTROLLERS = self.gen_controllers.get()
+            self.config.GENERATE_SWAGGER = self.gen_swagger.get()
 
-        # Start generation in a separate thread
-        self.is_generating = True
-        self.generate_button.config(state="disabled")
-        thread = threading.Thread(target=self.generate_files, args=(selected_entities,))
-        thread.daemon = True
-        thread.start()
+            # Analyze project structure first
+            source_path = Path(self.source_path.get())
+            self.log_message("Analyzing project structure...")
+            self.code_generator.analyze_project_structure(source_path)
+            self.log_message("Project analysis completed")
+
+            # Start generation in a separate thread
+            self.is_generating = True
+            self.generate_button.config(state="disabled")
+            thread = threading.Thread(target=self.generate_files, args=(selected_entities,))
+            thread.daemon = True
+            thread.start()
+
+        except Exception as e:
+            self.log_message(f"Error starting generation: {str(e)}")
+            messagebox.showerror("Error", f"Failed to start generation: {str(e)}")
+            self.generate_button.config(state="normal")
 
     def generate_files(self, selected_entities: List[str]):
         """Generate API files for selected entities"""
         try:
             source_path = Path(self.source_path.get())
             output_path = Path(self.output_path.get())
-
-            # First analyze project structure
-            self.log_message("Analyzing project structure...")
-            self.code_generator.analyze_project_structure(source_path)
-            self.log_message("Project analysis completed")
 
             total_entities = len(selected_entities)
             for i, entity_path in enumerate(selected_entities, 1):
@@ -397,9 +404,40 @@ class APIGeneratorGUI:
                 self.log_message(f"Processing {entity_path} ({i}/{total_entities})")
                 
                 try:
-                    # Process entity
+                    # Read entity file
                     full_path = source_path / entity_path
-                    self.code_generator.process_entity(str(full_path), output_path)
+                    with open(full_path, 'r', encoding='utf-8') as f:
+                        entity_content = f.read()
+
+                    # Generate each type
+                    for gen_type in ['dto', 'service', 'controller']:
+                        if getattr(self.config, f'GENERATE_{gen_type.upper()}S', True):
+                            try:
+                                self.log_message(f"Generating {gen_type} for {entity_path}")
+                                code = self.code_generator.generate_code_with_ollama(
+                                    entity_path,
+                                    entity_content,
+                                    gen_type
+                                )
+                                
+                                if code:
+                                    # Save generated code
+                                    entity_name = Path(entity_path).stem.replace('.entity', '')
+                                    output_file = output_path / f'{gen_type}s' / f'{entity_name}.{gen_type}.ts'
+                                    output_file.parent.mkdir(parents=True, exist_ok=True)
+                                    
+                                    with open(output_file, 'w', encoding='utf-8') as f:
+                                        f.write(code)
+                                    
+                                    self.log_message(f"Generated {gen_type} for {entity_name}")
+                                else:
+                                    self.log_message(f"No {gen_type} code generated for {entity_path}")
+                                
+                            except Exception as e:
+                                self.log_message(f"Error generating {gen_type}: {str(e)}")
+                                if not messagebox.askyesno("Error", 
+                                    f"Error generating {gen_type}. Continue with remaining files?"):
+                                    raise
                     
                     # Update progress
                     progress = (i / total_entities) * 100

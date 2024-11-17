@@ -30,7 +30,7 @@ class AnalyzerConfig:
     CACHE_DIR: Path = field(default_factory=lambda: Path(".cache"))
     
     # API configuration
-    API_TIMEOUT: int = 120  # Increased timeout
+    API_TIMEOUT: int = 120
     MAX_RETRIES: int = 3
     RETRY_DELAY: int = 2
     
@@ -45,10 +45,4 @@ class AnalyzerConfig:
     
     # Ollama configuration
     OLLAMA_BASE_URL: str = "http://localhost:11434"
-    OLLAMA_MODEL: str = "llama2"  # Using llama2 as default
-    
-    def __post_init__(self):
-        """Initialize additional configurations after instance creation"""
-        # Create necessary directories
-        self.CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        self.TEMPLATE_DIR.mkdir(parents=True, exist_ok=True)
+    OLLAMA_MODEL: str = "codellama"

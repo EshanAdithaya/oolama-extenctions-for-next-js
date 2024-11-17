@@ -1,0 +1,7 @@
+2024-11-17 08:08:17,761 - APIGenerator - INFO - Application started
+2024-11-17 08:08:27,614 - APIGenerator - INFO - Testing connection to Ollama...
+2024-11-17 08:08:40,572 - APIGenerator - INFO - Successfully connected to Ollama!
+2024-11-17 08:08:47,626 - APIGenerator - INFO - Scanning for entities in C:\xampp\htdocs\Pawsome-custom-api
+2024-11-17 08:08:47,656 - APIGenerator - INFO - Found 25 entities
+2024-11-17 08:09:00,171 - APIGenerator - INFO - Analyzing project structure...
+2024-11-17 08:09:00,174 - APIGenerator - INFO - Error generating files: name 'os' is not defined
